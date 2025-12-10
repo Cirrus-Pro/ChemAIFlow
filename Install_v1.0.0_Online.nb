@@ -1,0 +1,876 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     41576,        868]
+NotebookOptionsPosition[     40874,        847]
+NotebookOutlinePosition[     41266,        863]
+CellTagsIndexPosition[     41223,        860]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Content", "-", 
+    RowBox[{"type", ":", 
+     RowBox[{"application", "/", 
+      RowBox[{"vnd", ".", "wolfram", ".", "mathematica"}]}]}]}], "*)"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"**", "Wolfram"}], " ", "Notebook", " ", "File"}], "***)"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"http", ":"}], "//", 
+    RowBox[{
+     RowBox[{"www", ".", "wolfram", ".", "com"}], "/", "nb"}]}], "*)"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"**", "CHEMAIFLOW"}], " ", "INSTALLER", " ", "v1", ".0", ".0", " ", 
+    RowBox[{"(", 
+     RowBox[{"Official", " ", "Release"}], ")"}]}], "***)"}], 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "baseDir", ",", "kernelDir", ",", "resourcesDir", ",", "workflowsDir", ",",
+        "writeFile", ",", "mainNBContent"}], "}"}], ",", 
+     RowBox[{"(*", 
+      RowBox[{"--", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{
+                    "--", "--"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]\
+}], "*)"}], 
+     RowBox[{"(*", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"1.", " ", "SYSTEM", " ", "CLEANUP"}], "&"}], " ", 
+       "DIRECTORIES"}], "*)"}], 
+     RowBox[{"(*", 
+      RowBox[{"--", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{
+                    "--", "--"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]\
+}], "*)"}], 
+     RowBox[{
+      RowBox[{"Print", "[", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<\\[Rocket] INSTALLING ChemAIFlow v1.0.0 (Official \
+Release)...\>\"", ",", "Blue", ",", "Bold", ",", "16", ",", 
+         RowBox[{"FontFamily", "->", "\"\<Times New Roman\>\""}]}], "]"}], 
+       "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"baseDir", "=", 
+       RowBox[{"FileNameJoin", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"NotebookDirectory", "[", "]"}], 
+          ",", "\"\<ChemAIFlow\>\""}], "}"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"DirectoryQ", "[", "baseDir", "]"}], ",", 
+        RowBox[{"DeleteDirectory", "[", 
+         RowBox[{"baseDir", ",", 
+          RowBox[{"DeleteContents", "->", "True"}]}], "]"}]}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"CreateDirectory", "[", "baseDir", "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"kernelDir", "=", 
+       RowBox[{"FileNameJoin", "[", 
+        RowBox[{"{", 
+         RowBox[{"baseDir", ",", "\"\<Kernel\>\""}], "}"}], "]"}]}], ";", 
+      RowBox[{"CreateDirectory", "[", "kernelDir", "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"resourcesDir", "=", 
+       RowBox[{"FileNameJoin", "[", 
+        RowBox[{"{", 
+         RowBox[{"baseDir", ",", "\"\<Resources\>\""}], "}"}], "]"}]}], ";", 
+      RowBox[{"CreateDirectory", "[", "resourcesDir", "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"CreateDirectory", "[", 
+       RowBox[{"FileNameJoin", "[", 
+        RowBox[{"{", 
+         RowBox[{"resourcesDir", ",", "\"\<Models\>\""}], "}"}], "]"}], "]"}],
+       ";", "\[IndentingNewLine]", 
+      RowBox[{"workflowsDir", "=", 
+       RowBox[{"FileNameJoin", "[", 
+        RowBox[{"{", 
+         RowBox[{"baseDir", ",", "\"\<Workflows\>\""}], "}"}], "]"}]}], ";", 
+      RowBox[{"CreateDirectory", "[", "workflowsDir", "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"Helper", ":", 
+        RowBox[{"write", " ", "files", " ", "safely"}]}], "*)"}], 
+      RowBox[{
+       RowBox[{"writeFile", "[", 
+        RowBox[{"path_", ",", "content_"}], "]"}], ":=", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Export", "[", 
+          RowBox[{"path", ",", "content", ",", "\"\<Text\>\"", ",", 
+           RowBox[{"CharacterEncoding", "->", "\"\<UTF8\>\""}]}], "]"}], 
+         ";"}], ")"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{
+                    "--", "--"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]\
+}], "*)"}], 
+      RowBox[{"(*", 
+       RowBox[{"2.", " ", "PACLET", " ", "INFO"}], "*)"}], 
+      RowBox[{"(*", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{
+                    "--", "--"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]\
+}], "*)"}], 
+      RowBox[{"writeFile", "[", 
+       RowBox[{
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"baseDir", ",", "\"\<PacletInfo.wl\>\""}], "}"}], "]"}], 
+        ",", "\"\<Paclet[Name -> \\\"ChemAIFlow\\\", Version -> \
+\\\"1.0.0\\\", WolframVersion -> \\\"13.0+\\\", Extensions -> \
+{{\\\"Kernel\\\", \\\"Root\\\" -> \\\"Kernel\\\", \\\"Context\\\" -> \
+{\\\"ChemAIFlow`\\\"}}}]\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{
+                    "--", "--"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]\
+}], "*)"}], 
+      RowBox[{"(*", 
+       RowBox[{"3.", " ", "KERNEL", " ", "FILES", " ", 
+        RowBox[{"(", 
+         RowBox[{"Stable", " ", "Core"}], ")"}]}], "*)"}], 
+      RowBox[{"(*", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{
+                    "--", "--"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]\
+}], "*)"}], 
+      RowBox[{"(*", 
+       RowBox[{"init", ".", "wl"}], "*)"}], 
+      RowBox[{"writeFile", "[", 
+       RowBox[{
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"kernelDir", ",", "\"\<init.wl\>\""}], "}"}], "]"}], 
+        ",", "\"\<BeginPackage[\\\"ChemAIFlow`\\\"];\n   \
+Get[FileNameJoin[{DirectoryName[$InputFileName], \\\"ChEMBLFetch.m\\\"}]];\n  \
+ Get[FileNameJoin[{DirectoryName[$InputFileName], \\\"LigandFeature.m\\\"}]];\
+\n   Get[FileNameJoin[{DirectoryName[$InputFileName], \
+\\\"ProteinFeature.m\\\"}]];\n   \
+Get[FileNameJoin[{DirectoryName[$InputFileName], \\\"Integration.m\\\"}]];\n  \
+ Get[FileNameJoin[{DirectoryName[$InputFileName], \\\"Cleaning.m\\\"}]];\n   \
+EndPackage[];\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"ChEMBLFetch", ".", "m"}], "*)"}], 
+      RowBox[{"writeFile", "[", 
+       RowBox[{
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"kernelDir", ",", "\"\<ChEMBLFetch.m\>\""}], "}"}], "]"}], 
+        ",", "\"\<BeginPackage[\\\"ChemAIFlow`ChEMBLFetch`\\\"];\n   \
+FetchChEMBLProtList::usage = \\\"FetchChEMBLProtList[limit]\\\";\n   \
+FetchChEMBLTargetActivities::usage = \
+\\\"FetchChEMBLTargetActivities[targetID, limit]\\\";\n   \
+FetchChEMBLTargetSequence::usage = \
+\\\"FetchChEMBLTargetSequence[targetID]\\\";\n   Begin[\\\"`Private`\\\"];\n  \
+ baseURL = \\\"https://www.ebi.ac.uk/chembl/api/data\\\";\n   \
+safeImportJSON[url_] := Module[{res, json},\n     res = URLRead[url, \
+TimeConstraint -> 60];\n     If[res[\\\"StatusCode\\\"] =!= 200, \
+Return[Missing[\\\"HTTPError\\\", res[\\\"StatusCode\\\"]]]];\n     json = \
+Quiet @ Import[res, \\\"RawJSON\\\"];\n     If[FailureQ[json], \
+Missing[\\\"JSONDecodeError\\\"], json]\n   ];\n   \
+FetchChEMBLProtList[desiredN_Integer] := Module[{batchSize = 100, numPages, \
+offsets, targets = {}, url, raw, items, i},\n     numPages = Ceiling[desiredN \
+/ batchSize];\n     offsets = batchSize * Range[0, numPages - 1];\n     \
+Print[\\\"    -> Fetching Target List: Requesting \\\" <> ToString[desiredN] \
+<> \\\" proteins...\\\"];\n     Do[\n       url = baseURL <> \
+\\\"/target.json?target_type=SINGLE%20PROTEIN&limit=\\\" <> \
+ToString[batchSize] <> \\\"&offset=\\\" <> ToString[offsets[[i]]];\n       \
+raw = safeImportJSON[url];\n       If[!MissingQ[raw],\n          items = \
+Lookup[raw, \\\"targets\\\", {}];\n          items = \
+Map[<|\\\"target_chembl_id\\\" -> Lookup[#, \\\"target_chembl_id\\\"], \
+\\\"pref_name\\\" -> Lookup[#, \\\"pref_name\\\"]|>&, items];\n          \
+targets = Join[targets, items];\n       ];\n       If[Mod[i, 5] == 0, \
+Print[\\\"       Page \\\" <> ToString[i] <> \\\"/\\\" <> \
+ToString[Length[offsets]] <> \\\" done.\\\"]];\n     , {i, 1, \
+Length[offsets]}];\n     targets = Take[targets, UpTo[desiredN]];\n     \
+Print[\\\"    -> Successfully fetched list of \\\" <> \
+ToString[Length[targets]] <> \\\" proteins.\\\"];\n     targets\n   ];\n   \
+FetchChEMBLTargetActivities[tid_, limit_:200] := Module[{url, json, acts},\n  \
+   url = baseURL <> \\\"/activity.json?target_chembl_id=\\\" <> tid <> \
+\\\"&standard_type=IC50&format=json&limit=\\\" <> ToString[limit];\n     json \
+= safeImportJSON[url];\n     acts = Lookup[json, \\\"activities\\\", {}];\n   \
+  acts\n   ];\n   FetchChEMBLTargetSequence[tid_] := Module[{url, json, \
+comps, seq},\n     url = baseURL <> \\\"/target/\\\" <> tid <> \\\".json\\\";\
+\n     json = safeImportJSON[url];\n     If[MissingQ[json], Return[Missing[\\\
+\"NotFound\\\"]]];\n     comps = Lookup[json, \\\"target_components\\\", {}];\
+\n     If[Length[comps] > 0,\n       seq = Lookup[comps[[1]], \
+\\\"target_component_sequence\\\", \\\"\\\"];\n       If[StringQ[seq], seq, \
+Missing[\\\"NoSequence\\\"]],\n       Missing[\\\"NoComponents\\\"]\n     ]\n \
+  ];\n   End[];\n   EndPackage[];\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"LigandFeature", ".", "m"}], "*)"}], 
+      RowBox[{"writeFile", "[", 
+       RowBox[{
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"kernelDir", ",", "\"\<LigandFeature.m\>\""}], "}"}], "]"}],
+         ",", "\"\<BeginPackage[\\\"ChemAIFlow`LigandFeature`\\\"];\n   \
+CalculateLigandFeatures::usage = \\\"CalculateLigandFeatures[smiles]\\\";\n   \
+MakeLigandFeatures::usage = \\\"MakeLigandFeatures[rows]\\\";\n   \
+Begin[\\\"`Private`\\\"];\n   calcKeys = {\\\"Lig_MolecularMass\\\", \
+\\\"Lig_TPSA\\\", \\\"Lig_HBD\\\", \\\"Lig_HBA\\\", \
+\\\"Lig_RotatableBonds\\\", \\\"Lig_AromaticRings\\\", \\\"Lig_RingCount\\\", \
+\\\"Lig_HeavyAtoms\\\", \\\"Lig_FractionCsp3\\\"};\n   calcSMILES[s_] := \
+Module[{mol},\n     mol = Quiet@Check[Molecule[s], Missing[\\\"Invalid\\\"]];\
+\n     If[MissingQ[mol], <||>, <|\n          \\\"Lig_MolecularMass\\\" -> \
+Quiet@Check[mol[\\\"MolecularMass\\\"], 0],\n          \\\"Lig_TPSA\\\" -> \
+Quiet@Check[mol[\\\"TopologicalPolarSurfaceArea\\\"], 0],\n          \
+\\\"Lig_HBD\\\" -> Quiet@Check[mol[\\\"HBondDonorCount\\\"], 0],\n          \
+\\\"Lig_HBA\\\" -> Quiet@Check[mol[\\\"HBondAcceptorCount\\\"], 0],\n         \
+ \\\"Lig_RotatableBonds\\\" -> Quiet@Check[mol[\\\"RotatableBondCount\\\"], \
+0], \n          \\\"Lig_AromaticRings\\\" -> \
+Quiet@Check[mol[\\\"AromaticRingCount\\\"], 0], \n          \\\"Lig_RingCount\
+\\\" -> Quiet@Check[mol[\\\"RingCount\\\"], 0], \n          \
+\\\"Lig_HeavyAtoms\\\" -> Quiet@Check[mol[\\\"HeavyAtomCount\\\"], 0], \n     \
+     \\\"Lig_FractionCsp3\\\" -> Quiet@Check[mol[\\\"FractionalSP3\\\"], 0] \n\
+       |> ]\n   ];\n   CalculateLigandFeatures[s_String] := calcSMILES[s];\n  \
+ MakeLigandFeatures[rows:{__Association}] := Map[If[StringQ[#[\n   \
+\\\"Lig_SMILES\\\"]], calcSMILES[#[\\\"Lig_SMILES\\\"]], KeyTake[#, \
+calcKeys]]&, rows];\n   MakeLigandFeatures[_] := {};\n   End[];\n   \
+EndPackage[];\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"ProteinFeature", ".", "m"}], "*)"}], 
+      RowBox[{"writeFile", "[", 
+       RowBox[{
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"kernelDir", ",", "\"\<ProteinFeature.m\>\""}], "}"}], 
+         "]"}], ",", "\"\<BeginPackage[\\\"ChemAIFlow`ProteinFeature`\\\"];\n \
+  CalculateProteinFeatures::usage = \\\"CalculateProteinFeatures[seq]\\\";\n  \
+ MakeProteinFeatures::usage = \\\"MakeProteinFeatures[rows]\\\";\n   Begin[\\\
+\"`Private`\\\"];\n   aaData = \
+<|\\\"A\\\"->{89.09,1.8,\\\"H\\\"},\\\"R\\\"->{174.2,-4.5,\\\"+\\\"},\\\"N\\\"\
+->{132.1,-3.5,\\\"P\\\"},\\\"D\\\"->{133.1,-3.5,\\\"-\\\"},\\\"C\\\"->{121.1,\
+2.5,\\\"H\\\"},\\\"Q\\\"->{146.1,-3.5,\\\"P\\\"},\\\"E\\\"->{147.1,-3.5,\\\"-\
+\\\"},\\\"G\\\"->{75.0,-0.4,\\\"H\\\"},\\\"H\\\"->{155.1,-3.2,\\\"+\\\"},\\\"\
+I\\\"->{131.1,4.5,\\\"H\\\"},\\\"L\\\"->{131.1,3.8,\\\"H\\\"},\\\"K\\\"->{146.\
+1,-3.9,\\\"+\\\"},\\\"M\\\"->{149.2,1.9,\\\"H\\\"},\\\"F\\\"->{165.1,2.8,\\\"\
+A\\\"},\\\"P\\\"->{115.1,-1.6,\\\"H\\\"},\\\"S\\\"->{105.0,-0.8,\\\"P\\\"},\\\
+\"T\\\"->{119.1,-0.7,\\\"P\\\"},\\\"W\\\"->{204.2,-0.9,\\\"A\\\"},\\\"Y\\\"->{\
+181.1,-1.3,\\\"A\\\"},\\\"V\\\"->{117.1,4.2,\\\"H\\\"}|>;\n   \
+calcProt[seq_String] := Module[{c, len, w, h, t}, \n     c = \
+Select[Characters[ToUpperCase[seq]], KeyExistsQ[aaData, #]&]; \n     len = \
+Length[c]; \n     If[len==0, Return[<||>]]; \n     w = aaData[#][[1]]&/@c;\n  \
+   h = aaData[#][[2]]&/@c; \n     t = aaData[#][[3]]&/@c; \n     <| \
+\\\"Prot_ResidueLength\\\"->len, \n        \
+\\\"Prot_MolecularWeight_Da\\\"->Total[w]-(18.015*(len-1)), \n        \
+\\\"Prot_GRAVY\\\"->Mean[h], \n        \
+\\\"Prot_AromaticFraction\\\"->N@Count[t,\\\"A\\\"]/len, \n        \
+\\\"Prot_PositiveResidueFraction\\\"->N@Count[t,\\\"+\\\"]/len, \n        \
+\\\"Prot_NegativeResidueFraction\\\"->N@Count[t,\\\"-\\\"]/len, \n        \
+\\\"Prot_PolarResidueFraction\\\"->N@Count[t,\\\"P\\\"]/len |> \n   ];\n   \
+CalculateProteinFeatures[s_] := calcProt[s];\n   \
+MakeProteinFeatures[rows:{__Association}] := \
+Map[If[StringQ[#[\\\"Prot_Sequence\\\"]], calcProt[#[\\\"Prot_Sequence\\\"]], \
+<||>]&, rows];\n   MakeProteinFeatures[_] := {};\n   End[];\n   EndPackage[];\
+\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"Integration", ".", "m"}], "*)"}], 
+      RowBox[{"writeFile", "[", 
+       RowBox[{
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"kernelDir", ",", "\"\<Integration.m\>\""}], "}"}], "]"}], 
+        ",", "\"\<BeginPackage[\\\"ChemAIFlow`Integration`\\\"];\n   \
+MakeUnifiedDataset::usage = \\\"MakeUnifiedDataset[acts, prot]\\\";\n   \
+Begin[\\\"`Private`\\\"];\n   Needs[\\\"ChemAIFlow`ProteinFeature`\\\"];\n   \
+Needs[\\\"ChemAIFlow`LigandFeature`\\\"];\n   safeExtract[a_, k_] := \
+Module[{v = Lookup[a, k, Missing[\\\"NA\\\"]]}, If[NumericQ[v], v, \
+If[StringQ[v] && StringMatchQ[v, NumberString], ToExpression[v], \
+Missing[\\\"NA\\\"]]]];\n   getChemblProp[act_, key_] := \
+safeExtract[Lookup[act, \\\"molecule_properties\\\", <||>], key];\n   \
+MakeUnifiedDataset[acts_, prot_] := Module[{pFeats},\n     pFeats = \
+If[StringQ[prot], ChemAIFlow`ProteinFeature`CalculateProteinFeatures[prot], \
+prot];\n     Map[Function[a,\n       Module[{pic, smi, val, chProps, \
+calcProps, finalLigProps, ligId, ligName},\n         ligId = Lookup[a, \
+\\\"molecule_chembl_id\\\", \\\"UnknownID\\\"];\n         ligName = Lookup[a, \
+\\\"molecule_pref_name\\\", \\\"UnknownName\\\"];\n         \
+If[!StringQ[ligName], ligName = \\\"UnknownName\\\"];\n         pic = \
+Missing[\\\"NoData\\\"];\n         val = safeExtract[a, \
+\\\"pchembl_value\\\"];\n         If[NumericQ[val], pic = N[val],\n           \
+ val = safeExtract[a, \\\"standard_value\\\"];\n            If[NumericQ[val] \
+&& val > 0, pic = 9.0 - Log10[N[val]]]];\n         smi = Lookup[a, \
+\\\"canonical_smiles\\\", Missing[\\\"NA\\\"]];\n         If[StringQ[smi] && \
+NumericQ[pic],\n             chProps = <|\\\"Lig_MolecularMass\\\" -> \
+getChemblProp[a, \\\"full_mwt\\\"], \n                         \\\"Lig_TPSA\\\
+\" -> getChemblProp[a, \\\"psa\\\"], \n                         \\\"Lig_HBD\\\
+\" -> getChemblProp[a, \\\"hbd\\\"], \n                         \\\"Lig_HBA\\\
+\" -> getChemblProp[a, \\\"hba\\\"], \n                         \
+\\\"Lig_RotatableBonds\\\" -> getChemblProp[a, \\\"rtb\\\"], \n               \
+          \\\"Lig_AromaticRings\\\" -> getChemblProp[a, \
+\\\"aromatic_rings\\\"], \n                         \\\"Lig_HeavyAtoms\\\" -> \
+getChemblProp[a, \\\"heavy_atoms\\\"], \n                         \
+\\\"Lig_LogP\\\" -> getChemblProp[a, \\\"alogp\\\"]|>;\n             \
+calcProps = ChemAIFlow`LigandFeature`CalculateLigandFeatures[smi];\n          \
+   finalLigProps = Join[calcProps, Select[chProps, NumericQ]];\n             \
+Join[<|\\\"LigandID\\\" -> ligId, \\\"LigandName\\\" -> ligName, \
+\\\"Lig_SMILES\\\"->smi, \\\"pIC50\\\"->pic|>, finalLigProps, pFeats],\n      \
+       Nothing]\n       ]], acts]\n   ];\n   End[];\n   EndPackage[];\>\""}], 
+       "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"Cleaning", ".", "m"}], "*)"}], 
+      RowBox[{"writeFile", "[", 
+       RowBox[{
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"kernelDir", ",", "\"\<Cleaning.m\>\""}], "}"}], "]"}], 
+        ",", "\"\<BeginPackage[\\\"ChemAIFlow`Cleaning`\\\"];\n   \
+CleanDataset::usage = \\\"CleanDataset[data]\\\";\n   \
+Begin[\\\"`Private`\\\"];\n   nKeys = {\\\"Lig_MolecularMass\\\",\\\"Lig_TPSA\
+\\\",\\\"Lig_HBD\\\",\\\"Lig_HBA\\\",\\\"Lig_RotatableBonds\\\", \
+\\\"Lig_AromaticRings\\\",\\\"Lig_RingCount\\\",\\\"Lig_HeavyAtoms\\\",\\\"\
+Lig_FractionCsp3\\\", \
+\\\"Prot_ResidueLength\\\",\\\"Prot_MolecularWeight_Da\\\",\\\"Prot_GRAVY\\\",\
+\\\"pIC50\\\"};\n   safeNum[x_] := Which[NumericQ[x],N[x], \
+StringQ[x]&&StringMatchQ[x,NumberString], \
+Quiet@Check[N@ToExpression[x],Missing[\\\"Bad\\\"]], True, x];\n   \
+CleanDataset[d_List] := \
+Select[Map[Association@KeyValueMap[If[MemberQ[nKeys,#1],#1->safeNum[#2],#1->#\
+2]&,#]&, d], FreeQ[KeyTake[#,nKeys], _Missing]&];\n   End[];\n   \
+EndPackage[];\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{
+                    "--", "--"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]\
+}], "*)"}], 
+      RowBox[{"(*", 
+       RowBox[{
+       "4.", " ", "MAIN", " ", "WORKFLOW", " ", "NOTEBOOK", " ", 
+        "GENERATION"}], "*)"}], 
+      RowBox[{"(*", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{
+                    "--", "--"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]\
+}], "*)"}], 
+      RowBox[{
+      "mainNBContent", 
+       "=", "\"\<(* Content-type: application/vnd.wolfram.mathematica *)\n\n\
+(*** SECTION 0: INIT ***)\nSetDirectory[NotebookDirectory[]];\n\
+PacletDirectoryLoad[ParentDirectory[Directory[]]];\n\
+Needs[\\\"ChemAIFlow`\\\"];\n\n(* Global Variables *)\n\
+If[!ValueQ[globalTrainData], globalTrainData = {}];\n\
+If[!ValueQ[trainedModel], trainedModel = Missing[]];\n\
+If[!ValueQ[modelMethod], modelMethod = \\\"RandomForest\\\"];\n\n(* Default \
+Settings (Auto-fill) *)\nIf[!ValueQ[nProteins], nProteins = 3];\n\
+If[!ValueQ[nLigands], nLigands = 150];\n\n(* Helper to get Dynamic Model Path \
+*)\ngetModelPath[method_String] := \
+FileNameJoin[{ParentDirectory[Directory[]], \\\"Resources\\\", \
+\\\"Models\\\", \\\"ChemAIFlow_\\\" <> method <> \\\".mx\\\"}];\n\n(* UI \
+Helper *)\nChemAIFlowStyle = {FontFamily -> \\\"Times New Roman\\\", FontSize \
+-> 14};\nCFHeaderStyle = {FontFamily -> \\\"Times New Roman\\\", FontSize -> \
+24, FontWeight -> Bold, FontColor -> RGBColor[0, 0.2, 0.6]};\nPanelWidth = \
+850;\nfastMethods = {\\\"DecisionTree\\\", \\\"GradientBoostedTrees\\\", \
+\\\"LinearRegression\\\", \\\"NearestNeighbors\\\", \\\"RandomForest\\\"};\n\n\
+(* TITLE & CREDITS *)\nPrint[Panel[\n  Column[{\n    Style[\\\"ChemAIFlow \
+v1.0.0: Integrated Drug Discovery Pipeline\\\", Sequence @@ CFHeaderStyle],\n \
+   Style[\\\"Developed by: Chairote Yaiprasert @ Walailak University: \
+THAILAND\\\", FontFamily -> \\\"Times New Roman\\\", FontSize -> 16, Italic, \
+Black]\n  }, Alignment -> Center],\n  ImageSize -> {PanelWidth, Automatic}, \
+Alignment -> Center, Background -> LightBlue\n]];\n\n(*** SECTION 1: DATA & \
+TRAINING ***)\nPanel[\n Column[{\n   Style[\\\"Step 1: Data Acquisition & \
+Model Training\\\", 18, Bold, FontFamily -> \\\"Times New Roman\\\"],\n   \
+\\\" \\\",\n   Style[\\\"Configurations:\\\", Bold, FontFamily -> \\\"Times \
+New Roman\\\"],\n   Grid[{\n     {\\\"Number of Proteins:\\\", \
+InputField[Dynamic[nProteins], Number, FieldSize -> 5]},\n     {\\\"Ligands \
+per Protein:\\\", InputField[Dynamic[nLigands], Number, FieldSize -> 5]},\n   \
+  {\\\"ML Model Method:\\\", PopupMenu[Dynamic[modelMethod], fastMethods]}\n  \
+ }, Alignment -> Left, BaseStyle -> ChemAIFlowStyle],\n   \n   (* TIP STEP 1 \
+*)\n   Spacer[5],\n   Style[\\\"Tip: Large datasets (Proteins/Ligands) \
+improve accuracy but increase runtime.\\\\nStart with the default (3/150) to \
+test your connection.\\\", Italic, FontSize -> 12, Gray],\n   Spacer[5],\n   \
+\n   Button[\\\"Start Automated Pipeline\\\",\n    Module[{targets, trainData \
+= {}, cleanData, features, target, dataset, ems, currentPath},\n     (* 1. \
+Fetch *)\n     Print[\\\"\\\\n--- 1. Fetching Data ---\\\"];\n     targets = \
+ChemAIFlow`ChEMBLFetch`FetchChEMBLProtList[nProteins];\n     \n     \
+If[Length[targets] == 0, Print[Style[\\\"No targets found! Check \
+connection.\\\", Red]]; Return[]];\n\n     Print[\\\"--- Fetching Activities \
+& Integrating ---\\\"];\n     Monitor[\n       Do[\n         Module[{tid = \
+targets[[i, \\\"target_chembl_id\\\"]], seq, acts, unified},\n           seq \
+= ChemAIFlow`ChEMBLFetch`FetchChEMBLTargetSequence[tid];\n           \
+If[StringQ[seq],\n              acts = \
+ChemAIFlow`ChEMBLFetch`FetchChEMBLTargetActivities[tid, nLigands];\n          \
+    If[Length[acts] > 0,\n                 unified = \
+ChemAIFlow`Integration`MakeUnifiedDataset[acts, seq];\n                 \
+trainData = Join[trainData, unified];\n                 If[Mod[i, 10] == 0 || \
+i == Length[targets], \n                    Print[\\\"  Processed \\\" <> \
+ToString[i] <> \\\"/\\\" <> ToString[Length[targets]] <> \\\" : \\\" <> \
+targets[[i, \\\"pref_name\\\"]]];\n                 ];\n              ]\n     \
+      ]\n         ], {i, Length[targets]}\n       ], \n       \
+Row[{\\\"Processing Protein \\\", i, \\\" / \\\", Length[targets]}]\n     ];\n\
+     \n     (* 2. Clean *)\n     cleanData = \
+ChemAIFlow`Cleaning`CleanDataset[trainData];\n     Print[\\\"Total Cleaned \
+Rows: \\\", Length[cleanData]];\n     \n     If[Length[cleanData] > 10,\n     \
+   globalTrainData = cleanData;\n        \n        (* 3. Train *)\n        \
+Print[\\\"--- 2. Training Model (\\\" <> modelMethod <> \\\") ---\\\"];\n     \
+   features = Join[\n          \
+ChemAIFlow`LigandFeature`MakeLigandFeatures[cleanData],\n          \
+ChemAIFlow`ProteinFeature`MakeProteinFeatures[cleanData], 2\n        ];\n     \
+   target = Lookup[cleanData, \\\"pIC50\\\"];\n        dataset = Rule @@@ \
+Transpose[{Values[features], target}];\n        \n        trainedModel = \
+Predict[dataset, Method -> modelMethod, PerformanceGoal -> \\\"Quality\\\"];\n\
+        \n        (* SAVE with Method Name *)\n        currentPath = \
+getModelPath[modelMethod];\n        DumpSave[currentPath, trainedModel];\n    \
+    Print[\\\"Model saved to: \\\", currentPath];\n        \n        (* 4. \
+Statistics *)\n        ems = PredictorMeasurements[trainedModel, dataset];\n  \
+      Print[Style[\\\"TRAINING COMPLETE! Model Performance:\\\", Bold, \
+Green]];\n        Print[Grid[{\n          {Style[\\\"Metric\\\", Bold], \
+Style[\\\"Value\\\", Bold]},\n          {Style[Row[{\\\"R\\\", Superscript[\\\
+\"\\\", 2]}], FontFamily->\\\"Times New Roman\\\", Italic], NumberForm[ems[\\\
+\"RSquared\\\"], {5, 3}]},\n          {\\\"RMSE\\\", \
+NumberForm[Sqrt[ems[\\\"MeanSquare\\\"]], {5, 3}]},\n          {\\\"MAE\\\", \
+NumberForm[ems[\\\"MeanDeviation\\\"], {5, 3}]}\n        }, Frame -> All, \
+Background -> {None, {Lighter[Gray, 0.9], White}}, BaseStyle -> \
+ChemAIFlowStyle]];\n        \n        Print[ems[\\\"ComparisonPlot\\\"]];\n   \
+  ,\n        Print[Style[\\\"Not enough data to train.\\\", Red]];\n     ];\n \
+   ]\n   , Method -> \\\"Queued\\\", ImageSize -> {200, 40}, BaseStyle -> \
+{FontFamily -> \\\"Times New Roman\\\", 14, Bold}]\n }, Alignment -> Center],\
+\n ImageSize -> {PanelWidth, Automatic}, Alignment -> Center\n]\n\n(*** \
+SECTION 2: PREDICTION & VISUALIZATION ***)\nDynamicModule[{\n  inputType = \\\
+\"Manual\\\", \n  manualInput = \\\"Gefitinib, \
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCCN1CCOCC1\\\\nRandom, \
+CCC1(c2ccccc2)c2cc(Cl)ccc2O1\\\",\n  inputTargetID = \\\"CHEMBL203\\\",\n  \
+predResult = {},\n  bestLigand = Missing[],\n  status = \\\"Ready\\\",\n  \
+predictMethod = \\\"RandomForest\\\"\n },\n Panel[\n  Column[{\n    \
+Style[\\\"Step 2: Prediction & Molecular Visualization\\\", 18, Bold, \
+FontFamily -> \\\"Times New Roman\\\"],\n    Divider,\n    \n    Grid[{\n     \
+ {Style[\\\"Select Trained Model:\\\", Bold], \n       Row[{\n         \
+PopupMenu[Dynamic[predictMethod], fastMethods],\n         Spacer[10],\n       \
+  Dynamic[If[FileExistsQ[getModelPath[predictMethod]], \n            Style[\\\
+\"\[Checkmark] Ready\\\", Green, Bold], \n            Style[\\\"\[Times] Not \
+Found\\\", Red, Bold]]]\n       }]},\n      {\\\"Target Protein ID:\\\", \
+InputField[Dynamic[inputTargetID], String, FieldSize -> 15]},\n      \
+{\\\"Input Source:\\\", RadioButtonBar[Dynamic[inputType], {\\\"Manual\\\" -> \
+\\\"Manual Input\\\", \\\"Auto\\\" -> \\\"Auto Library (From Step 1)\\\"}]}\n \
+   }, Alignment -> Left, BaseStyle -> ChemAIFlowStyle],\n    \n    (* TIP \
+STEP 2 *)\n    Spacer[5],\n    Style[\\\"Tip: You can select a model marked \
+'Ready' and predict immediately without running Step 1 again.\\\", Italic, \
+FontSize -> 12, Gray],\n    Spacer[5],\n    \n    Divider,\n    \n    \
+Dynamic[\n      If[inputType === \\\"Manual\\\",\n         Column[{\n         \
+  Style[\\\"Enter Ligands (Name, SMILES per line):\\\", Italic, FontFamily -> \
+\\\"Times New Roman\\\"],\n           InputField[Dynamic[manualInput], \
+String, FieldSize -> {60, 6}]\n         }, Alignment -> Center],\n         \n \
+        Column[{\n           Style[\\\"Using Training Data as Library\\\", \
+Italic, FontFamily -> \\\"Times New Roman\\\"],\n           \
+Style[Row[{\\\"Available Ligands: \\\", Length[globalTrainData]}], Blue]\n    \
+     }, Alignment -> Center]\n      ]\n    ],\n    \\\" \\\",\n    \
+Button[\\\"Predict & Visualize Top Hit\\\",\n      status = \\\"Processing...\
+\\\";\n      Module[{seq, protFeats, ligList, res, modelFile},\n        \n    \
+    modelFile = getModelPath[predictMethod];\n        \
+If[!FileExistsQ[modelFile], \n           status = \\\"Model file not found! \
+Train \\\" <> predictMethod <> \\\" first.\\\"; \n           Return[]\n       \
+ ];\n        Get[modelFile]; \n        If[!ValueQ[trainedModel], status = \
+\\\"Error loading model.\\\"; Return[]];\n\n        (* 1. Prepare Protein *)\n\
+        seq = \
+ChemAIFlow`ChEMBLFetch`FetchChEMBLTargetSequence[inputTargetID];\n        \
+If[!StringQ[seq], status = \\\"Bad Target ID\\\"; Return[]];\n        \
+protFeats = ChemAIFlow`ProteinFeature`CalculateProteinFeatures[seq];\n        \
+\n        (* 2. Prepare Ligands *)\n        ligList = {};\n        \
+If[inputType === \\\"Manual\\\",\n           ligList = Select[StringSplit[#, \
+\\\",\\\"] & /@ StringSplit[manualInput, \\\"\\\\n\\\"], Length[#] >= 2 &];\n \
+          ligList = Map[{#[[1]], StringTrim[#[[2]]]} &, ligList];\n        ,\n\
+           If[Length[globalTrainData] == 0, status = \\\"No Auto Data\\\"; \
+Return[]];\n           ligList = Map[\n              Module[{nm, id},\n       \
+         nm = #[\\\"LigandName\\\"]; \n                id = \
+#[\\\"LigandID\\\"];\n                {If[StringQ[nm] && nm =!= \
+\\\"UnknownName\\\", nm, id], #[\\\"Lig_SMILES\\\"]}\n              ]&, \n    \
+          Take[globalTrainData, Min[300, Length[globalTrainData]]]\n          \
+ ];\n        ];\n        \n        (* 3. Predict *)\n        res = Table[\n   \
+        Module[{name=l[[1]], smi=l[[2]], lFeats, vec, pVal},\n             \
+lFeats = ChemAIFlow`LigandFeature`CalculateLigandFeatures[smi];\n             \
+If[Length[lFeats] > 0,\n                vec = Values[Join[lFeats, \
+protFeats]];\n                If[FreeQ[vec, _Missing],\n                   \
+pVal = trainedModel[vec];\n                   {name, smi, pVal},\n            \
+       Nothing\n                ],\n                Nothing\n             ]\n \
+          ], {l, ligList}\n        ];\n        \n        res = SortBy[res, \
+-#[[3]] &]; \n        predResult = DeleteDuplicatesBy[res, #[[2]] &]; \n      \
+  \n        If[Length[predResult] > 0,\n           bestLigand = \
+predResult[[1]];\n           status = \\\"Success!\\\";\n        ,\n          \
+ bestLigand = Missing[];\n           status = \\\"No valid predictions.\\\";\n\
+        ];\n      ]\n    , Method -> \\\"Queued\\\", ImageSize -> {250, 40}, \
+BaseStyle -> {FontFamily -> \\\"Times New Roman\\\", 14, Bold}],\n    \n    \
+Style[Dynamic[status], 12, Italic],\n    Divider,\n    \n    Dynamic[\n      \
+If[Length[predResult] > 0,\n        Column[{\n          Style[\\\"Top \
+Prediction Results (Unique Ligands)\\\", 16, Bold, FontFamily -> \\\"Times \
+New Roman\\\"],\n          Grid[Prepend[predResult[[1;;Min[10, \
+Length[predResult]]]], {Style[\\\"Name/ID\\\", Bold], Style[\\\"SMILES\\\", \
+Bold], Style[\\\"Predicted pIC50\\\", Bold]}], Frame -> All, Background -> \
+{None, {Lighter[Blue, 0.9], White}}],\n          \\\" \\\",\n          \
+If[!MissingQ[bestLigand],\n             Module[{mol, smi = bestLigand[[2]], \
+name = bestLigand[[1]], score = bestLigand[[3]], comps},\n               \n   \
+            mol = Molecule[smi];\n               comps = MoleculeSplit[mol];\n\
+               \n               If[ListQ[comps] && Length[comps] > 1,\n       \
+           mol = First[SortBy[comps, -MoleculeValue[#, \\\"AtomCount\\\"] \
+&]];\n               ];\n               \n               Column[{\n           \
+      Style[\\\"Visualization of Top Hit: \\\" <> name, 16, Bold, Blue, \
+FontFamily -> \\\"Times New Roman\\\"],\n                 Style[\\\"pIC50: \\\
+\" <> ToString[score], 14, FontFamily -> \\\"Times New Roman\\\"],\n          \
+       Row[{\n                    Show[Quiet@MoleculePlot3D[mol], PlotLabel \
+-> Style[\\\"3D Structure\\\", Bold, FontFamily -> \\\"Times New Roman\\\"], \
+ImageSize -> 350],\n                    Show[Quiet@MoleculePlot[mol], \
+PlotLabel -> Style[\\\"2D Diagram\\\", Bold, FontFamily -> \\\"Times New \
+Roman\\\"], ImageSize -> 350]\n                 }, Spacer[20]]\n              \
+ }, Alignment -> Center]\n             ]\n          ]\n        }, Alignment \
+-> Center]\n      , \\\"\\\"]\n    ]\n  }, Alignment -> Center],\n  ImageSize \
+-> {PanelWidth, Automatic}, Alignment -> Center\n ]\n]\n\>\""}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{
+                    "--", "--"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]\
+}], "*)"}], 
+      RowBox[{"(*", 
+       RowBox[{"5.", " ", "WRITE", " ", "MAIN", " ", "NOTEBOOK"}], "*)"}], 
+      RowBox[{"(*", 
+       RowBox[{"--", 
+        RowBox[{"--", 
+         RowBox[{"--", 
+          RowBox[{"--", 
+           RowBox[{"--", 
+            RowBox[{"--", 
+             RowBox[{"--", 
+              RowBox[{"--", 
+               RowBox[{"--", 
+                RowBox[{"--", 
+                 RowBox[{"--", 
+                  RowBox[{"--", 
+                   RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{"--", 
+                    RowBox[{
+                    "--", "--"}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]\
+}], "*)"}], 
+      RowBox[{"writeFile", "[", 
+       RowBox[{
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"workflowsDir", ",", "\"\<ChemAIFlow_Main_v1.0.0.nb\>\""}], 
+          "}"}], "]"}], ",", "mainNBContent"}], "]"}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Print", "[", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<\\n\:2705 INSTALLATION v1.0.0 COMPLETE!\>\"", ",", 
+         "Green", ",", "Bold", ",", "20", ",", 
+         RowBox[{"FontFamily", "->", "\"\<Times New Roman\>\""}]}], "]"}], 
+       "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Print", "[", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<File Created: \
+ChemAIFlow/Workflows/ChemAIFlow_Main_v1.0.0.nb\>\"", ",", "12", ",", 
+         "Italic"}], "]"}], "]"}], ";"}]}], "]"}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.974295187011621*^9, 3.974295187013316*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"be6eaf69-3939-4b91-83d8-d457b8cf0c95"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox["\<\"\\\\[Rocket] INSTALLING ChemAIFlow v1.0.0 (Official \
+Release)...\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[0, 0, 1],
+  FrontFaceColor->RGBColor[0, 0, 1],
+  BackFaceColor->RGBColor[0, 0, 1],
+  GraphicsColor->RGBColor[0, 0, 1],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->Bold,
+  FontColor->RGBColor[0, 0, 1]]], "Print",
+ CellChangeTimes->{3.974295206085266*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"209cf924-72b6-4c0c-ba82-d09954bc44ae"],
+
+Cell[BoxData[
+ StyleBox["\<\"\\n\:2705 INSTALLATION v1.0.0 COMPLETE!\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[0, 1, 0],
+  FrontFaceColor->RGBColor[0, 1, 0],
+  BackFaceColor->RGBColor[0, 1, 0],
+  GraphicsColor->RGBColor[0, 1, 0],
+  FontFamily->"Times New Roman",
+  FontSize->20,
+  FontWeight->Bold,
+  FontColor->RGBColor[0, 1, 0]]], "Print",
+ CellChangeTimes->{3.97429520611375*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"a6ec13e3-84a8-4a09-bb85-326de5dc3854"],
+
+Cell[BoxData[
+ StyleBox["\<\"File Created: ChemAIFlow/Workflows/ChemAIFlow_Main_v1.0.0.nb\"\
+\>",
+  StripOnInput->False,
+  FontSize->12,
+  FontSlant->Italic]], "Print",
+ CellChangeTimes->{3.974295206114834*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"596d6342-ca50-4b2b-a96d-f5b739e5e3d4"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 747},
+WindowMargins->{{38, Automatic}, {10, Automatic}},
+FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"19d24107-cd81-4ffd-91f4-635dc6bfd049"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 38908, 775, 8920, "Input",ExpressionUUID->"be6eaf69-3939-4b91-83d8-d457b8cf0c95"],
+Cell[CellGroupData[{
+Cell[39509, 801, 522, 15, 25, "Print",ExpressionUUID->"209cf924-72b6-4c0c-ba82-d09954bc44ae"],
+Cell[40034, 818, 495, 14, 58, "Print",ExpressionUUID->"a6ec13e3-84a8-4a09-bb85-326de5dc3854"],
+Cell[40532, 834, 314, 9, 21, "Print",ExpressionUUID->"596d6342-ca50-4b2b-a96d-f5b739e5e3d4"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
