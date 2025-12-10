@@ -1,7 +1,7 @@
 # ChemAIFlow: A Lightweight AI Workflow for Protein–Ligand Binding Analysis
 
 ## Overview
-ChemAIFlow is a lightweight, reproducible Wolfram Language workflow designed for protein–ligand binding affinity modelling.  
+ChemAIFlow is a lightweight, reproducible Wolfram Language (Trial version 14.3.0) workflow designed for protein–ligand binding affinity modelling.  
 It supports both **online** and **offline** installation modes and automatically generates working directories containing runnable workflow notebooks.
 
 This repository accompanies the software submission to the *Journal of Statistical Software (JSS)*.
