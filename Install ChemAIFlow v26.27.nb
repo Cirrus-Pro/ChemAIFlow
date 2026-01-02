@@ -1,0 +1,2057 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[    119397,       2049]
+NotebookOptionsPosition[    118204,       2023]
+NotebookOutlinePosition[    118596,       2039]
+CellTagsIndexPosition[    118553,       2036]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+], "\[IndentingNewLine]", 
+  " \[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \
+\[NonBreakingSpace] \[NonBreakingSpace] \[NonBreakingSpace] \
+\[NonBreakingSpace]\[NonBreakingSpace] \[NonBreakingSpace] ", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"NOVELTY", "&"}], " ", "SYSTEM", " ", "ARCHITEC", " ", "TURE"}], 
+   " ", "*)"}], " ", "\[IndentingNewLine]", 
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"ChemAIFlow", " ", 
+    RowBox[{"(", 
+     RowBox[{"v26", " ", "Series"}], ")"}], " ", "represents", " ", "a", " ", 
+    "paradigm", " ", "shift", " ", "in", " ", "democratized", " ", 
+    "Computational", " ", "Drug", " ", 
+    RowBox[{"Discovery", "."}]}], "*)"}], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Moving", " ", "beyond", " ", "static", " ", "execution", " ", 
+     "scripts"}], ",", 
+    RowBox[{
+    "it", " ", "functions", " ", "as", " ", "an", 
+     " ", "\"\<Autonomous AI Orchestrator\>\"", " ", "that", " ", 
+     "harmonizes", " ", "Data", " ", "Mining"}], ",", 
+    RowBox[{"Machine", " ", "Learning"}], ",", " ", 
+    RowBox[{
+    "and", " ", "Statistical", " ", "Validation", " ", "into", " ", "a", " ", 
+     "resilient"}], ",", " ", 
+    RowBox[{"user", "-", 
+     RowBox[{"friendly", " ", 
+      RowBox[{"platform", "."}]}]}]}], "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Key", " ", 
+    RowBox[{"Innovations", ":"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"1.", " ", "Multi"}], "-", 
+      RowBox[{"Paradigm", " ", "AI", " ", "Core", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"\"\<Grand Consensus\>\"", "&"}], " ", "\"\<ProV\>\""}], 
+        ")"}]}]}], ":", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+      "The", " ", "system", " ", "introduces", " ", "\"\<Grand Consensus,\>\"",
+        " ", "a", " ", "meta"}], "-", 
+      RowBox[{
+      "voting", " ", "architecture", " ", "that", " ", "aggregates", " ", 
+       "decisions", " ", "from", " ", "9", " ", "distinct", " ", "sub"}], "-", 
+      RowBox[{"models", " ", "across", " ", "3", " ", "architectures", " ", 
+       RowBox[{"(", 
+        RowBox[{"RandomForest", ",", "GBT"}], ")"}], " ", "to", " ", 
+       "eliminate", " ", 
+       RowBox[{"bias", ".", "It"}], " ", "also", " ", "features", 
+       " ", "\"\<ProV\>\"", " ", 
+       RowBox[{"(", 
+        RowBox[{"Pro", " ", "Vision"}], ")"}]}]}]}], ",", 
+    RowBox[{
+     RowBox[{"a", " ", "hybrid", " ", "engine", " ", "merging", " ", "Text"}],
+      "-", 
+     RowBox[{
+     "based", " ", "SMILES", " ", "features", " ", "with", " ", 
+      "Physicochemical", " ", "descriptors"}]}], ",", 
+    RowBox[{
+     RowBox[{"enabling", " ", "high"}], "-", 
+     RowBox[{
+     "precision", " ", "discovery", " ", "beyond", " ", "traditional", " ", 
+      "molecular", " ", 
+      RowBox[{"fingerprints", "."}]}]}]}], "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"2.", " ", "\"\<Honest\>\"", " ", "Statistical", " ", 
+     RowBox[{"Intelligence", ":", " ", "\[IndentingNewLine]", 
+      RowBox[{
+      "Addressing", " ", "the", " ", "\"\<False Confidence\>\"", " ", 
+       "problem", " ", "in", " ", "ensemble", " ", "learning"}]}]}], ",", 
+    RowBox[{
+    "ChemAIFlow", " ", "implements", " ", "a", " ", "novel", 
+     " ", "\"\<Internal Variance Tracking\>\"", " ", 
+     RowBox[{"algorithm", ".", "Instead"}], " ", "of", " ", "calculating", " ",
+      "the", " ", "deviation", " ", "of", " ", "a", " ", "single", " ", 
+     "averaged", " ", "score", " ", 
+     RowBox[{"(", 
+      RowBox[{"which", " ", "yields", " ", "zero"}], ")"}]}], ",", 
+    RowBox[{
+     RowBox[{
+     "the", " ", "system", " ", "tracks", " ", "the", " ", "divergence", " ", 
+      "among", " ", "sub"}], "-", 
+     RowBox[{
+     "models", " ", "to", " ", "report", " ", "true", 
+      " ", "\"\<Confidence Intervals\>\"", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"High", "/", "Med"}], "/", "Low"}], ")"}]}]}], ",", 
+    RowBox[{
+     RowBox[{
+     "ensuring", " ", "scientific", " ", "integrity", " ", "in", " ", 
+      "decision"}], "-", 
+     RowBox[{"making", "."}]}]}], "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"3.", " ", "\"\<Bulletproof\>\"", " ", "Operational", " ", 
+     RowBox[{"Resilience", ":", "\[IndentingNewLine]", 
+      RowBox[{"Designed", " ", "for", " ", "stability"}]}]}], ",", 
+    RowBox[{
+    "the", " ", "system", " ", "integrates", " ", "a", 
+     " ", "\"\<Safety Snapshot\>\"", " ", "mechanism", " ", "that", " ", 
+     "freezes", " ", "input", " ", "parameters", " ", "upon", " ", 
+     "execution"}], ",", 
+    RowBox[{
+    "preventing", " ", "\"\<Race Conditions\>\"", " ", "caused", " ", "by", " ",
+      "user", " ", "interference", " ", "during", " ", 
+     RowBox[{"runtime", ".", "Coupled"}], " ", "with", " ", "a", " ", 
+     "global", " ", "\"\<UI Locking\>\"", " ", "state", " ", 
+     RowBox[{"(", "$isProcessing", ")"}], " ", "and", " ", "active", 
+     " ", "\"\<Memory Garbage Collection\>\"", " ", 
+     RowBox[{"(", 
+      RowBox[{"Clear", " ", "RAM"}], ")"}]}], ",", 
+    RowBox[{
+    "it", " ", "prevents", " ", "the", " ", "Kernel", " ", "panics", " ", 
+     "and", " ", "UI", " ", "freezes", " ", "common", " ", "in", " ", "heavy",
+      " ", "3", 
+     RowBox[{"D", "/", "AI"}], " ", 
+     RowBox[{"computations", "."}]}]}], "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "4.", " ", "Intelligent", " ", "Data", " ", "Orchestration", " ", 
+     RowBox[{"(", "\"\<Hybrid Smart\>\"", ")"}]}], ":", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+     "The", " ", "traffic", " ", "control", " ", "logic", " ", "autonomously",
+       " ", "decides", " ", "between", " ", "local", " ", "\"\<SmartCache\>\"",
+       " ", "retrieval", " ", "and", " ", "real"}], "-", 
+     RowBox[{
+     "time", " ", "ChEMBL", " ", "API", " ", "mining", " ", "based", " ", 
+      "on", " ", "a", " ", "\"\<Data Quality Policy\>\"", " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"capped", " ", "at", " ", "500", " ", "high"}], "-", 
+         RowBox[{"quality", " ", "ligands"}]}], ")"}], ".", "This"}], " ", 
+      "ensures", " ", "optimal", " ", "training", " ", "distribution", " ", 
+      "while", " ", "adhering", " ", "to", " ", "API", " ", "limits", " ", 
+      "and", " ", "preventing", " ", "outlier", " ", 
+      RowBox[{"contamination", "."}]}]}]}], "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"5.", " ", "\"\<Glass Box\>\"", " ", "Accessibility"}], "&"}], " ", 
+     RowBox[{"Restoration", ":", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Bridging", " ", "the", " ", "gap", " ", "for", " ", "non"}], "-",
+        "coders"}]}]}], ",", 
+    RowBox[{
+    "the", " ", "system", " ", "features", " ", "a", " ", "bilingual", 
+     " ", "\"\<Contextual Help System\>\"", " ", 
+     RowBox[{"(", 
+      RowBox[{"TH", "/", "EN"}], ")"}], " ", "embedded", " ", "directly", " ",
+      "in", " ", "the", " ", 
+     RowBox[{"workflow", ".", "Furthermore"}]}], ",", 
+    RowBox[{
+    "the", " ", "\"\<Strict Factory Restore\>\"", " ", "capability", " ", 
+     "allows", " ", "researchers", " ", "to", " ", "experiment", " ", 
+     "fearlessly"}], ",", 
+    RowBox[{
+    "providing", " ", "an", " ", "instant", " ", "rollback", " ", "to", " ", 
+     "a", " ", "validated", " ", "system", " ", "state"}], ",", 
+    RowBox[{
+    "solving", " ", "the", " ", "\"\<Cold Start\>\"", " ", "problem", " ", 
+     "in", " ", "data", " ", "science", " ", 
+     RowBox[{"deployment", "."}]}]}], "*)"}], "\[IndentingNewLine]", "\n", 
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Developed", " ", "by", " ", 
+     RowBox[{"Asst", ".", "Prof", ".", "Dr", ".", "Chairote"}], " ", 
+     RowBox[{"Yaiprasert", " ", "@", " ", "Walailak"}], " ", "University"}], ",",
+     " ", 
+    RowBox[{"THAILAND", " ", "|", " ", 
+     RowBox[{"email", ":", " ", 
+      RowBox[{
+       RowBox[{"ychairot", "@", "mail"}], ".", "wu", ".", "ac", ".", 
+       "th"}]}]}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+  "(*", "**********************************************************************************)"}\
+], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Quiet", "[", 
+     RowBox[{"Remove", "[", "\"\<ChemAIFlow`*\>\"", "]"}], "]"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"Quiet", "[", 
+     RowBox[{"Unprotect", "[", "\"\<Global`*\>\"", "]"}], "]"}], ";"}], "\n", 
+   
+   RowBox[{
+    RowBox[{"Quiet", "[", 
+     RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", "\n", 
+   RowBox[{
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "baseDir", ",", "backupName", ",", "backups", ",", "kernelDir", ",", 
+        "resourcesDir", ",", "workflowsDir", ",", "databaseDir", ",", 
+        "modelsDir", ",", "factorySource", ",", "factoryDBwl", ",", 
+        "factoryDBmx", ",", "factoryCachemx", ",", "factoryModels", ",", 
+        "codeCore", ",", "codeTraffic", ",", "codeAI", ",", "codeEnsemble", ",",
+         "codeInit", ",", "uiContent", ",", "targetFile", ",", "dbData"}], 
+       "}"}], ",", 
+      RowBox[{
+       RowBox[{"Print", "[", 
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<\[RightGuillemet] Installing ChemAIFlow v26.27 (The \
+Button Locker)...\>\"", ",", "Purple", ",", "Bold", ",", "16", ",", 
+          RowBox[{"FontFamily", "->", "\"\<Times New Roman\>\""}]}], "]"}], 
+        "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"SECTION", " ", "0"}], ":", 
+           RowBox[{"SYSTEM", " ", "BACKUP"}]}], "&"}], " ", "DIRECTORIES"}], 
+        "*)"}], 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{"baseDir", "=", 
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"NotebookDirectory", "[", "]"}], 
+           ",", "\"\<ChemAIFlow\>\""}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"DirectoryQ", "[", "baseDir", "]"}], ",", 
+         RowBox[{
+          RowBox[{"Print", "[", 
+           RowBox[{"Style", "[", 
+            
+            RowBox[{"\"\<Found existing installation. Creating Rolling \
+Backup...\>\"", ",", "Orange", ",", 
+             RowBox[{"FontFamily", "->", "\"\<Times New Roman\>\""}]}], "]"}],
+            "]"}], ";", "\[IndentingNewLine]", 
+          RowBox[{"backupName", "=", 
+           RowBox[{"baseDir", "<>", "\"\<_Backup_\>\"", "<>", 
+            RowBox[{"DateString", "[", 
+             RowBox[{"{", 
+              
+              RowBox[{"\"\<Year\>\"", ",", "\"\<_\>\"", ",", "\"\<Month\>\"", 
+               ",", "\"\<_\>\"", ",", "\"\<Day\>\"", ",", "\"\<_\>\"", 
+               ",", "\"\<Hour\>\"", ",", "\"\<_\>\"", ",", "\"\<Minute\>\"", 
+               ",", "\"\<_\>\"", ",", "\"\<Second\>\""}], "}"}], "]"}]}]}], ";",
+           "\[IndentingNewLine]", 
+          RowBox[{"RenameDirectory", "[", 
+           RowBox[{"baseDir", ",", "backupName"}], "]"}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Print", "[", 
+           RowBox[{"\"\<  Moved to: \>\"", "<>", 
+            RowBox[{"FileNameTake", "[", "backupName", "]"}]}], "]"}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"backups", "=", 
+           RowBox[{"Sort", "[", 
+            RowBox[{"FileNames", "[", 
+             RowBox[{"baseDir", "<>", "\"\<_Backup_*\>\""}], "]"}], "]"}]}], ";",
+           "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Length", "[", "backups", "]"}], ">", "3"}], ",", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"DeleteDirectory", "[", 
+                RowBox[{"#", ",", 
+                 RowBox[{"DeleteContents", "->", "True"}]}], "]"}], "&"}], 
+              ")"}], "/@", 
+             RowBox[{"Take", "[", 
+              RowBox[{"backups", ",", 
+               RowBox[{
+                RowBox[{"Length", "[", "backups", "]"}], "-", "3"}]}], 
+              "]"}]}]}], "]"}], ";"}]}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"kernelDir", "=", 
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"baseDir", ",", "\"\<Kernel\>\""}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"resourcesDir", "=", 
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"baseDir", ",", "\"\<Resources\>\""}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"modelsDir", "=", 
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"resourcesDir", ",", "\"\<Models\>\""}], "}"}], "]"}]}], ";",
+        "\[IndentingNewLine]", 
+       RowBox[{"workflowsDir", "=", 
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"baseDir", ",", "\"\<Workflows\>\""}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"databaseDir", "=", 
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"baseDir", ",", "\"\<Database\>\""}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Scan", "[", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"CreateDirectory", "[", 
+            RowBox[{"#", ",", 
+             RowBox[{"CreateIntermediateDirectories", "->", "True"}]}], "]"}],
+            "&"}], ")"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+          "kernelDir", ",", "modelsDir", ",", "workflowsDir", ",", 
+           "databaseDir"}], "}"}]}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{"SECTION", " ", "0.5"}], ":", 
+         RowBox[{"FACTORY", " ", "ASSETS", " ", "MIGRATION"}]}], "*)"}], 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{"factorySource", "=", 
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"NotebookDirectory", "[", "]"}], 
+           ",", "\"\<Factory_Assets\>\""}], "}"}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"DirectoryQ", "[", "factorySource", "]"}], ",", 
+         RowBox[{
+          RowBox[{"Print", "[", 
+           RowBox[{"Style", "[", 
+            
+            RowBox[{"\"\<   \[RightGuillemet] Factory Assets Found. Checking \
+integrity...\>\"", ",", "Blue", ",", 
+             RowBox[{"FontFamily", "->", "\"\<Times New Roman\>\""}]}], "]"}],
+            "]"}], ";", "\[IndentingNewLine]", 
+          RowBox[{"factoryDBwl", "=", 
+           RowBox[{"FileNameJoin", "[", 
+            RowBox[{"{", 
+             RowBox[{"factorySource", ",", "\"\<DB.wl\>\""}], "}"}], "]"}]}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"factoryDBmx", "=", 
+           RowBox[{"FileNameJoin", "[", 
+            RowBox[{"{", 
+             RowBox[{"factorySource", ",", "\"\<DB.mx\>\""}], "}"}], "]"}]}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"factoryCachemx", "=", 
+           RowBox[{"FileNameJoin", "[", 
+            RowBox[{"{", 
+             RowBox[{"factorySource", ",", "\"\<SmartCache.mx\>\""}], "}"}], 
+            "]"}]}], ";", "\[IndentingNewLine]", 
+          RowBox[{"targetWL", "=", 
+           RowBox[{"FileNameJoin", "[", 
+            RowBox[{"{", 
+             RowBox[{"databaseDir", ",", "\"\<DB.wl\>\""}], "}"}], "]"}]}], ";",
+           "\[IndentingNewLine]", 
+          RowBox[{"targetMX", "=", 
+           RowBox[{"FileNameJoin", "[", 
+            RowBox[{"{", 
+             RowBox[{"databaseDir", ",", "\"\<DB.mx\>\""}], "}"}], "]"}]}], ";",
+           "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"FileExistsQ", "[", "factoryDBwl", "]"}], "&&", 
+             RowBox[{"!", 
+              RowBox[{"FileExistsQ", "[", "targetWL", "]"}]}]}], ",", 
+            RowBox[{
+             RowBox[{"CopyFile", "[", 
+              RowBox[{"factoryDBwl", ",", "targetWL"}], "]"}], ";"}]}], "]"}],
+           ";", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"FileExistsQ", "[", "factoryDBmx", "]"}], "&&", 
+             RowBox[{"!", 
+              RowBox[{"FileExistsQ", "[", "targetMX", "]"}]}]}], ",", 
+            RowBox[{
+             RowBox[{"CopyFile", "[", 
+              RowBox[{"factoryDBmx", ",", "targetMX"}], "]"}], ";"}]}], "]"}],
+           ";", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"FileExistsQ", "[", "targetWL", "]"}], "&&", 
+             RowBox[{"!", 
+              RowBox[{"ValueQ", "[", "Global`$DB", "]"}]}]}], ",", 
+            RowBox[{
+             RowBox[{"dbData", "=", 
+              RowBox[{"Import", "[", "targetWL", "]"}]}], ";", 
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{"ListQ", "[", "dbData", "]"}], ",", 
+               RowBox[{
+                RowBox[{"Global`$DB", "=", "dbData"}], ";", 
+                RowBox[{"If", "[", 
+                 RowBox[{
+                  RowBox[{"!", 
+                   RowBox[{"FileExistsQ", "[", "targetMX", "]"}]}], ",", 
+                  RowBox[{"DumpSave", "[", 
+                   RowBox[{"targetMX", ",", "Global`$DB"}], "]"}]}], "]"}], ";", 
+                RowBox[{"Clear", "[", "Global`$DB", "]"}], ";", 
+                RowBox[{"dbData", "=."}], ";"}]}], "]"}]}]}], "]"}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"FileExistsQ", "[", "targetMX", "]"}], "&&", 
+             RowBox[{"!", 
+              RowBox[{"ValueQ", "[", "Global`$DB", "]"}]}]}], ",", 
+            RowBox[{"Block", "[", 
+             RowBox[{
+              RowBox[{"{", "Global`$DB", "}"}], ",", 
+              RowBox[{
+               RowBox[{"Quiet", "[", 
+                RowBox[{"Get", "[", "targetMX", "]"}], "]"}], ";", 
+               RowBox[{"If", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"ValueQ", "[", "Global`$DB", "]"}], "&&", 
+                  RowBox[{"!", 
+                   RowBox[{"FileExistsQ", "[", "targetWL", "]"}]}]}], ",", 
+                 RowBox[{"Export", "[", 
+                  RowBox[{"targetWL", ",", "Global`$DB"}], "]"}]}], "]"}]}]}],
+              "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+          RowBox[{"targetCache", "=", 
+           RowBox[{"FileNameJoin", "[", 
+            RowBox[{"{", 
+             RowBox[{"databaseDir", ",", "\"\<SmartCache.mx\>\""}], "}"}], 
+            "]"}]}], ";", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"FileExistsQ", "[", "factoryCachemx", "]"}], "&&", 
+             RowBox[{"!", 
+              RowBox[{"FileExistsQ", "[", "targetCache", "]"}]}]}], ",", 
+            RowBox[{
+             RowBox[{"CopyFile", "[", 
+              RowBox[{"factoryCachemx", ",", "targetCache"}], "]"}], ";", 
+             RowBox[{
+             "Print", "[", "\"\<      + SmartCache deployed.\>\"", "]"}], 
+             ";"}]}], "]"}], ";", "\[IndentingNewLine]", 
+          RowBox[{"factoryModels", "=", 
+           RowBox[{"Select", "[", 
+            RowBox[{
+             RowBox[{"FileNames", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"\"\<*.mx\>\"", ",", "\"\<*.wxf\>\""}], "}"}], ",", 
+               "factorySource"}], "]"}], ",", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"FileNameTake", "[", "#", "]"}], 
+                 "=!=", "\"\<DB.mx\>\""}], "&&", 
+                RowBox[{
+                 RowBox[{"FileNameTake", "[", "#", "]"}], 
+                 "=!=", "\"\<SmartCache.mx\>\""}]}], ")"}], "&"}]}], "]"}]}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Length", "[", "factoryModels", "]"}], ">", "0"}], ",", 
+            RowBox[{
+             RowBox[{"Scan", "[", 
+              RowBox[{
+               RowBox[{"Function", "[", 
+                RowBox[{"src", ",", 
+                 RowBox[{"Module", "[", 
+                  RowBox[{
+                   RowBox[{"{", "dest", "}"}], ",", 
+                   RowBox[{
+                    RowBox[{"dest", "=", 
+                    RowBox[{"FileNameJoin", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"modelsDir", ",", 
+                    RowBox[{"FileNameTake", "[", "src", "]"}]}], "}"}], 
+                    "]"}]}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"!", 
+                    RowBox[{"FileExistsQ", "[", "dest", "]"}]}], ",", 
+                    RowBox[{"CopyFile", "[", 
+                    RowBox[{"src", ",", "dest"}], "]"}]}], "]"}], ";"}]}], 
+                  "]"}]}], "]"}], ",", "factoryModels"}], "]"}], ";", 
+             RowBox[{
+             "Print", "[", "\"\<      + Model assets verified.\>\"", "]"}], 
+             ";"}]}], "]"}], ";", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"FileExistsQ", "[", 
+             RowBox[{"FileNameJoin", "[", 
+              RowBox[{"{", 
+               RowBox[{"factorySource", ",", "\"\<README.md\>\""}], "}"}], 
+              "]"}], "]"}], ",", 
+            RowBox[{"CopyFile", "[", 
+             RowBox[{
+              RowBox[{"FileNameJoin", "[", 
+               RowBox[{"{", 
+                RowBox[{"factorySource", ",", "\"\<README.md\>\""}], "}"}], 
+               "]"}], ",", 
+              RowBox[{"FileNameJoin", "[", 
+               RowBox[{"{", 
+                RowBox[{"baseDir", ",", "\"\<README.md\>\""}], "}"}], "]"}], ",", 
+              RowBox[{"OverwriteTarget", "->", "True"}]}], "]"}]}], "]"}], 
+          ";"}], ",", 
+         RowBox[{
+          RowBox[{"Print", "[", 
+           RowBox[{"Style", "[", 
+            
+            RowBox[{"\"\<   (No 'Factory_Assets' folder found. System will \
+start clean.)\>\"", ",", "Gray", ",", "Italic", ",", 
+             RowBox[{"FontFamily", "->", "\"\<Times New Roman\>\""}]}], "]"}],
+            "]"}], ";"}]}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"SECTION", " ", "1"}], ":", 
+           RowBox[{"CORE", " ", "LOGIC"}]}], "&"}], " ", "UTILS"}], "*)"}], 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{
+       "codeCore", 
+        "=", "\"\<BeginPackage[\\\"ChemAIFlow`Core`\\\"];\n\
+CalcLigManual::usage = \\\"Calculates intrinsic ligand features.\\\";\n\
+CalcTextFeatures::usage = \\\"Calculates text-based features.\\\";\n\
+CalcProtFeatures::usage = \\\"Calculates protein sequence features.\\\";\n\
+AssembleHybridVector::usage = \\\"Unifies vector creation.\\\";\n\
+MapChEMBLToFeatures::usage = \\\"Maps raw JSON to a Flat Association.\\\";\n\
+RemoveOutliers::usage = \\\"Removes pIC50 outliers.\\\";\n\
+BuildFastIndex::usage = \\\"Builds optimized index with Metadata.\\\";\n\
+Begin[\\\"`Private`\\\"];\n$ForbiddenAA = {\\\"B\\\", \\\"J\\\", \\\"O\\\", \
+\\\"U\\\", \\\"X\\\", \\\"Z\\\"};\n$AA = \
+<|\\\"A\\\"->{89.09,1.8,\\\"H\\\"},\\\"R\\\"->{174.2,-4.5,\\\"+\\\"},\\\"N\\\"\
+->{132.1,-3.5,\\\"P\\\"},\\\"D\\\"->{133.1,-3.5,\\\"-\\\"},\\\"C\\\"->{121.1,\
+2.5,\\\"H\\\"},\\\"Q\\\"->{146.1,-3.5,\\\"P\\\"},\\\"E\\\"->{147.1,-3.5,\\\"-\
+\\\"},\\\"G\\\"->{75.0,-0.4,\\\"H\\\"},\\\"H\\\"->{155.1,-3.2,\\\"+\\\"},\\\"\
+I\\\"->{131.1,4.5,\\\"H\\\"},\\\"L\\\"->{131.1,3.8,\\\"H\\\"},\\\"K\\\"->{146.\
+1,-3.9,\\\"+\\\"},\\\"M\\\"->{149.2,1.9,\\\"H\\\"},\\\"F\\\"->{165.1,2.8,\\\"\
+A\\\"},\\\"P\\\"->{115.1,-1.6,\\\"H\\\"},\\\"S\\\"->{105.0,-0.8,\\\"P\\\"},\\\
+\"T\\\"->{119.1,-0.7,\\\"P\\\"},\\\"W\\\"->{204.2,-0.9,\\\"A\\\"},\\\"Y\\\"->{\
+181.1,-1.3,\\\"A\\\"},\\\"V\\\"->{117.1,4.2,\\\"H\\\"}|>;\nMakeError[msg_] := \
+Failure[\\\"Rejected\\\", <|\\\"Message\\\" -> msg|>];\n\
+CalcTextFeatures[s_String] := Module[{unigrams, bigrams, pharmacophores, \
+allPatterns, counts}, unigrams = {\\\"c\\\", \\\"C\\\", \\\"n\\\", \\\"N\\\", \
+\\\"o\\\", \\\"O\\\", \\\"F\\\", \\\"Cl\\\", \\\"Br\\\", \\\"I\\\", \
+\\\"S\\\", \\\"P\\\", \\\"=\\\", \\\"#\\\", \\\"(\\\", \\\")\\\", \\\"[\\\", \
+\\\"]\\\", \\\"1\\\", \\\"2\\\", \\\"3\\\"}; bigrams = {\\\"cc\\\", \
+\\\"CC\\\", \\\"CN\\\", \\\"NC\\\", \\\"CO\\\", \\\"OC\\\", \\\"C=\\\", \
+\\\"=O\\\", \\\"c(\\\", \\\"C(\\\", \\\"n1\\\", \\\"c1\\\", \\\"c2\\\"}; \
+pharmacophores = {\\\"c1ccccc1\\\", \\\"C(=O)O\\\", \\\"C(=O)N\\\", \
+\\\"N(=O)=O\\\", \\\"S(=O)(=O)\\\", \\\"CF3\\\", \\\"NH2\\\", \\\"OH\\\"}; \
+allPatterns = Join[unigrams, bigrams, pharmacophores]; counts = \
+Flatten[{StringLength[s], StringCount[s, #] & /@ allPatterns}]; N[counts]];\n\
+CalcLigManual[smiles_] := Module[{mol, res}, If[!StringQ[smiles], \
+Return[MakeError[\\\"SMILES is not a string\\\"]]]; mol = \
+Quiet[Molecule[smiles]]; If[MoleculeQ[mol] === False, \
+Return[MakeError[\\\"Invalid SMILES structure\\\"]]]; Check[res = \
+<|\\\"Lig_MolecularMass\\\" -> QuantityMagnitude[MoleculeValue[mol, \
+\\\"MolecularMass\\\"]], \\\"Lig_TPSA\\\" -> \
+QuantityMagnitude[MoleculeValue[mol, \\\"TopologicalPolarSurfaceArea\\\"]], \
+\\\"Lig_HBD\\\" -> MoleculeValue[mol, \\\"HBondDonorCount\\\"], \\\"Lig_HBA\\\
+\" -> MoleculeValue[mol, \\\"HBondAcceptorCount\\\"], \
+\\\"Lig_RotatableBonds\\\" -> MoleculeValue[mol, \\\"RotatableBondCount\\\"], \
+\\\"Lig_AromaticRings\\\" -> MoleculeValue[mol, \\\"AromaticRingCount\\\"], \
+\\\"Lig_RingCount\\\" -> MoleculeValue[mol, \\\"RingCount\\\"], \
+\\\"Lig_HeavyAtoms\\\" -> Length@Select[AtomList[mol], # =!= \\\"H\\\" &], \\\
+\"Lig_FractionCsp3\\\" -> QuantityMagnitude[MoleculeValue[mol, \
+\\\"FractionCarbonSP3\\\"]], \\\"Lig_LogP\\\" -> MoleculeValue[mol, \
+\\\"CrippenClogP\\\"]|>; If[!NumericQ[res[\\\"Lig_MolecularMass\\\"]], \
+Return[MakeError[\\\"Calc Failed\\\"]]]; res, MakeError[\\\"Calc \
+Exception\\\"]]];\nCalcProtFeatures[seq_String] := Module[{c, len, w, h, t, \
+upperSeq}, upperSeq = ToUpperCase[seq]; If[StringContainsQ[upperSeq, \
+$ForbiddenAA], Return[MakeError[\\\"Protein contains forbidden \
+characters\\\"]]]; c = Characters[upperSeq]; If[AnyTrue[c, !KeyExistsQ[$AA, \
+#]&], Return[MakeError[\\\"Unknown amino acids\\\"]]]; len = Length[c]; \
+If[len == 0, Return[MakeError[\\\"Empty Protein Sequence\\\"]]]; w = \
+$AA[#][[1]]&/@c; h = $AA[#][[2]]&/@c; t = $AA[#][[3]]&/@c; \
+<|\\\"Prot_ResidueLength\\\" -> N[len], \\\"Prot_MolecularWeight_Da\\\" -> \
+N[Total[w] - (18.015*(len - 1))], \\\"Prot_GRAVY\\\" -> N[Mean[h]], \
+\\\"Prot_AromaticFraction\\\" -> N[Count[t, \\\"A\\\"]/len], \
+\\\"Prot_PositiveResidueFraction\\\" -> N[Count[t, \\\"+\\\"]/len], \
+\\\"Prot_NegativeResidueFraction\\\" -> N[Count[t, \\\"-\\\"]/len], \
+\\\"Prot_PolarResidueFraction\\\" -> N[Count[t, \\\"P\\\"]/len]|>];\n\
+CalcProtFeatures[_] := MakeError[\\\"Invalid Input for Protein\\\"];\n\
+AssembleHybridVector[txtVec_List, ligPhys_List, protPhys_List] := \
+Module[{interact}, interact = {ligPhys[[1]] / (protPhys[[2]] + 1.0), \
+ligPhys[[10]] * protPhys[[3]], ligPhys[[2]] * protPhys[[7]]}; Join[txtVec, \
+ligPhys, protPhys, interact]];\nsafeNum[x_] := Which[NumericQ[x], N[x], \
+StringQ[x] && StringMatchQ[x, NumberString], Quiet@Check[N@ToExpression[x], \
+Missing[]], True, Missing[]];\nMapChEMBLToFeatures[act_, pFeats_] := \
+Module[{smi, pIC50, lFeats, effBlock, bei, le, lle, sei, baseData}, smi = \
+Lookup[act, \\\"canonical_smiles\\\", Missing[]]; If[MissingQ[smi], \
+Return[MakeError[\\\"Missing SMILES\\\"]]]; If[!AssociationQ[pFeats], \
+Return[MakeError[\\\"Protein features invalid\\\"]]]; pIC50 = \
+safeNum[Lookup[act, \\\"pchembl_value\\\"]]; If[MissingQ[pIC50], \
+Return[MakeError[\\\"Missing pChEMBL Value\\\"]]]; lFeats = \
+CalcLigManual[smi]; If[FailureQ[lFeats], Return[lFeats]]; effBlock = \
+Lookup[act, \\\"ligand_efficiency\\\", <||>]; If[!AssociationQ[effBlock], \
+Return[MakeError[\\\"Missing Efficiency Block\\\"]]]; bei = \
+safeNum[Lookup[effBlock, \\\"bei\\\"]]; le  = safeNum[Lookup[effBlock, \\\"le\
+\\\"]]; lle = safeNum[Lookup[effBlock, \\\"lle\\\"]]; sei = \
+safeNum[Lookup[effBlock, \\\"sei\\\"]]; If[MissingQ[bei] || MissingQ[le] || \
+MissingQ[lle] || MissingQ[sei], Return[MakeError[\\\"Incomplete Efficiency \
+Data\\\"]];]; baseData = <|\\\"TargetId\\\" -> Lookup[act, \
+\\\"target_chembl_id\\\", Missing[]], \\\"LigandId\\\" -> Lookup[act, \
+\\\"molecule_chembl_id\\\", Missing[]], \\\"CanonicalSMILES\\\" -> smi, \
+\\\"pIC50\\\" -> pIC50, \\\"Lig_BEI\\\" -> bei, \\\"Lig_LE\\\" -> le, \
+\\\"Lig_LLE\\\" -> lle, \\\"Lig_SEI\\\" -> sei|>; Join[baseData, lFeats, \
+pFeats]];\nRemoveOutliers[data_] := Module[{vals, q1, q3, iqr, lower, upper}, \
+vals = Lookup[data, \\\"pIC50\\\"]; If[Length[vals] < 10, Return[data]]; q1 = \
+Quantile[vals, 0.25]; q3 = Quantile[vals, 0.75]; iqr = q3 - q1; lower = q1 - \
+1.5 * iqr; upper = q3 + 1.5 * iqr; Select[data, (NumericQ[#[\\\"pIC50\\\"]] \
+&& lower <= #[\\\"pIC50\\\"] <= upper) &]];\nBuildFastIndex[data_List] := \
+Module[{grouped, keysIntrinsic, keysEff, index, totalEff, globalMean, \
+targetCounts}, If[Length[data] == 0, \
+Return[<|\\\"Metadata\\\"-><|\\\"TotalRows\\\"->0, \\\"UniqueLigands\\\"->0, \
+\\\"TargetCount\\\"-><||>|>, \\\"Index\\\"-><||>, \
+\\\"GlobalMean\\\"->{0.,0.,0.,0.}, \\\"Samples\\\"->{}|>]]; keysIntrinsic = {\
+\\\"Lig_MolecularMass\\\", \\\"Lig_TPSA\\\", \\\"Lig_HBD\\\", \
+\\\"Lig_HBA\\\", \\\"Lig_RotatableBonds\\\", \\\"Lig_AromaticRings\\\", \
+\\\"Lig_RingCount\\\", \\\"Lig_HeavyAtoms\\\", \\\"Lig_FractionCsp3\\\", \
+\\\"Lig_LogP\\\"}; keysEff = {\\\"Lig_BEI\\\", \\\"Lig_LE\\\", \
+\\\"Lig_LLE\\\", \\\"Lig_SEI\\\"}; grouped = GroupBy[data, \
+Key[\\\"CanonicalSMILES\\\"]]; targetCounts = Counts[Lookup[data, \
+\\\"TargetId\\\"]]; totalEff = Values[KeyTake[#, keysEff]]& /@ data; \
+globalMean = Mean[totalEff]; index = AssociationMap[Function[smi, \
+Module[{rows, firstRow, intVals, effVals, meanEff}, rows = grouped[smi]; \
+firstRow = First[rows]; intVals = Values[KeyTake[firstRow, keysIntrinsic]]; \
+effVals = Values[KeyTake[#, keysEff]]& /@ rows; meanEff = Mean[effVals]; <|\\\
+\"Int\\\" -> intVals, \\\"Eff\\\" -> meanEff|>]], Keys[grouped]]; \
+<|\\\"Metadata\\\" -> <|\\\"TotalRows\\\" -> Length[data], \
+\\\"UniqueLigands\\\" -> Length[grouped], \\\"TargetCount\\\" -> \
+targetCounts, \\\"HasFP\\\" -> True, \\\"Engine\\\"->\\\"UnifiedHybrid\\\", \
+\\\"LastUpdated\\\" -> DateString[]|>, \\\"Index\\\" -> index, \\\"GlobalMean\
+\\\" -> globalMean, \\\"Samples\\\" -> Take[Keys[grouped], UpTo[5]]|>];\n\
+End[]; EndPackage[];\>\""}], ";", "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"SECTION", " ", "2"}], ":", "TRAFFIC"}], "&"}], " ", 
+         "API"}], "*)"}], 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{
+       "codeTraffic", 
+        "=", "\"\<BeginPackage[\\\"ChemAIFlow`Traffic`\\\"];\n\
+FetchTargetList::usage = \\\"Fetches list of targets.\\\";\n\
+FetchActivities::usage = \\\"Fetches activity data.\\\";\n\
+FetchSequence::usage = \\\"Fetches protein sequence.\\\";\n\
+TrafficControl::usage = \\\"Decides fetch strategy.\\\";\nBegin[\\\"`Private`\
+\\\"];\nbaseURL = \\\"https://www.ebi.ac.uk/chembl/api/data\\\";\n\
+ReportNetworkError[url_, code_, msg_] := Print[Style[\\\"   \[Cross] Network \
+Error [\\\"<>ToString[code]<>\\\"]: \\\" <> msg <> \\\" @ \\\" <> url, Red]];\
+\nsafeJson[url_] := Module[{res, status}, res = Quiet[URLRead[url, \
+TimeConstraint -> 120]]; If[FailureQ[res], ReportNetworkError[url, \
+\\\"TIMEOUT/FAIL\\\", res[\\\"Message\\\"]]; Return[Missing[]]]; status = \
+res[\\\"StatusCode\\\"]; If[status =!= 200, ReportNetworkError[url, status, \
+\\\"HTTP Error\\\"]; Return[Missing[]]]; Quiet@Import[res, \\\"RawJSON\\\"]];\
+\nFetchTargetList[n_, offset_:0] := Module[{res}, res = safeJson[baseURL <> \
+\\\"/target.json?target_type=SINGLE%20PROTEIN&limit=\\\" <> ToString[n] <> \\\
+\"&offset=\\\" <> ToString[offset]]; If[!AssociationQ[res], {}, Lookup[res, \
+\\\"targets\\\", {}]]];\nFetchSequence[tid_] := Module[{json, c}, json = \
+safeJson[baseURL <> \\\"/target/\\\" <> tid <> \\\".json\\\"]; \
+If[!AssociationQ[json], Return[Missing[]]]; c = Lookup[json, \
+\\\"target_components\\\", {}]; If[Length[c] == 0, Return[Missing[]]]; \
+Lookup[c[[1]], \\\"target_component_sequence\\\", Missing[]]];\n\
+FetchActivities[tid_, reqLimit_, offset_:0] := Module[{res, finalLimit}, \
+finalLimit = Min[reqLimit, 500]; res = safeJson[baseURL <> \
+\\\"/activity.json?target_chembl_id=\\\" <> tid <> \\\"&limit=\\\" <> \
+ToString[finalLimit] <> \\\"&offset=\\\" <> ToString[offset]]; \
+If[!AssociationQ[res], {}, Lookup[res, \\\"activities\\\", {}]]];\n\
+TrafficControl[tid_, currentRows_, reqRows_, mode_] := Module[{needed}, \
+If[mode === \\\"OfflineFast\\\", Return[<|\\\"Action\\\" -> \\\"Skip\\\"|>]]; \
+If[mode === \\\"ForceOnline\\\", Return[<|\\\"Action\\\" -> \\\"Fetch\\\", \\\
+\"Offset\\\" -> 0, \\\"Limit\\\" -> Min[reqRows, 500]|>]]; needed = reqRows - \
+currentRows; If[needed <= 0, <|\\\"Action\\\" -> \\\"Skip\\\"|>, <|\\\"Action\
+\\\" -> \\\"Fetch\\\", \\\"Offset\\\" -> currentRows, \\\"Limit\\\" -> \
+Min[needed, 500]|>]];\nEnd[]; EndPackage[];\>\""}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{"SECTION", " ", "3"}], ":", 
+         RowBox[{"AI", " ", "BRAIN"}]}], "*)"}], 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{
+       "codeAI", 
+        "=", "\"\<BeginPackage[\\\"ChemAIFlow`AI`\\\"];\nTrainModel::usage = \
+\\\"Trains model.\\\";\nBegin[\\\"`Private`\\\"];\nTrainModel[data_, \
+method_String, type_String] := Module[{finalData, keysRetro, keysPro, \
+usedKeys, features, labels, ds, model, extractorMethod, safeLimit = 150000},\n\
+   If[Length[data] > safeLimit, Print[Style[\\\"   [Safety] Data > \\\" <> \
+ToString[safeLimit] <> \\\". Smart Sampling for Performance...\\\", Orange]]; \
+finalData = RandomSample[data, safeLimit], finalData = data];\n   keysPro = {\
+\\\"Lig_MolecularMass\\\", \\\"Lig_TPSA\\\", \\\"Lig_HBD\\\", \
+\\\"Lig_HBA\\\", \\\"Lig_RotatableBonds\\\", \\\"Lig_AromaticRings\\\", \
+\\\"Lig_RingCount\\\", \\\"Lig_HeavyAtoms\\\", \\\"Lig_FractionCsp3\\\", \
+\\\"Lig_LogP\\\"};\n   keysProt = {\\\"Prot_ResidueLength\\\", \
+\\\"Prot_MolecularWeight_Da\\\", \\\"Prot_GRAVY\\\", \
+\\\"Prot_AromaticFraction\\\", \\\"Prot_PositiveResidueFraction\\\", \
+\\\"Prot_NegativeResidueFraction\\\", \\\"Prot_PolarResidueFraction\\\"};\n   \
+keysClassic = Join[keysPro, keysProt];\n   keysRetro = Join[keysClassic, \
+{\\\"Lig_BEI\\\", \\\"Lig_LE\\\", \\\"Lig_LLE\\\", \\\"Lig_SEI\\\"}];\n   \
+If[type === \\\"ProV\\\",\n      Print[\\\"   [Brain v3.6] Training Mode: Pro \
+V (Hybrid - Text+Physics+Interaction)...\\\"];\n      features = \
+Map[Function[row, Module[{tVec, lVec, pVec},\n         tVec = \
+ChemAIFlow`Core`CalcTextFeatures[row[\\\"CanonicalSMILES\\\"]];\n         \
+lVec = Values[KeyTake[row, keysPro]];\n         pVec = Values[KeyTake[row, \
+keysProt]];\n         ChemAIFlow`Core`AssembleHybridVector[tVec, lVec, pVec]\n\
+      ]], finalData];\n      extractorMethod = \\\"Identity\\\"; \n   ,\n     \
+ usedKeys = If[type === \\\"Pro\\\", keysClassic, keysRetro];\n      Print[\\\
+\"   [Brain v3.6] Training Mode: \\\" <> type <> \\\" (Classic \
+Features)\\\"];\n      features = Values[KeyTake[#, usedKeys]] & /@ \
+finalData;\n      If[MemberQ[{\\\"LinearRegression\\\", \
+\\\"NearestNeighbors\\\"}, method], extractorMethod = \
+\\\"StandardizedVector\\\", extractorMethod = \\\"Identity\\\"];\n   ];\n   \
+labels = Lookup[finalData, \\\"pIC50\\\"];\n   ds = Rule @@@ \
+Transpose[{features, labels}];\n   model = Quiet[TimeConstrained[Predict[ds, \
+Method -> method, FeatureExtractor -> extractorMethod, PerformanceGoal -> \
+\\\"TrainingSpeed\\\"], 300, $Failed]];\n   If[model === $Failed, \
+Print[Style[\\\"   [Error] Training Timed Out.\\\", Red]]];\n   model\n ];\n \
+End[]; EndPackage[];\>\""}], ";", "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{"SECTION", " ", "3.5"}], ":", 
+         RowBox[{"ENSEMBLE", " ", "BRAIN", " ", 
+          RowBox[{"(", 
+           RowBox[{"V26", ".25", " ", "STABLE"}], ")"}]}]}], "*)"}], 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{
+       "codeEnsemble", 
+        "=", "\"\<BeginPackage[\\\"ChemAIFlow`Ensemble`\\\"];\n\
+TrainEnsembleManager::usage = \\\"Manages ensemble training.\\\";\n\
+$EnsembleRecipes::usage = \\\"List of recipes\\\";\nBegin[\\\"`Private`\\\"];\
+\n$Recipes = <|\n  \\\"The Oracle\\\" -> {{\\\"ProV\\\", \
+\\\"RandomForest\\\"}, {\\\"Pro\\\", \\\"GradientBoostedTrees\\\"}, \
+{\\\"Retro\\\", \\\"RandomForest\\\"}},\n  \\\"The Trinity\\\" -> {{\\\"Retro\
+\\\", \\\"RandomForest\\\"}, {\\\"ProV\\\", \\\"RandomForest\\\"}, {\\\"Pro\\\
+\", \\\"GradientBoostedTrees\\\"}},\n  \\\"Deep Hunter\\\" -> {{\\\"ProV\\\", \
+\\\"RandomForest\\\"}, {\\\"ProV\\\", \\\"GradientBoostedTrees\\\"}, {\\\"Pro\
+\\\", \\\"RandomForest\\\"}}\n|>;\nTrainEnsembleManager[data_, recipeUI_, \
+outputDir_, dbChanged_:False] := Module[{recipeName, steps, modelName, \
+userModelName, type, method, model, savePath, userSavePath, subModelList = \
+{}, step, startT, endT, r2Val, pm, scorecard = {}, testSample, testFeats, \
+keysPro, keysProt, keysRetro, keysClassic, isValid, loadedModel},\n  \n  \
+recipeName = StringTrim[First[StringSplit[recipeUI, \\\"(\\\"]]];\n  \
+If[!KeyExistsQ[$Recipes, recipeName], Print[Style[\\\"   [Error] Recipe not \
+found: \\\"<>recipeName, Red]]; Return[$Failed]];\n  \n  steps = \
+$Recipes[recipeName];\n  Print[Style[\\\"\\\\n--- Ensemble: \\\" <> \
+recipeName <> \\\" (\\\" <> ToString[Length[steps]] <> \\\" models) ---\\\", \
+Blue, Bold]];\n  \n  testSample = RandomSample[data, Min[Length[data], 500]];\
+\n  keysPro = {\\\"Lig_MolecularMass\\\", \\\"Lig_TPSA\\\", \\\"Lig_HBD\\\", \
+\\\"Lig_HBA\\\", \\\"Lig_RotatableBonds\\\", \\\"Lig_AromaticRings\\\", \
+\\\"Lig_RingCount\\\", \\\"Lig_HeavyAtoms\\\", \\\"Lig_FractionCsp3\\\", \
+\\\"Lig_LogP\\\"};\n  keysProt = {\\\"Prot_ResidueLength\\\", \
+\\\"Prot_MolecularWeight_Da\\\", \\\"Prot_GRAVY\\\", \
+\\\"Prot_AromaticFraction\\\", \\\"Prot_PositiveResidueFraction\\\", \
+\\\"Prot_NegativeResidueFraction\\\", \\\"Prot_PolarResidueFraction\\\"};\n  \
+keysClassic = Join[keysPro, keysProt];\n  keysRetro = Join[keysClassic, \
+{\\\"Lig_BEI\\\", \\\"Lig_LE\\\", \\\"Lig_LLE\\\", \\\"Lig_SEI\\\"}];\n\n  \
+Monitor[\n  Do[\n     step = steps[[i]]; type = step[[1]]; method = \
+step[[2]];\n     modelName = \\\"EnsSub_\\\" <> StringReplace[recipeName, \
+\\\" \\\"->\\\"\\\"] <> \\\"_\\\" <> IntegerString[i, 10, 2] <> \\\"_\\\" <> \
+type <> \\\"_\\\" <> method <> \\\".wxf\\\";\n     userModelName = \
+\\\"User_\\\" <> type <> \\\"_\\\" <> method <> \\\".wxf\\\";\n     savePath \
+= FileNameJoin[{outputDir, modelName}];\n     userSavePath = \
+FileNameJoin[{outputDir, userModelName}];\n     \n     startT = \
+AbsoluteTime[];\n     \n     If[!dbChanged && FileExistsQ[userSavePath],\n    \
+    loadedModel = Quiet[Check[Import[userSavePath, \\\"WXF\\\"], $Failed]];\n \
+       isValid = MatchQ[loadedModel, _PredictorFunction] || \
+(ListQ[loadedModel] && Length[loadedModel]>0 && MatchQ[First[loadedModel], \
+_PredictorFunction]);\n        \n        If[isValid,\n           \
+If[ListQ[loadedModel], model = First[loadedModel], model = loadedModel];\n    \
+       CopyFile[userSavePath, savePath, OverwriteTarget->True];\n           \
+status = \\\"Reused\\\";\n        ,\n           If[FileExistsQ[userSavePath], \
+DeleteFile[userSavePath]];\n           model = ChemAIFlow`AI`TrainModel[data, \
+method, type];\n           If[Head[model] === PredictorFunction,\n            \
+  Export[savePath, model, \\\"WXF\\\"]; CopyFile[savePath, userSavePath, \
+OverwriteTarget->True]; status = \\\"Recovered\\\";\n           , status = \\\
+\"Failed\\\";];\n        ];\n     ,\n        model = \
+ChemAIFlow`AI`TrainModel[data, method, type];\n        If[Head[model] === \
+PredictorFunction,\n           Export[savePath, model, \\\"WXF\\\"];\n        \
+   CopyFile[savePath, userSavePath, OverwriteTarget->True];\n           \
+status = \\\"Trained\\\";\n        , \n           status = \\\"Failed\\\";\n  \
+      ];\n     ];\n     endT = AbsoluteTime[];\n     \n     If[Head[model] \
+=== PredictorFunction,\n        If[type === \\\"ProV\\\",\n           \
+testFeats = \
+Map[ChemAIFlow`Core`AssembleHybridVector[ChemAIFlow`Core`CalcTextFeatures[#[\\\
+\"CanonicalSMILES\\\"]], Values[KeyTake[#, keysPro]], Values[KeyTake[#, \
+keysProt]]]&, testSample];\n        ,\n           If[StringContainsQ[type, \\\
+\"Retro\\\"],\n              testFeats = Values[KeyTake[#, keysRetro]]& /@ \
+testSample;\n           ,\n              testFeats = Values[KeyTake[#, \
+keysClassic]]& /@ testSample;\n           ];\n        ];\n        pm = \
+Quiet[PredictorMeasurements[model, testFeats -> Lookup[testSample, \
+\\\"pIC50\\\"]]];\n        r2Val = If[Head[pm]===PredictorMeasurementsObject, \
+NumberForm[pm[\\\"RSquared\\\"], {3,2}], \\\"N/A\\\"];\n     , r2Val = \
+\\\"-\\\"];\n\n     AppendTo[scorecard, {type, method, NumberForm[endT - \
+startT, {3,2}], status, r2Val}];\n     AppendTo[subModelList, \
+<|\\\"File\\\"->modelName, \\\"Type\\\"->type, \\\"Method\\\"->method|>];\n   \
+  Clear[model]; Clear[loadedModel]; ClearSystemCache[];\n     \n  , {i, 1, \
+Length[steps]}],\n  Row[{Style[\\\"Training Sub-Models: \\\", Blue, Bold], \
+ProgressIndicator[i/Length[steps]], \\\" \\\", i, \\\"/\\\", \
+Length[steps]}]];\n  \n  Print[Style[\\\"\\\\n--- Scorecard: \
+\\\"<>recipeName<>\\\" ---\\\", Bold]];\n  Print[Grid[Prepend[scorecard, \
+{\\\"Type\\\", \\\"Method\\\", \\\"Time (s)\\\", \\\"Source\\\", \
+\\\"R2\\\"}], Frame->All, Background->{None, {LightGray, None}}]];\n  \n  \
+If[Length[subModelList] > 0,\n     manifestData = \
+<|\\\"Type\\\"->\\\"Ensemble\\\", \\\"Recipe\\\"->recipeName, \
+\\\"Models\\\"->subModelList, \\\"Created\\\"->DateString[]|>;\n     \
+Export[FileNameJoin[{outputDir, \\\"User_Ensemble_\\\" <> \
+StringReplace[recipeName, \\\" \\\"->\\\"\\\"] <> \\\".wxf\\\"}], \
+manifestData, \\\"WXF\\\"];\n     Return[manifestData];\n  ];\n  $Failed\n];\n\
+End[]; EndPackage[];\>\""}], ";", "\[IndentingNewLine]", 
+       RowBox[{
+       "codeInit", 
+        "=", "\"\<BeginPackage[\\\"ChemAIFlow`\\\"];\n\
+Get[FileNameJoin[{DirectoryName[$InputFileName], \\\"Brain_v1_Core.wl\\\"}]];\
+\nGet[FileNameJoin[{DirectoryName[$InputFileName], \
+\\\"Brain_v2_Traffic.wl\\\"}]];\n\
+Get[FileNameJoin[{DirectoryName[$InputFileName], \\\"Brain_v3_AI.wl\\\"}]];\n\
+Get[FileNameJoin[{DirectoryName[$InputFileName], \
+\\\"Brain_v4_Ensemble.wl\\\"}]];\nEndPackage[];\>\""}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{"FileNameJoin", "[", 
+          RowBox[{"{", 
+           RowBox[{"kernelDir", ",", "\"\<Brain_v1_Core.wl\>\""}], "}"}], 
+          "]"}], ",", "codeCore", ",", "\"\<Text\>\""}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{"FileNameJoin", "[", 
+          RowBox[{"{", 
+           RowBox[{"kernelDir", ",", "\"\<Brain_v2_Traffic.wl\>\""}], "}"}], 
+          "]"}], ",", "codeTraffic", ",", "\"\<Text\>\""}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{"FileNameJoin", "[", 
+          RowBox[{"{", 
+           RowBox[{"kernelDir", ",", "\"\<Brain_v3_AI.wl\>\""}], "}"}], "]"}],
+          ",", "codeAI", ",", "\"\<Text\>\""}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{"FileNameJoin", "[", 
+          RowBox[{"{", 
+           RowBox[{"kernelDir", ",", "\"\<Brain_v4_Ensemble.wl\>\""}], "}"}], 
+          "]"}], ",", "codeEnsemble", ",", "\"\<Text\>\""}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{"FileNameJoin", "[", 
+          RowBox[{"{", 
+           RowBox[{"kernelDir", ",", "\"\<init.wl\>\""}], "}"}], "]"}], ",", 
+         "codeInit", ",", "\"\<Text\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{"FileNameJoin", "[", 
+          RowBox[{"{", 
+           RowBox[{"baseDir", ",", "\"\<PacletInfo.wl\>\""}], "}"}], "]"}], 
+         ",", "\"\<Paclet[Name -> \\\"ChemAIFlow\\\", Version -> \
+\\\"26.27.0\\\", Extensions -> {{\\\"Kernel\\\", \\\"Root\\\" -> \\\"Kernel\\\
+\", \\\"Context\\\" -> {\\\"ChemAIFlow`\\\"}}}]\>\"", ",", "\"\<Text\>\""}], 
+        "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"SECTION", " ", "4"}], ":", "UI"}], "&"}], " ", 
+         "INTERFACE", " ", 
+         RowBox[{"(", 
+          RowBox[{"THE", " ", "BUTTON", " ", "LOCKER"}], ")"}]}], "*)"}], 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], 
+       RowBox[{
+       "uiContent", 
+        "=", "\"\<(*** ChemAIFlow v26.27 (The Button Locker) ***)\n\
+Begin[\\\"Global`\\\"];\nUnprotect[\\\"Global`*\\\"];\n\
+ClearAll[\\\"Global`*\\\"];\nSetDirectory[NotebookDirectory[]];\n\
+PacletDirectoryLoad[ParentDirectory[Directory[]]];\n\
+Needs[\\\"ChemAIFlow`\\\"];\n\n(* GLOBAL LOCK VARIABLE *)\n\
+If[!ValueQ[$isProcessing], $isProcessing = False];\n\n(* HELP SYSTEM *)\n\
+HelpContent = <|\n  \\\"1\\\" -> <|\\\"Title\\\" -> \\\"Data Control\\\", \
+\\\"TH\\\" -> \\\"* \:0e2a\:0e16\:0e32\:0e19\:0e30\:0e02\:0e49\:0e2d\:0e21\
+\:0e39\:0e25\:0e41\:0e25\:0e30\:0e40\:0e04\:0e23\:0e37\:0e48\:0e2d\:0e07\:0e21\
+\:0e37\:0e2d *\\n\\nTarget Proteins \
+(Active):\\n\:0e08\:0e33\:0e19\:0e27\:0e19\:0e42\:0e1b\:0e23\:0e15\:0e35\:0e19\
+\:0e40\:0e1b\:0e49\:0e32\:0e2b\:0e21\:0e32\:0e22\:0e17\:0e35\:0e48\:0e21\:0e35\
+\:0e2d\:0e22\:0e39\:0e48\:0e43\:0e19\:0e10\:0e32\:0e19\:0e02\:0e49\:0e2d\:0e21\
+\:0e39\:0e25\:0e1b\:0e31\:0e08\:0e08\:0e38\:0e1a\:0e31\:0e19 / \:0e08\:0e33\
+\:0e19\:0e27\:0e19\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\:0e01\:0e34\:0e08\:0e01\
+\:0e23\:0e23\:0e21\:0e17\:0e31\:0e49\:0e07\:0e2b\:0e21\:0e14 (Activities) \
+\:0e17\:0e35\:0e48\:0e21\:0e35\\n\\nUnique \
+Ligands:\\n\:0e08\:0e33\:0e19\:0e27\:0e19\:0e42\:0e04\:0e23\:0e07\:0e2a\:0e23\
+\:0e49\:0e32\:0e07\:0e42\:0e21\:0e40\:0e14\:0e40\:0e25\:0e01\:0e38\:0e25 \
+(Ligands) \:0e17\:0e35\:0e48\:0e44\:0e21\:0e48\:0e0b\:0e49\:0e33\:0e01\:0e31\
+\:0e19\:0e43\:0e19\:0e23\:0e30\:0e1a\:0e1a\\n\\nEngine:\\n\:0e23\:0e30\:0e1a\
+\:0e1a\:0e17\:0e35\:0e48\:0e43\:0e0a\:0e49\:0e43\:0e19\:0e01\:0e32\:0e23\:0e40\
+\:0e01\:0e47\:0e1a\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25 (\:0e1b\:0e31\:0e08\
+\:0e08\:0e38\:0e1a\:0e31\:0e19\:0e04\:0e37\:0e2d Unified Hybrid)\\n\\n* \
+\:0e01\:0e32\:0e23\:0e43\:0e0a\:0e49\:0e07\:0e32\:0e19\:0e1b\:0e38\:0e48\:0e21\
+ *\\n\\nRefresh DB from Disk:\\n\:0e01\:0e14\:0e40\:0e21\:0e37\:0e48\:0e2d\
+\:0e15\:0e49\:0e2d\:0e07\:0e01\:0e32\:0e23\:0e14\:0e32\:0e27\:0e19\:0e4c\:0e42\
+\:0e2b\:0e25\:0e14\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\:0e08\:0e32\:0e01\:0e44\
+\:0e1f\:0e25\:0e4c DB.wl \:0e2b\:0e23\:0e37\:0e2d DB.mx \:0e43\:0e2b\:0e21\
+\:0e48 \\n(\:0e40\:0e0a\:0e48\:0e19 \
+\:0e01\:0e23\:0e13\:0e35\:0e21\:0e35\:0e01\:0e32\:0e23\:0e41\:0e01\:0e49\:0e44\
+\:0e02\:0e44\:0e1f\:0e25\:0e4c\:0e08\:0e32\:0e01\:0e20\:0e32\:0e22\:0e19\:0e2d\
+\:0e01 \:0e2b\:0e23\:0e37\:0e2d\:0e04\:0e48\:0e32\:0e43\:0e19\:0e2b\:0e19\
+\:0e49\:0e32\:0e08\:0e2d\:0e44\:0e21\:0e48\:0e15\:0e23\:0e07\:0e01\:0e31\:0e1a\
+\:0e04\:0e27\:0e32\:0e21\:0e08\:0e23\:0e34\:0e07)\\n\\nForce Re-Index:\\n\
+\:0e01\:0e14\:0e40\:0e21\:0e37\:0e48\:0e2d\:0e23\:0e30\:0e1a\:0e1a\:0e04\:0e49\
+\:0e19\:0e2b\:0e32\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\:0e44\:0e21\:0e48\:0e40\
+\:0e08\:0e2d \:0e2b\:0e23\:0e37\:0e2d\:0e01\:0e32\:0e23\:0e41\:0e2a\:0e14\
+\:0e07\:0e1c\:0e25\:0e1c\:0e34\:0e14\:0e1e\:0e25\:0e32\:0e14 \:0e1b\:0e38\
+\:0e48\:0e21\:0e19\:0e35\:0e49\:0e08\:0e30\:0e2a\:0e23\:0e49\:0e32\:0e07\:0e14\
+\:0e31\:0e0a\:0e19\:0e35 (SmartCache) \:0e43\:0e2b\:0e21\:0e48\:0e08\:0e32\
+\:0e01\:0e10\:0e32\:0e19\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\:0e17\:0e35\:0e48\
+\:0e21\:0e35\:0e2d\:0e22\:0e39\:0e48 \:0e40\:0e1e\:0e37\:0e48\:0e2d\:0e43\
+\:0e2b\:0e49\:0e01\:0e32\:0e23\:0e04\:0e49\:0e19\:0e2b\:0e32\:0e23\:0e27\:0e14\
+\:0e40\:0e23\:0e47\:0e27\:0e02\:0e36\:0e49\:0e19\\\", \\\"EN\\\" -> \\\"* \
+Data Status & Tools *\\n\\nTarget Proteins (Active):\\nNumber of loaded \
+target proteins / Total activity data points available.\\n\\nUnique \
+Ligands:\\nCount of unique chemical structures in the \
+system.\\n\\nEngine:\\nCurrent data engine (Unified Hybrid).\\n\\n* Button \
+Functions *\\n\\nRefresh DB from Disk:\\nReloads data from DB.wl or DB.mx. \
+Use this if external file edits occurred or display is out of \
+sync.\\n\\nForce Re-Index:\\nRebuilds the search index (SmartCache). \\nUse \
+if search fails or performance lags.\\\"|>,\n  \\\"2\\\" -> <|\\\"Title\\\" \
+-> \\\"Configuration\\\", \\\"TH\\\" -> \\\"* \:0e01\:0e32\:0e23\:0e01\:0e33\
+\:0e2b\:0e19\:0e14\:0e02\:0e19\:0e32\:0e14\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\
+\:0e41\:0e25\:0e30\:0e42\:0e2b\:0e21\:0e14\:0e2d\:0e2d\:0e19\:0e44\:0e25\:0e19\
+\:0e4c *\\n\\nTarget Proteins:\\n\:0e08\:0e33\:0e19\:0e27\:0e19\:0e42\:0e1b\
+\:0e23\:0e15\:0e35\:0e19\:0e17\:0e35\:0e48\:0e15\:0e49\:0e2d\:0e07\:0e01\:0e32\
+\:0e23\:0e19\:0e33\:0e21\:0e32\:0e1d\:0e36\:0e01\\n\\n- \:0e01\:0e23\:0e2d\
+\:0e01\:0e19\:0e49\:0e2d\:0e22:\\n\:0e1d\:0e36\:0e01\:0e40\:0e23\:0e47\:0e27 \
+\:0e41\:0e15\:0e48\:0e42\:0e21\:0e40\:0e14\:0e25\:0e2d\:0e32\:0e08\:0e44\:0e21\
+\:0e48\:0e04\:0e23\:0e2d\:0e1a\:0e04\:0e25\:0e38\:0e21\\n\\n- \:0e01\:0e23\
+\:0e2d\:0e01\:0e21\:0e32\:0e01\:0e40\:0e01\:0e34\:0e19 DB:\\n\:0e23\:0e30\
+\:0e1a\:0e1a\:0e08\:0e30\:0e1e\:0e22\:0e32\:0e22\:0e32\:0e21\:0e14\:0e32\:0e27\
+\:0e19\:0e4c\:0e42\:0e2b\:0e25\:0e14\:0e40\:0e1e\:0e34\:0e48\:0e21\:0e08\:0e32\
+\:0e01 ChEMBL (\:0e16\:0e49\:0e32\:0e42\:0e2b\:0e21\:0e14\:0e2d\:0e19\:0e38\
+\:0e0d\:0e32\:0e15) \:0e2b\:0e32\:0e01\:0e2b\:0e32\:0e44\:0e21\:0e48\:0e44\
+\:0e14\:0e49 \:0e23\:0e30\:0e1a\:0e1a\:0e08\:0e30\:0e43\:0e0a\:0e49\:0e40\
+\:0e17\:0e48\:0e32\:0e17\:0e35\:0e48\:0e21\:0e35\\n\\nLigands per Protein:\\n\
+\:0e08\:0e33\:0e19\:0e27\:0e19\:0e2a\:0e32\:0e23\:0e40\:0e04\:0e21\:0e35\:0e15\
+\:0e48\:0e2d 1 \:0e42\:0e1b\:0e23\:0e15\:0e35\:0e19\\n\\n- \:0e01\:0e23\:0e2d\
+\:0e01\:0e21\:0e32\:0e01:\\n\:0e41\:0e21\:0e48\:0e19\:0e22\:0e33\:0e02\:0e36\
+\:0e49\:0e19 \:0e41\:0e15\:0e48\:0e43\:0e0a\:0e49\:0e40\:0e27\:0e25\:0e32\
+\:0e14\:0e32\:0e27\:0e19\:0e4c\:0e42\:0e2b\:0e25\:0e14\:0e41\:0e25\:0e30\:0e1d\
+\:0e36\:0e01\:0e19\:0e32\:0e19\\n\\n- \:0e23\:0e30\:0e1a\:0e1a\:0e08\:0e33\
+\:0e01\:0e31\:0e14:\\n\:0e2a\:0e39\:0e07\:0e2a\:0e38\:0e14 500 \:0e15\:0e31\
+\:0e27\:0e15\:0e48\:0e2d\:0e04\:0e23\:0e31\:0e49\:0e07 \:0e40\:0e1e\:0e37\
+\:0e48\:0e2d\:0e40\:0e19\:0e49\:0e19\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\:0e04\
+\:0e38\:0e13\:0e20\:0e32\:0e1e\:0e2a\:0e39\:0e07\:0e25\:0e33\:0e14\:0e31\:0e1a\
+\:0e41\:0e23\:0e01\:0e08\:0e32\:0e01 ChEMBL \:0e41\:0e25\:0e30\:0e04\:0e27\
+\:0e1a\:0e04\:0e38\:0e21\:0e01\:0e32\:0e23\:0e01\:0e23\:0e30\:0e08\:0e32\:0e22\
+\:0e15\:0e31\:0e27\:0e02\:0e2d\:0e07\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\:0e44\
+\:0e21\:0e48\:0e43\:0e2b\:0e49\:0e2b\:0e25\:0e38\:0e14\:0e01\:0e25\:0e38\:0e48\
+\:0e21 (Outliers)\\n\\n* Mode (\:0e42\:0e2b\:0e21\:0e14\:0e01\:0e32\:0e23\
+\:0e17\:0e33\:0e07\:0e32\:0e19) *\\n\\n- Offline Fast:\\n\:0e43\:0e0a\:0e49\
+\:0e40\:0e09\:0e1e\:0e32\:0e30\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\:0e17\:0e35\
+\:0e48\:0e21\:0e35\:0e43\:0e19\:0e40\:0e04\:0e23\:0e37\:0e48\:0e2d\:0e07 (\
+\:0e40\:0e23\:0e47\:0e27\:0e2a\:0e38\:0e14 \:0e44\:0e21\:0e48\:0e15\:0e48\
+\:0e2d\:0e40\:0e19\:0e47\:0e15)\\n\\n- Hybrid Smart:\\n\:0e43\:0e0a\:0e49\
+\:0e02\:0e2d\:0e07\:0e40\:0e14\:0e34\:0e21\:0e01\:0e48\:0e2d\:0e19 \:0e16\
+\:0e49\:0e32\:0e21\:0e35\:0e44\:0e21\:0e48\:0e1e\:0e2d\:0e08\:0e30\:0e14\:0e32\
+\:0e27\:0e19\:0e4c\:0e42\:0e2b\:0e25\:0e14\:0e40\:0e1e\:0e34\:0e48\:0e21\\n\\\
+n- Force Online:\\n(\:0e04\:0e33\:0e40\:0e15\:0e37\:0e2d\:0e19 \:26a0\:fe0f) \
+\:0e1a\:0e31\:0e07\:0e04\:0e31\:0e1a\:0e14\:0e32\:0e27\:0e19\:0e4c\:0e42\:0e2b\
+\:0e25\:0e14\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\:0e43\:0e2b\:0e21\:0e48\:0e08\
+\:0e32\:0e01 ChEMBL \:0e17\:0e31\:0e49\:0e07\:0e2b\:0e21\:0e14\:0e40\:0e1e\
+\:0e37\:0e48\:0e2d\:0e2d\:0e31\:0e1b\:0e40\:0e14\:0e15\:0e25\:0e48\:0e32\:0e2a\
+\:0e38\:0e14 \:0e43\:0e0a\:0e49\:0e40\:0e27\:0e25\:0e32\:0e19\:0e32\:0e19\
+\:0e21\:0e32\:0e01 \:0e40\:0e1b\:0e23\:0e35\:0e22\:0e1a\:0e40\:0e2a\:0e21\
+\:0e37\:0e2d\:0e19\:0e01\:0e32\:0e23\:0e25\:0e49\:0e32\:0e07\:0e41\:0e25\:0e30\
+\:0e2a\:0e23\:0e49\:0e32\:0e07 DB \:0e43\:0e2b\:0e21\:0e48\:0e17\:0e31\:0e49\
+\:0e07\:0e2b\:0e21\:0e14\\\", \\\"EN\\\" -> \\\"* Mining & Online Settings \
+*\\n\\nTarget Proteins:\\nNumber of proteins to fetch/train.\\n\\n- Low \
+value:\\nFaster training, less coverage.\\n\\n- Exceeds DB:\\nAttempts to \
+download more from ChEMBL (if mode allows).\\n\\nLigands per \
+Protein:\\nNumber of chemicals per target.\\n\\n- High value:\\nHigher \
+accuracy, slower processing.\\n\\n- System Limit:\\nCapped at 500 per target \
+to prioritize high-quality ChEMBL data and control outlier \
+distribution.\\n\\n* Mode *\\n\\n- Offline Fast:\\nUses local data only \
+(Fastest).\\n\\n- Hybrid Smart:\\nUses local data first, downloads only if \
+needed.\\n\\n- Force Online:\\n(Warning \:26a0\:fe0f) Wipes and re-downloads \
+fresh data from ChEMBL. Very slow.\\\"|>,\n  \\\"3\\\" -> <|\\\"Title\\\" -> \
+\\\"Architecture\\\", \\\"TH\\\" -> \\\"* \
+\:0e40\:0e25\:0e37\:0e2d\:0e01\:0e21\:0e31\:0e19\:0e2a\:0e21\:0e2d\:0e07\:0e41\
+\:0e25\:0e30\:0e04\:0e33\:0e2a\:0e31\:0e48\:0e07\:0e1d\:0e36\:0e01 \
+*\\n\\nModel Type (\:0e1b\:0e23\:0e30\:0e40\:0e20\:0e17\:0e42\:0e21\:0e40\
+\:0e14\:0e25):\\n\\n- Retro:\\n\:0e43\:0e0a\:0e49\:0e1f\:0e35\:0e40\:0e08\
+\:0e2d\:0e23\:0e4c\:0e1e\:0e37\:0e49\:0e19\:0e10\:0e32\:0e19 \:0e40\:0e2b\
+\:0e21\:0e32\:0e30\:0e01\:0e31\:0e1a\:0e01\:0e32\:0e23\:0e27\:0e34\:0e40\:0e04\
+\:0e23\:0e32\:0e30\:0e2b\:0e4c\:0e04\:0e27\:0e32\:0e21\:0e2a\:0e31\:0e21\:0e1e\
+\:0e31\:0e19\:0e18\:0e4c\:0e22\:0e49\:0e2d\:0e19\:0e2b\:0e25\:0e31\:0e07\\n\\\
+n- Pro:\\n\:0e43\:0e0a\:0e49\:0e1f\:0e35\:0e40\:0e08\:0e2d\:0e23\:0e4c\:0e02\
+\:0e31\:0e49\:0e19\:0e2a\:0e39\:0e07 \:0e40\:0e2b\:0e21\:0e32\:0e30\:0e01\
+\:0e31\:0e1a\:0e01\:0e32\:0e23\:0e04\:0e49\:0e19\:0e2b\:0e32\:0e2a\:0e32\:0e23\
+\:0e43\:0e2b\:0e21\:0e48 (Discovery)\\n\\n- Pro Vision \
+(Recommended):\\n\:0e23\:0e30\:0e1a\:0e1a\:0e25\:0e39\:0e01\:0e1c\:0e2a\:0e21 \
+(Hybrid) \:0e43\:0e0a\:0e49\:0e17\:0e31\:0e49\:0e07\:0e42\:0e04\:0e23\:0e07\
+\:0e2a\:0e23\:0e49\:0e32\:0e07\:0e40\:0e04\:0e21\:0e35\:0e41\:0e25\:0e30\:0e02\
+\:0e49\:0e2d\:0e04\:0e27\:0e32\:0e21 (Text) \:0e41\:0e21\:0e48\:0e19\:0e22\
+\:0e33\:0e17\:0e35\:0e48\:0e2a\:0e38\:0e14\:0e2a\:0e33\:0e2b\:0e23\:0e31\:0e1a\
+\:0e42\:0e21\:0e40\:0e14\:0e25\:0e40\:0e14\:0e35\:0e48\:0e22\:0e27\\n\\n- \
+Ensemble:\\n\:0e23\:0e27\:0e21\:0e1e\:0e25\:0e31\:0e07 3 \:0e42\:0e21\:0e40\
+\:0e14\:0e25\:0e22\:0e48\:0e2d\:0e22 (RandomForest + GBT) \:0e0a\:0e48\:0e27\
+\:0e22\:0e01\:0e31\:0e19\:0e42\:0e2b\:0e27\:0e15\\n\\n- Grand Consensus (\
+\|01f3c6):\\n\:0e23\:0e27\:0e21\:0e1e\:0e25\:0e31\:0e07 3 \:0e2a\:0e39\:0e15\
+\:0e23 (9 \:0e42\:0e21\:0e40\:0e14\:0e25\:0e22\:0e48\:0e2d\:0e22) \
+\:0e42\:0e2b\:0e27\:0e15\:0e01\:0e31\:0e19\:0e40\:0e2d\:0e07 \:0e41\:0e21\
+\:0e48\:0e19\:0e22\:0e33\:0e41\:0e25\:0e30\:0e40\:0e2a\:0e16\:0e35\:0e22\:0e23\
+\:0e17\:0e35\:0e48\:0e2a\:0e38\:0e14\\n\\nStart \
+Training:\\n\:0e40\:0e23\:0e34\:0e48\:0e21\:0e01\:0e23\:0e30\:0e1a\:0e27\:0e19\
+\:0e01\:0e32\:0e23\:0e1d\:0e36\:0e01 \:0e23\:0e30\:0e1a\:0e1a\:0e08\:0e30\
+\:0e15\:0e23\:0e27\:0e08\:0e2a\:0e2d\:0e1a\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\
+\:0e41\:0e25\:0e30\:0e2a\:0e23\:0e49\:0e32\:0e07\:0e44\:0e1f\:0e25\:0e4c\:0e42\
+\:0e21\:0e40\:0e14\:0e25 .wxf \
+\:0e40\:0e01\:0e47\:0e1a\:0e44\:0e27\:0e49\\n\\nRestore Factory Defaults:\\n(\
+\:0e23\:0e30\:0e27\:0e31\:0e07 \:26a0\:fe0f) \:0e25\:0e49\:0e32\:0e07\:0e02\
+\:0e49\:0e2d\:0e21\:0e39\:0e25\:0e1c\:0e39\:0e49\:0e43\:0e0a\:0e49\:0e17\:0e31\
+\:0e49\:0e07\:0e2b\:0e21\:0e14 \:0e25\:0e1a\:0e42\:0e21\:0e40\:0e14\:0e25\
+\:0e17\:0e35\:0e48\:0e1d\:0e36\:0e01\:0e40\:0e2d\:0e07 \:0e41\:0e25\:0e30\
+\:0e01\:0e39\:0e49\:0e04\:0e37\:0e19\:0e44\:0e1f\:0e25\:0e4c\:0e15\:0e31\:0e49\
+\:0e07\:0e15\:0e49\:0e19\:0e08\:0e32\:0e01\:0e42\:0e23\:0e07\:0e07\:0e32\:0e19\
+ (\:0e43\:0e0a\:0e49\:0e40\:0e21\:0e37\:0e48\:0e2d\:0e23\:0e30\:0e1a\:0e1a\
+\:0e23\:0e27\:0e19\:0e2b\:0e23\:0e37\:0e2d\:0e2d\:0e22\:0e32\:0e01\:0e40\:0e23\
+\:0e34\:0e48\:0e21\:0e43\:0e2b\:0e21\:0e48)\\\", \\\"EN\\\" -> \\\"* AI Brain \
+& Training *\\n\\nModel Type:\\n\\n- Retro:\\nBasic features (Retrospective \
+analysis).\\n\\n- Pro:\\nAdvanced features (Discovery mode).\\n\\n- Pro \
+Vision (Recommended):\\nHybrid (Text+Physics). Best single-model accuracy.\\n\
+\\n- Ensemble:\\nVoting system using 3 sub-models (RandomForest + \
+GBT).\\n\\n- Grand Consensus (\|01f3c6):\\nThe ultimate voter using 9 \
+sub-models (3 recipes). Most robust.\\n\\nStart Training:\\nInitiates the \
+training loop and saves .wxf models.\\n\\nRestore Factory \
+Defaults:\\n(Warning \:26a0\:fe0f) Wipes all user data/models and restores \
+original factory assets. Use for system resets.\\\"|>,\n  \\\"4\\\" -> \
+<|\\\"Title\\\" -> \\\"Model & Source\\\", \\\"TH\\\" -> \\\"* \:0e01\:0e32\
+\:0e23\:0e40\:0e25\:0e37\:0e2d\:0e01\:0e42\:0e21\:0e40\:0e14\:0e25\:0e17\:0e33\
+\:0e19\:0e32\:0e22 *\\n\\nSelect \
+Model:\\n\:0e40\:0e25\:0e37\:0e2d\:0e01\:0e44\:0e1f\:0e25\:0e4c\:0e2a\:0e21\
+\:0e2d\:0e07 AI \:0e17\:0e35\:0e48\:0e08\:0e30\:0e43\:0e0a\:0e49\:0e17\:0e33\
+\:0e19\:0e32\:0e22\\n\\n- \:0e0a\:0e37\:0e48\:0e2d\:0e19\:0e33\:0e2b\:0e19\
+\:0e49\:0e32 User_:\\n\:0e42\:0e21\:0e40\:0e14\:0e25\:0e17\:0e35\:0e48\:0e04\
+\:0e38\:0e13\:0e1d\:0e36\:0e01\:0e40\:0e2d\:0e07\\n\\n- \:0e0a\:0e37\:0e48\
+\:0e2d\:0e19\:0e33\:0e2b\:0e19\:0e49\:0e32 \
+EnsSub_:\\n\:0e42\:0e21\:0e40\:0e14\:0e25\:0e22\:0e48\:0e2d\:0e22\:0e02\:0e2d\
+\:0e07\:0e23\:0e30\:0e1a\:0e1a Ensemble\\n\\n* \:0e1b\:0e38\:0e48\:0e21 Scan \
+*\\n\:0e01\:0e14\:0e40\:0e21\:0e37\:0e48\:0e2d\:0e2b\:0e32\:0e44\:0e1f\:0e25\
+\:0e4c\:0e42\:0e21\:0e40\:0e14\:0e25\:0e44\:0e21\:0e48\:0e40\:0e08\:0e2d \
+\:0e2b\:0e23\:0e37\:0e2d\:0e40\:0e1e\:0e34\:0e48\:0e07\:0e1d\:0e36\:0e01\:0e40\
+\:0e2a\:0e23\:0e47\:0e08\:0e41\:0e25\:0e49\:0e27\:0e0a\:0e37\:0e48\:0e2d\:0e22\
+\:0e31\:0e07\:0e44\:0e21\:0e48\:0e02\:0e36\:0e49\:0e19\:0e43\:0e19\:0e25\:0e34\
+\:0e2a\:0e15\:0e4c\\n\\n* Clear User Models \
+*\\n\:0e25\:0e1a\:0e44\:0e1f\:0e25\:0e4c\:0e42\:0e21\:0e40\:0e14\:0e25\:0e17\
+\:0e35\:0e48\:0e1d\:0e36\:0e01\:0e40\:0e2d\:0e07\:0e17\:0e31\:0e49\:0e07\:0e2b\
+\:0e21\:0e14\:0e17\:0e34\:0e49\:0e07 (\:0e43\:0e0a\:0e49\:0e40\:0e21\:0e37\
+\:0e48\:0e2d\:0e1d\:0e36\:0e01\:0e1c\:0e34\:0e14\:0e1e\:0e25\:0e32\:0e14 \
+\:0e2b\:0e23\:0e37\:0e2d\:0e15\:0e49\:0e2d\:0e07\:0e01\:0e32\:0e23\:0e40\:0e04\
+\:0e25\:0e35\:0e22\:0e23\:0e4c\:0e1e\:0e37\:0e49\:0e19\:0e17\:0e35\:0e48)\\\",\
+ \\\"EN\\\" -> \\\"* Model Selection *\\n\\nSelect Model:\\nChoose the AI \
+model file for prediction.\\n\\n- User_:\\nCustom models trained by \
+you.\\n\\n- EnsSub_:\\nEnsemble sub-components.\\n\\n* Scan *\\nRefreshes the \
+model list (e.g., after training).\\n\\n* Clear User Models *\\nDeletes all \
+custom-trained models to free up disk space.\\\"|>,\n  \\\"5\\\" -> \
+<|\\\"Title\\\" -> \\\"Input & Execution\\\", \\\"TH\\\" -> \\\"* \
+\:0e01\:0e32\:0e23\:0e1b\:0e49\:0e2d\:0e19\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\
+\:0e41\:0e25\:0e30\:0e41\:0e2a\:0e14\:0e07\:0e1c\:0e25 *\\n\\nLigand \
+Source:\\n\\n- Manual Entry:\\n\:0e01\:0e23\:0e2d\:0e01\:0e40\:0e2d\:0e07\
+\:0e17\:0e35\:0e25\:0e30\:0e1a\:0e23\:0e23\:0e17\:0e31\:0e14 \:0e23\:0e39\
+\:0e1b\:0e41\:0e1a\:0e1a \:0e0a\:0e37\:0e48\:0e2d, SMILES \\n(\:0e40\:0e0a\
+\:0e48\:0e19 Aspirin, CC(=O)Oc1ccccc1C(=O)O)\\n\\n- Database Search:\\n\:0e2a\
+\:0e38\:0e48\:0e21\:0e14\:0e36\:0e07\:0e2a\:0e32\:0e23\:0e08\:0e32\:0e01\:0e10\
+\:0e32\:0e19\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\:0e21\:0e32\:0e17\:0e14\:0e2a\
+\:0e2d\:0e1a (\:0e23\:0e30\:0e1a\:0e38\:0e08\:0e33\:0e19\:0e27\:0e19\:0e43\
+\:0e19\:0e0a\:0e48\:0e2d\:0e07 Sample Size)\\n\\nPREDICT & RANK:\\n\:0e40\
+\:0e23\:0e34\:0e48\:0e21\:0e04\:0e33\:0e19\:0e27\:0e13\:0e04\:0e30\:0e41\:0e19\
+\:0e19 \:0e04\:0e27\:0e32\:0e21\:0e19\:0e48\:0e32\:0e08\:0e30\:0e40\:0e1b\
+\:0e47\:0e19 \:0e41\:0e25\:0e30\:0e04\:0e48\:0e32\:0e04\:0e27\:0e32\:0e21\
+\:0e40\:0e0a\:0e37\:0e48\:0e2d\:0e21\:0e31\:0e48\:0e19 (Confidence)\\n\\n- \
+Confidence:\\n\:0e41\:0e2a\:0e14\:0e07 High/Med/Low \:0e40\:0e09\:0e1e\:0e32\
+\:0e30\:0e40\:0e21\:0e37\:0e48\:0e2d\:0e43\:0e0a\:0e49 Ensemble \:0e41\:0e25\
+\:0e30\:0e21\:0e35\:0e04\:0e30\:0e41\:0e19\:0e19 > 0\\n\\nZone 2 (2D) / Zone \
+3 (3D):\\n\:0e1e\:0e34\:0e21\:0e1e\:0e4c\:0e40\:0e25\:0e02\:0e25\:0e33\:0e14\
+\:0e31\:0e1a (Rank) \:0e17\:0e35\:0e48\:0e15\:0e49\:0e2d\:0e07\:0e01\:0e32\
+\:0e23\:0e14\:0e39 \:0e41\:0e25\:0e49\:0e27\:0e01\:0e14\:0e1b\:0e38\:0e48\
+\:0e21\:0e40\:0e1e\:0e37\:0e48\:0e2d\:0e2a\:0e23\:0e49\:0e32\:0e07\:0e20\:0e32\
+\:0e1e\:0e42\:0e04\:0e23\:0e07\:0e2a\:0e23\:0e49\:0e32\:0e07\:0e42\:0e21\:0e40\
+\:0e14\:0e40\:0e25\:0e01\:0e38\:0e25\\n\\n- Clear RAM:\\n\:0e01\:0e14\:0e40\
+\:0e21\:0e37\:0e48\:0e2d\:0e14\:0e39 2D/3D \:0e40\:0e2a\:0e23\:0e47\:0e08 \
+\:0e40\:0e1e\:0e37\:0e48\:0e2d\:0e04\:0e37\:0e19\:0e2b\:0e19\:0e48\:0e27\:0e22\
+\:0e04\:0e27\:0e32\:0e21\:0e08\:0e33\:0e43\:0e2b\:0e49\:0e40\:0e04\:0e23\:0e37\
+\:0e48\:0e2d\:0e07\\\", \\\"EN\\\" -> \\\"* Prediction & Visualization \
+*\\n\\nLigand Source:\\n\\n- Manual Entry:\\nType inputs line-by-line format:\
+\\nName, SMILES.\\n\\n- Database Search:\\nRandomly samples compounds from \
+the DB (Set count in 'Sample Size').\\n\\nPREDICT & RANK:\\nCalculates \
+Scores, Affinity, and Confidence.\\n\\n- Confidence:\\nDisplays High/Med/Low \
+only for Ensemble modes with Score > 0.\\n\\nZone 2 (2D) / Zone 3 \
+(3D):\\nEnter the Rank ID to generate molecular structures.\\n\\n- Clear RAM:\
+\\nUse after 2D/3D viewing to release system memory.\\\"|>,\n  \\\"6\\\" -> \
+<|\\\"Title\\\" -> \\\"System\\\", \\\"TH\\\" -> \\\"* \:0e01\:0e32\:0e23\
+\:0e1b\:0e34\:0e14\:0e41\:0e25\:0e30\:0e40\:0e23\:0e34\:0e48\:0e21\:0e15\:0e49\
+\:0e19\:0e43\:0e2b\:0e21\:0e48 *\\n\\n\:0e01\:0e32\:0e23\:0e1b\:0e34\:0e14\
+\:0e42\:0e1b\:0e23\:0e41\:0e01\:0e23\:0e21: \\n\:0e44\:0e21\:0e48\:0e04\:0e27\
+\:0e23\:0e1b\:0e34\:0e14\:0e2b\:0e19\:0e49\:0e32\:0e15\:0e48\:0e32\:0e07\:0e19\
+\:0e35\:0e49\:0e40\:0e17\:0e48\:0e32\:0e19\:0e31\:0e49\:0e19 \:0e40\:0e1e\
+\:0e23\:0e32\:0e30 Kernel (\:0e2a\:0e21\:0e2d\:0e07\:0e02\:0e2d\:0e07 \
+Mathematica) \:0e2d\:0e32\:0e08\:0e22\:0e31\:0e07\:0e17\:0e33\:0e07\:0e32\
+\:0e19\:0e04\:0e49\:0e32\:0e07\:0e2d\:0e22\:0e39\:0e48\:0e41\:0e25\:0e30\:0e01\
+\:0e34\:0e19\:0e41\:0e23\:0e21\\n\\n\:0e27\:0e34\:0e18\:0e35\:0e17\:0e35\:0e48\
+\:0e16\:0e39\:0e01\:0e15\:0e49\:0e2d\:0e07: \\n\:0e44\:0e1b\:0e17\:0e35\:0e48\
+\:0e40\:0e21\:0e19\:0e39 Evaluation -> Quit Kernel -> Local \\n\:0e40\:0e1e\
+\:0e37\:0e48\:0e2d\:0e25\:0e49\:0e32\:0e07\:0e2b\:0e19\:0e48\:0e27\:0e22\:0e04\
+\:0e27\:0e32\:0e21\:0e08\:0e33\:0e17\:0e31\:0e49\:0e07\:0e2b\:0e21\:0e14\:0e01\
+\:0e48\:0e2d\:0e19\:0e1b\:0e34\:0e14\\n\\n\:0e01\:0e32\:0e23\:0e40\:0e1b\:0e34\
+\:0e14\:0e43\:0e2b\:0e21\:0e48: \\n\:0e14\:0e31\:0e1a\:0e40\:0e1a\:0e34\:0e49\
+\:0e25\:0e04\:0e25\:0e34\:0e01\:0e44\:0e1f\:0e25\:0e4c ChemAIFlow_Main.nb (\
+\:0e42\:0e1f\:0e25\:0e40\:0e14\:0e2d\:0e23\:0e4c Workflows) \
+\:0e23\:0e30\:0e1a\:0e1a\:0e08\:0e30\:0e14\:0e32\:0e27\:0e19\:0e4c\:0e42\:0e2b\
+\:0e25\:0e14\:0e10\:0e32\:0e19\:0e02\:0e49\:0e2d\:0e21\:0e39\:0e25\:0e25\:0e48\
+\:0e32\:0e2a\:0e38\:0e14\:0e43\:0e2b\:0e49\:0e2d\:0e31\:0e15\:0e42\:0e19\:0e21\
+\:0e31\:0e15\:0e34\\\", \\\"EN\\\" -> \\\"* System Management *\\n\\nClosing: \
+\\nClosing the window does not stop the Kernel (RAM remains \
+used).\\n\\nProper Exit: \\nGo to menu Evaluation -> Quit Kernel -> Local, \
+\\nto fully clear memory.\\n\\nRestart: \\nDouble-click ChemAIFlow_Main.nb \
+(Workflows folder) to reload the system and database.\\\"|>\n|>;\n\n\
+HelpButton[id_] := Button[Style[\\\"\:2139\:fe0f\\\", 12], \n   Module[{dat = \
+HelpContent[id]},\n      CreateDialog[\n         DynamicModule[{currentLang = \
+\\\"EN\\\"},\n            Column[{\n               Row[{Style[dat[\\\"Title\\\
+\"], Bold, 16, FontFamily -> \\\"Times New Roman\\\"], Spacer[150], \n        \
+            Button[Dynamic[If[currentLang === \\\"EN\\\", \
+\\\"\|01f1f9\|01f1ed TH\\\", \\\"\|01f1fa\|01f1f8 EN\\\"]], currentLang = \
+If[currentLang === \\\"EN\\\", \\\"TH\\\", \\\"EN\\\"], ImageSize -> {60, \
+25}, Appearance -> \\\"Palette\\\"]\n               }],\n               \
+Divider,\n               Pane[Dynamic[Style[dat[currentLang], 14, FontFamily \
+-> \\\"Times New Roman\\\", TextAlignment -> Left]], ImageSize -> {450, 300}, \
+Scrollbars -> Automatic],\n               Divider,\n               \
+Button[\\\"Close\\\", DialogReturn[], ImageSize -> {80, 25}, Alignment -> \
+Center]\n            }, Alignment -> Center, Spacings -> {0, 10}]\n         \
+], WindowTitle -> (\\\"ChemAIFlow Help: \\\" <> dat[\\\"Title\\\"])\n      ]\n\
+   ], Appearance -> \\\"Frameless\\\", ImageSize -> {20, 20}\n];\n\n$DBPathWL \
+= FileNameJoin[{ParentDirectory[Directory[]], \\\"Database\\\", \
+\\\"DB.wl\\\"}];\n$DBPathMX = FileNameJoin[{ParentDirectory[Directory[]], \
+\\\"Database\\\", \\\"DB.mx\\\"}];\n$CachePathMX = \
+FileNameJoin[{ParentDirectory[Directory[]], \\\"Database\\\", \
+\\\"SmartCache.mx\\\"}];\n$ModelDir = \
+FileNameJoin[{ParentDirectory[Directory[]], \\\"Resources\\\", \
+\\\"Models\\\"}];\n$FactorySource = \
+FileNameJoin[{ParentDirectory[ParentDirectory[Directory[]]], \
+\\\"Factory_Assets\\\"}];\n\nfastMethods = {\\\"DecisionTree\\\", \
+\\\"GradientBoostedTrees\\\", \\\"LinearRegression\\\", \
+\\\"NearestNeighbors\\\", \\\"RandomForest\\\"};\nensembleRecipes = {\\\"The \
+Oracle (Empirical Best)\\\", \\\"The Trinity (Balanced)\\\", \\\"Deep Hunter \
+(Discovery)\\\"};\n\nIf[!ValueQ[$LastUpdate], $LastUpdate = 0];\n\
+If[!ValueQ[$Settings], $Settings = <|\\\"Method\\\"->\\\"RandomForest\\\", \\\
+\"nProt\\\"->5, \\\"nLig\\\"->500, \\\"Prot\\\"->\\\"\\\", \
+\\\"Lig\\\"->\\\"\\\", \\\"Mode\\\"->\\\"OfflineFast\\\", \\\"ModelType\\\"->\
+\\\"Pro\\\", \\\"EnsembleRecipe\\\"->First[ensembleRecipes], \
+\\\"SampleN\\\"->20|>];\nIf[!ValueQ[$SmartCache], $SmartCache = \
+<|\\\"Metadata\\\"-><|\\\"TotalRows\\\"->0, \\\"UniqueLigands\\\"->0, \
+\\\"TargetCount\\\"-><||>|>, \\\"Index\\\"-><||>, \\\"Samples\\\"->{}|>];\n\
+If[!ValueQ[$DBUpdated], $DBUpdated = False];\n\n$RealEGFR = \
+\\\"MQSKVLLAVALWLCVETRAASVGLPSVSLDLPRLSIQKDILTIKANTTLQITCRGQRDLDWLWPNNQSGSEQRV\
+EVTECSDGLFCKTLTIPKVIGNDTGAYKCFYRETDLASVIYVYVQDYRSPFIASVSDQHGVVIEMANLQIEKQGPYLE\
+VNKGKILGPDPESVVLVVTQLPAKKLGTQEITVFLIGSKLKPEIPILITVSDPVQIVYDSQAPTEQGSEKTSEKKSHP\
+VRVWAIPISVAVLTGGLVLVVVVLLTVIIYRRYRKEGKGTVLALVA\\\";\n$ExampleLigands = \
+\\\"Sorafenib (Strong), \
+CNC(=O)C1=NC=CC(OC2=CC=C(NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F)C=C2)=C1\\\\\
+nSunitinib (Strong), \
+CCN(CC)CCNC(=O)C1=C(C)NC(=C1C)C=C2C3=C(C=CC(=C3)F)NC2=O\\\\nAspirin (Weak), \
+CC(=O)Oc1ccccc1C(=O)O\\\\nParacetamol (Weak), CC(=O)Nc1ccc(O)cc1\\\\nCaffeine \
+(Inactive), CN1C=NC2=C1C(=O)N(C(=O)N2C)C\\\\nWater (Dummy), O\\\\nGlucose \
+(Sugar), OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O\\\";\n\n$AlienProt = \
+\\\"MENFQKVEKIGEGTYGVVYKARNKLTGEVVALKKIRLDTETEGVPSTAIREISLLKELNHPNIVKLLDVIHTEN\
+KLYLVFEFLHQDLKKFMDASALTGIPLPLIKSYLFQLLQGLAFCHSHRVLHRDLKPQNLLINTEGAIKLADFGLARAF\
+GVPVRTYTHEVVTLWYRAPEILLGCKYYSTAVDIWSLGCIFAEMVTRRALFPGDSEIDQLFRIFRTLGTPDEVVWPGV\
+TSMPDYKPSFPKWARQDFSKVVPPLDEDGRSLLSQMLHYDPNKRISAKAALAHPFFQDVTKPVPHLRL\\\";\n\
+$AlienLigs = \\\"Dinaciclib (Strong), \
+CC1=C(C(=NO1)C)NC2=C(C(=NC=N2)N(C(C)C)C3=CC=CC=C3)N4CCC(CC4)O\\\\nRoscovitine \
+(Strong), \
+CCN(CC)C1=C(N=C(N=C1N(C(C)C)C2=CC=CC=C2)NC3=CC=C(C=C3)CO)N\\\\nFlavopiridol \
+(Strong), \
+CN1CCC(CC1)C(C2=CC(=C(C=C2Cl)O)O)C3=C(C(=O)C4=C(O3)C=C(C=C4)O)O\\\\nAT-7519 \
+(Strong), C1CC(CCC1)NC2=NC(=NC3=C2NN=C3)C4=C(C=C(C=C4)Cl)Cl\\\\nSNS-032 \
+(Strong), CCN(CC)C(=O)C1=CN=C(N=C1)NC2=C(C=C(S2)C(=O)NC3CC3)S(=O)(=O)C(C)(C)C\
+\\\\nOlomoucine (Moderate), \
+CC1=NC=C(N1)NCCN2C3=C(C(=NC=N3)NC4=CC=C(C=C4)O)N=C2N\\\\nPurvalanol B \
+(Moderate), C(C)C(C)Nc1nc(Nc2ccc(cc2)C(=O)O)c2ncn(C(C)C)c2n1\\\\nFasudil \
+(Weak), C1CNCCN1S(=O)(=O)C2=CC=CC3=C2C=CC=N3\\\\nHymenialdisine (Moderate), \
+C1=CC=C(C=C1)C2=C(NC(=O)N2)C3=C(NC4=C3C(=O)N=C(N4)N)O\\\\nIndirubin (Weak), \
+C1=CC=C2C(=C1)C(=O)C3=C(N2)C=CC=C3C(=O)N\\\\nImatinib (Inactive), \
+CN1CCN(CC1)CC2=CC=C(C=C2)C(=O)NC3=CC(=C(C=C3)N)NC4=NC=CC(=N4)C5=CN=CC=C5\\\\\
+nSorafenib (Inactive-Here), \
+CNC(=O)C1=NC=CC(OC2=CC=C(NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F)C=C2)=C1\\\\\
+nAspirin (Inactive), CC(=O)Oc1ccccc1C(=O)O\\\\nParacetamol (Inactive), \
+CC(=O)Nc1ccc(O)cc1\\\\nMetformin (Inactive), \
+CN(C)C(=N)NC(=N)N\\\\nAtorvastatin (Inactive), \
+CC(C)c1c(c(c(n1CC[C@H](C[C@H](CC(=O)O)O)c2ccc(cc2)F)c3ccccc3)C(=O)Nc4ccccc4)\\\
+\\nVitamin C (Dummy), C(C(C1C(=C(C(=O)O1)O)O)O)O\\\\nGlucose (Sugar), \
+OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O\\\\nGlycine (Amino), \
+C(C(=O)O)N\\\\nWater (Dummy), O\\\";\n\nChemAIFlowStyle = {FontFamily -> \
+\\\"Times New Roman\\\", FontSize -> 14};\nCFHeaderStyle = {FontFamily -> \
+\\\"Times New Roman\\\", FontSize -> 24, FontWeight -> Bold, FontColor -> \
+RGBColor[0.5, 0, 0.5]};\nPanelWidth = 850;\n\nScanModels[] := Module[{files, \
+name, parts, src, type, algo, label, map = <||>}, files = FileNames[{\\\"*.mx\
+\\\", \\\"*.wxf\\\"}, $ModelDir]; Do[name = FileBaseName[f]; parts = \
+StringSplit[name, \\\"_\\\"]; If[StringContainsQ[name, \\\"Ensemble\\\"], \
+label = \\\"[Ensemble] \\\" <> StringReplace[name, \
+{\\\"User_Ensemble_\\\"->\\\"\\\", \\\".wxf\\\"->\\\"\\\"}]; map[label] = f;, \
+If[Length[parts] >= 3, src = parts[[1]]; type = parts[[2]]; algo = \
+StringRiffle[parts[[3;;]], \\\"_\\\"]; label = src <> \\\" (\\\" <> type <> \
+\\\"): \\\" <> algo; map[label] = f;]];, {f, files}]; map];\n$AvailableModels \
+= ScanModels[];\n$SelectedModelLabel = If[Length[$AvailableModels] > 0, \
+First[Keys[$AvailableModels]], \\\"None\\\"];\n\nLoadDB[forceFull_:False] := \
+Module[{cacheLoaded = False, dbLoaded = False, meta},\n  If[!forceFull && \
+FileExistsQ[$CachePathMX], Quiet[Get[$CachePathMX]]; If[ValueQ[$SmartCache] \
+&& KeyExistsQ[$SmartCache, \\\"Metadata\\\"], meta = $SmartCache[\\\"Metadata\
+\\\"]; Print[Style[\\\"\[RightGuillemet] Loaded Smart Cache: \\\" <> \
+ToString[meta[\\\"UniqueLigands\\\"]] <> \\\" items.\\\", Darker[Green], \
+FontFamily->\\\"Times New Roman\\\"]]; cacheLoaded = True;];];\n  \
+If[forceFull || !cacheLoaded, If[FileExistsQ[$DBPathMX] || \
+FileExistsQ[$DBPathWL], Print[\\\"   > Loading Full Database (Heavy)... \
+\\\"]; If[FileExistsQ[$DBPathMX], Quiet[Get[$DBPathMX]]; \
+If[ValueQ[Global`$DB] && Length[Global`$DB] > 0, $DB = Global`$DB; dbLoaded = \
+True];]; If[!dbLoaded && FileExistsQ[$DBPathWL], $DB = Import[$DBPathWL]; \
+If[ListQ[$DB], dbLoaded = True; Global`$DB = $DB; DumpSave[$DBPathMX, \
+Global`$DB];];]; If[dbLoaded, Print[\\\"\[Checkmark] DB Loaded: \\\" <> \
+ToString[Length[$DB]] <> \\\" rows.\\\"]; If[!cacheLoaded, $SmartCache = \
+ChemAIFlow`Core`BuildFastIndex[$DB]; DumpSave[$CachePathMX, \
+$SmartCache];];];, Print[\\\"\[WarningSign] No DB Found.\\\"]; $DB = {};];];\n\
+  If[$Settings[\\\"Prot\\\"] === \\\"\\\", $Settings[\\\"Prot\\\"] = \
+$RealEGFR]; If[$Settings[\\\"Lig\\\"] === \\\"\\\", $Settings[\\\"Lig\\\"] = \
+$ExampleLigands];\n  $LastUpdate = AbsoluteTime[];\n];\n\n(* SAFETY HELPERS \
+*)\nMakeSafe[val_] := Which[NumericQ[val], val, StringQ[val] && \
+StringMatchQ[val, NumberString], ToExpression[val], True, 0.0];\n\
+CalcConsensus[p_, b_] := Module[{safeP, safeB, score}, safeP = MakeSafe[p]; \
+safeB = MakeSafe[b]; If[safeP >= 6.0, (safeP*0.6) + (safeB*0.4), 0.0]];\n\n\
+Print[Panel[Pane[Column[{\n  Row[{Style[\\\"ChemAIFlow v26.27: The Button \
+Locker\\\", Sequence @@ CFHeaderStyle], Spacer[10], HelpButton[\\\"6\\\"]}],\n\
+  Style[\\\"Interface: v26.27 | Feature: Anti-Rapid Fire + Universal Progress \
++ All Fixes\\\", FontFamily -> \\\"Times New Roman\\\", FontSize -> 16, \
+Italic, Black], \n  Style[\\\"Developed by: Chairote Yaiprasert @ Walailak \
+University: THAILAND\\\", FontFamily -> \\\"Times New Roman\\\", FontSize -> \
+14, Italic, Black]}, Alignment -> Center], ImageSize -> {PanelWidth-20, \
+Automatic}, Alignment -> Center], ImageSize -> {PanelWidth, Automatic}, \
+Alignment -> Center, Background -> LightBlue]];\n\nPanel[Pane[Column[{\n  \
+Row[{Style[\\\"Step 1: Data Manager & Training\\\", 18, Bold, FontFamily -> \
+\\\"Times New Roman\\\"], Spacer[10], HelpButton[\\\"1\\\"]}],\n  \
+Dynamic[$LastUpdate; Pane[If[Length[$DB]>0 || (KeyExistsQ[$SmartCache, \
+\\\"Metadata\\\"] && KeyExistsQ[$SmartCache[\\\"Metadata\\\"], \
+\\\"TotalRows\\\"] && TrueQ[$SmartCache[\\\"Metadata\\\"][\\\"TotalRows\\\"] \
+> 0]), Module[{meta = $SmartCache[\\\"Metadata\\\"]}, Grid[{{Style[\\\"\
+\[Checkmark] Target Proteins (Active): \\\", Darker[Green], Bold, \
+FontFamily->\\\"Times New Roman\\\"], \
+Style[ToString[Length[meta[\\\"TargetCount\\\"]]] <> \\\" / Total Activities \
+: \\\" <> ToString[meta[\\\"TotalRows\\\"]], Darker[Green], \
+FontFamily->\\\"Times New Roman\\\"]}, {Style[\\\"Unique Ligands : \\\", \
+Bold, FontFamily->\\\"Times New Roman\\\"], \
+Style[meta[\\\"UniqueLigands\\\"], FontFamily->\\\"Times New Roman\\\"]}, \
+{Style[\\\"Engine: \\\", Bold, FontFamily->\\\"Times New Roman\\\"], \
+If[KeyExistsQ[meta, \\\"Engine\\\"] && \
+meta[\\\"Engine\\\"]===\\\"UnifiedHybrid\\\", Style[\\\"Unified Hybrid \
+(Active)\\\", Blue, Bold, FontFamily -> \\\"Times New Roman\\\"], \
+Style[\\\"Legacy\\\", Orange, Bold, FontFamily -> \\\"Times New \
+Roman\\\"]]}}, Frame -> All, Background -> Lighter[Cyan, 0.9], Alignment -> \
+Center]], Style[\\\"\:274c No Database Loaded\\\", 18 ,Red, Bold, FontFamily \
+-> \\\"Times New Roman\\\"]], Alignment->Center, ImageSize->Full]],\n  \
+Spacer[5], Row[{Button[\\\"Refresh DB from Disk\\\", $isProcessing=True; \
+Clear[$DB]; LoadDB[False]; $isProcessing=False;, \
+Enabled->Dynamic[!$isProcessing], ImageSize -> {180, 30}, BaseStyle -> \
+{FontFamily -> \\\"Times New Roman\\\", 12}], Button[\\\"Force Re-Index\\\", \
+$isProcessing=True; If[Length[$DB]==0, LoadDB[True]]; $SmartCache = \
+ChemAIFlow`Core`BuildFastIndex[$DB]; DumpSave[$CachePathMX, $SmartCache]; \
+$LastUpdate = AbsoluteTime[]; Print[Style[\\\"\[Checkmark] Cache \
+Rebuilt.\\\", Darker[Green], Bold, FontFamily -> \\\"Times New Roman\\\"]]; \
+$isProcessing=False;, Enabled->Dynamic[!$isProcessing], ImageSize -> {180, \
+30}, BaseStyle -> {FontFamily -> \\\"Times New Roman\\\", 12}]}],\n  \n  \
+Spacer[10], Row[{Style[\\\"Select Model Architecture:\\\", Bold, 14, \
+FontFamily -> \\\"Times New Roman\\\"], Spacer[5], HelpButton[\\\"3\\\"]}],\n \
+ Column[{\n     RadioButtonBar[Dynamic[$Settings[\\\"ModelType\\\"]], \
+{\\\"Retro\\\" -> Style[\\\"Retrospective (Correlation)\\\", 14, FontFamily \
+-> \\\"Times New Roman\\\"], \\\"Pro\\\" -> Style[\\\"Prospective (Discovery)\
+\\\", 14, FontFamily -> \\\"Times New Roman\\\"], \\\"ProV\\\" -> \
+Style[\\\"Pro Vision (Hybrid)\\\", 14, Bold, Purple, FontFamily -> \\\"Times \
+New Roman\\\"]}, Appearance -> \\\"Tabs\\\", \
+Enabled->Dynamic[!$isProcessing]],\n     Spacer[10],\n     \
+RadioButtonBar[Dynamic[$Settings[\\\"ModelType\\\"]], {\\\"Ensemble\\\" -> \
+Style[\\\"Ensemble (Dream Team) \|01f31f\\\", 14, Bold, Darker[Green], \
+FontFamily -> \\\"Times New Roman\\\"], \\\"GrandConsensus\\\" -> \
+Style[\\\"Grand Consensus \|01f3c6\\\", 14, Bold, Red, FontFamily -> \
+\\\"Times New Roman\\\"]}, Appearance -> \\\"Tabs\\\", \
+Enabled->Dynamic[!$isProcessing]]\n  }, Alignment->Center, Spacings->0],\n  \n\
+  Spacer[10],\n  Column[{\n     Row[{Style[\\\"Training Data Configuration:\\\
+\", Bold, 14, FontFamily -> \\\"Times New Roman\\\"], Spacer[5], \
+HelpButton[\\\"2\\\"]}, Alignment->Center],\n     Grid[{{Style[\\\"Target \
+Proteins:\\\", Bold], InputField[Dynamic[$Settings[\\\"nProt\\\"]], Number, \
+FieldSize->{5,1}, Enabled->Dynamic[!$isProcessing]]}, {Style[\\\"Ligands per \
+Protein:\\\", Bold], InputField[Dynamic[$Settings[\\\"nLig\\\"]], Number, \
+FieldSize->{5,1}, Enabled->Dynamic[!$isProcessing]]}, \
+{Dynamic[If[$Settings[\\\"ModelType\\\"] === \\\"Ensemble\\\", \
+Style[\\\"Ensemble Recipe:\\\", Bold, Darker[Green]], \
+If[$Settings[\\\"ModelType\\\"] === \\\"GrandConsensus\\\", Style[\\\"Mode:\\\
+\", Bold, Red], Style[\\\"ML Method:\\\", Bold]]]], \
+Dynamic[If[$Settings[\\\"ModelType\\\"] === \\\"Ensemble\\\", \
+PopupMenu[Dynamic[$Settings[\\\"EnsembleRecipe\\\"]], ensembleRecipes, \
+ImageSize->200, Enabled->Dynamic[!$isProcessing]], If[$Settings[\\\"ModelType\
+\\\"] === \\\"GrandConsensus\\\", Style[\\\"Auto-Train All 3 Recipes\\\", 12, \
+Italic], PopupMenu[Dynamic[$Settings[\\\"Method\\\"]], fastMethods, \
+ImageSize->200, Enabled->Dynamic[!$isProcessing]]]]]}}, Alignment -> {Center, \
+Center}, BaseStyle -> ChemAIFlowStyle],\n     Spacer[5], \
+RadioButtonBar[Dynamic[$Settings[\\\"Mode\\\"]], {\\\"OfflineFast\\\" -> \
+Style[\\\"Offline Fast\\\", 14, FontFamily -> \\\"Times New Roman\\\"], \
+\\\"HybridSmart\\\" -> Style[\\\"Hybrid Smart\\\", 14, FontFamily -> \
+\\\"Times New Roman\\\"], \\\"ForceOnline\\\" -> Style[\\\"Force Online\\\", \
+14, FontFamily -> \\\"Times New Roman\\\"]}, \
+Enabled->Dynamic[!$isProcessing]]\n  }, Alignment->Center],\n  \n  \
+Spacer[10], \n  Row[{\n    Dynamic[Button[If[$Settings[\\\"ModelType\\\"] === \
+\\\"GrandConsensus\\\", \\\"Train Grand Consensus\\\", \\\"Start \
+Training\\\"], \n      $isProcessing = True;\n      Module[{tids, \
+existingTids, targetsToScan, goalProt, currentProtCount, neededProt, \
+neededLig, plan, acts, seq, pFeats, row, validRows=0, saveName, pm, statKeys, \
+plotData, features, labels, ds, featKeys, limitCap, countBefore, countAfter, \
+errMsg, errorSummary, trainingData, maxTrainSize, keysPro, keysProt, keysEff, \
+usedKeys,\n              runType, runMethod, runRecipe, runMode, runNProt, \
+runNLig},\n         \n         runType = $Settings[\\\"ModelType\\\"];\n      \
+   runMethod = $Settings[\\\"Method\\\"];\n         runRecipe = \
+$Settings[\\\"EnsembleRecipe\\\"];\n         runMode = \
+$Settings[\\\"Mode\\\"];\n         runNProt = $Settings[\\\"nProt\\\"];\n     \
+    runNLig = $Settings[\\\"nLig\\\"];\n         \n         If[Length[$DB] == \
+0 && KeyExistsQ[$SmartCache, \\\"Metadata\\\"], Print[\\\"\[RightGuillemet] \
+Waking up Full DB...\\\"]; LoadDB[True]];\n         Print[\\\"\\\\n--- \
+Processing Started ---\\\"];\n         \n         existingTids = \
+If[Length[$DB]>0, DeleteDuplicates[Lookup[$DB, \\\"TargetId\\\"]], {}]; \
+currentProtCount = Length[existingTids]; goalProt = runNProt; errorSummary = \
+<||>; targetsToScan = {};\n         If[runMode =!= \\\"OfflineFast\\\", \
+If[goalProt > currentProtCount || runMode === \\\"ForceOnline\\\", \
+Print[Style[\\\"\[RightGuillemet] Checking ChEMBL...\\\", Blue]]; \
+targetsToScan = If[runMode === \\\"ForceOnline\\\", existingTids, {}]; \
+If[Length[targetsToScan] < goalProt, tids = \
+Lookup[ChemAIFlow`Traffic`FetchTargetList[goalProt + 50], \
+\\\"target_chembl_id\\\"]; targetsToScan = Union[targetsToScan, tids];]; \
+targetsToScan = Take[Select[targetsToScan, !MemberQ[existingTids, #] || \
+runMode === \\\"ForceOnline\\\" &], UpTo[goalProt]];];];\n         \
+If[Length[targetsToScan] > 0, Print[\\\"   > Downloading... \\\"]; \
+Monitor[Do[tid = target; currentCount = Length[Select[$DB, #TargetId == tid \
+&]]; neededLig = runNLig - currentCount; limitCap = Min[neededLig, 500]; \
+If[limitCap > 0, plan = ChemAIFlow`Traffic`TrafficControl[tid, currentCount, \
+runNLig, runMode]; If[plan[\\\"Action\\\"] === \\\"Fetch\\\", acts = \
+ChemAIFlow`Traffic`FetchActivities[tid, plan[\\\"Limit\\\"], \
+plan[\\\"Offset\\\"]]; If[Length[acts] > 0, seq = \
+ChemAIFlow`Traffic`FetchSequence[tid]; If[MissingQ[seq], seq = $RealEGFR]; \
+pFeats = ChemAIFlow`Core`CalcProtFeatures[seq]; If[FailureQ[pFeats], \
+Continue[]]; Scan[Function[act, row = \
+ChemAIFlow`Core`MapChEMBLToFeatures[act, pFeats]; If[!FailureQ[row], \
+AppendTo[$DB, row]; validRows++;]], acts];];];];, {target, targetsToScan}], \
+Row[{Style[\\\"Fetching: \\\", Blue], target}]]; If[validRows > 0, \
+Print[Style[\\\"\[Checkmark] Downloaded \\\" <> ToString[validRows] <> \\\" \
+new activities.\\\", Darker[Green], Bold]]; $DBUpdated = True;];];\n         \
+If[validRows > 0, $DB = DeleteDuplicatesBy[$DB, {#TargetId, #CanonicalSMILES} \
+&]; $DB = ChemAIFlow`Core`RemoveOutliers[$DB]; Print[\\\"   > Syncing \
+Database & Cache...\\\"]; Global`$DB = $DB; DumpSave[$DBPathMX, Global`$DB]; \
+Export[$DBPathWL, $DB]; $SmartCache = ChemAIFlow`Core`BuildFastIndex[$DB]; \
+DumpSave[$CachePathMX, $SmartCache]; Print[Style[\\\"\[Checkmark] DB \
+Synced.\\\", Darker[Green]]]; $LastUpdate = AbsoluteTime[];];\n         \n    \
+     maxTrainSize = runNProt * runNLig;\n         If[Length[$DB] > \
+maxTrainSize, Print[Style[\\\"   \[RightGuillemet] Filtering Data: Using top \
+\\\" <> ToString[maxTrainSize] <> \\\" rows (from \\\" <> \
+ToString[Length[$DB]] <> \\\") based on settings.\\\", Orange]]; trainingData \
+= RandomSample[$DB, maxTrainSize];, trainingData = $DB;];\n         \n        \
+ If[runType === \\\"GrandConsensus\\\", \n            Print[Style[\\\"\
+\[RightGuillemet] Training Grand Consensus (All 3 Recipes)...\\\", Purple, \
+Bold]];\n            \
+Do[ChemAIFlow`Ensemble`TrainEnsembleManager[trainingData, rec, $ModelDir, \
+$DBUpdated];, {rec, {\\\"The Oracle\\\", \\\"The Trinity\\\", \\\"Deep Hunter\
+\\\"}}];\n            $AvailableModels = ScanModels[]; Print[Style[\\\"\
+\[Checkmark] Grand Consensus Training Finished.\\\", Darker[Green], Bold]]; \
+$DBUpdated = False; $isProcessing = False; Return[];\n         ];\n\n         \
+If[runType === \\\"Ensemble\\\", \
+Check[ChemAIFlow`Ensemble`TrainEnsembleManager[trainingData, runRecipe, \
+$ModelDir, $DBUpdated]; $AvailableModels = ScanModels[]; Print[Style[\\\"\
+\[Checkmark] Ensemble Training Finished.\\\", Darker[Green], Bold]]; \
+$DBUpdated = False;, Print[Style[\\\"Ensemble Training Failed.\\\", Red]]]; \
+$isProcessing = False; Return[];];\n         \n         \
+If[Length[trainingData] > 50, Print[\\\"Training [\\\" <> runType <> \\\"] \
+Model (on \\\"<>ToString[Length[trainingData]]<>\\\" rows)...\\\"]; \n        \
+    Monitor[\n               Check[$UserModel = \
+ChemAIFlow`AI`TrainModel[trainingData, runMethod, runType]; \
+If[Head[$UserModel] === PredictorFunction, saveName = \\\"User_\\\" <> \
+runType <> \\\"_\\\" <> runMethod <> \\\".wxf\\\"; \
+Export[FileNameJoin[{$ModelDir, saveName}], $UserModel, \\\"WXF\\\"]; \
+Print[Style[\\\"Model Saved as: \\\" <> saveName, Blue, Bold]]; \
+$AvailableModels = ScanModels[]; $SelectedModelLabel = \\\"User (\\\" <> \
+runType <> \\\"): \\\" <> runMethod; \n               \n               Quiet[\
+\n                  plotData = If[Length[trainingData] > 5000, \
+RandomSample[trainingData, 5000], trainingData]; \n                  keysPro \
+= {\\\"Lig_MolecularMass\\\", \\\"Lig_TPSA\\\", \\\"Lig_HBD\\\", \
+\\\"Lig_HBA\\\", \\\"Lig_RotatableBonds\\\", \\\"Lig_AromaticRings\\\", \
+\\\"Lig_RingCount\\\", \\\"Lig_HeavyAtoms\\\", \\\"Lig_FractionCsp3\\\", \
+\\\"Lig_LogP\\\"};\n                  keysProt = {\\\"Prot_ResidueLength\\\", \
+\\\"Prot_MolecularWeight_Da\\\", \\\"Prot_GRAVY\\\", \
+\\\"Prot_AromaticFraction\\\", \\\"Prot_PositiveResidueFraction\\\", \
+\\\"Prot_NegativeResidueFraction\\\", \\\"Prot_PolarResidueFraction\\\"};\n   \
+               keysEff = {\\\"Lig_BEI\\\", \\\"Lig_LE\\\", \\\"Lig_LLE\\\", \
+\\\"Lig_SEI\\\"};\n\n                  If[runType === \\\"ProV\\\", \n        \
+             features = \
+Map[ChemAIFlow`Core`AssembleHybridVector[ChemAIFlow`Core`CalcTextFeatures[#[\\\
+\"CanonicalSMILES\\\"]], Values[KeyTake[#, keysPro]], Values[KeyTake[#, \
+keysProt]]]&, plotData];\n                  , \n                     usedKeys \
+= If[runType === \\\"Retro\\\", Join[keysPro, keysProt, keysEff], \
+Join[keysPro, keysProt]];\n                     features = Values[KeyTake[#, \
+usedKeys]] & /@ plotData;\n                  ];\n                  \n         \
+         labels = Lookup[plotData, \\\"pIC50\\\"]; \n                  ds = \
+Rule @@@ Transpose[{features, labels}]; \n                  pm = \
+Check[PredictorMeasurements[$UserModel, ds], $Failed]; \n                  \
+If[Head[pm] === PredictorMeasurementsObject, \n                     statKeys \
+= {\\\"RSquared\\\", \\\"MeanSquare\\\", \\\"MeanDeviation\\\", \
+\\\"StandardDeviation\\\", \\\"MeanCrossEntropy\\\", \
+\\\"FractionVarianceUnexplained\\\"}; \n                     \
+Print[Grid[Prepend[Map[{#, pm[#]} &, statKeys], {Style[\\\"Metric\\\", Bold], \
+Style[\\\"Value\\\", Bold]}], Frame -> All, Background -> {None, {LightGray, \
+None}}]]; \n                     Print[\\\"Generating Comparison \
+Plot...\\\"]; \n                     Print[pm[\\\"ComparisonPlot\\\"]];, \n   \
+                  Print[Style[\\\"\[WarningSign] Stat Graph Skipped \
+(Calculation Failed).\\\", Orange]];\n                  ];\n               ]; \
+\n               ClearSystemCache[];, Print[Style[\\\"Training Aborted.\\\", \
+Red]];];, Print[Style[\\\"Critical Error during Training.\\\", Red]];];\n     \
+       , Row[{Style[\\\"Training Single Model... \\\", Blue, Bold], \
+ProgressIndicator[Appearance -> \\\"Indeterminate\\\"]}]\n            ];\n    \
+     , Print[\\\"Not enough data.\\\"];]; ClearSystemCache[]; $isProcessing = \
+False;], Enabled->Dynamic[!$isProcessing], Method -> \\\"Queued\\\", \
+ImageSize -> {200, 40}, BaseStyle -> {FontFamily -> \\\"Times New Roman\\\", \
+14, Bold}]],\n    Spacer[10], \n    Button[\\\"Restore Factory Defaults\\\", \
+Module[{choice, facFiles}, choice = ChoiceDialog[Column[{Style[\\\"\
+\[WarningSign] WARNING : FACTORY RESET\\\", Bold, Red, 16], Style[\\\"This \
+will DELETE ALL DATA permanently!\\\", 14, Black], Style[\\\"1. Deletes \
+DB.mx, DB.wl, SmartCache.mx\\\", 12], Style[\\\"2. Deletes all Models \
+(User_*.wxf, EnsSub_*.wxf)\\\", 12], Style[\\\"3. Resets all settings\\\", \
+12], Spacer[10], \\\"Are you absolutely sure?\\\"}], {\\\"Yes, DELETE \
+EVERYTHING\\\" -> True, \\\"No, Cancel\\\" -> False}]; If[choice, \n       \
+DeleteFile[FileNames[{\\\"*.mx\\\", \\\"*.wxf\\\"}, $ModelDir]]; \n       \
+If[FileExistsQ[$DBPathMX], DeleteFile[$DBPathMX]]; \n       \
+If[FileExistsQ[$DBPathWL], DeleteFile[$DBPathWL]]; \n       \
+If[FileExistsQ[$CachePathMX], DeleteFile[$CachePathMX]]; \n       $DB = {}; \
+$SmartCache = <||>; $Settings = <|\\\"Method\\\" -> \\\"RandomForest\\\", \
+\\\"nProt\\\" -> 5, \\\"nLig\\\" -> 500, \\\"Prot\\\" -> \\\"\\\", \
+\\\"Lig\\\" -> \\\"\\\", \\\"Mode\\\" -> \\\"OfflineFast\\\", \\\"ModelType\\\
+\" -> \\\"Pro\\\", \\\"SampleN\\\" -> 20|>; \n       \n       \
+If[DirectoryQ[$FactorySource], \n          facFiles = \
+FileNames[{\\\"*.mx\\\", \\\"*.wxf\\\", \\\"*.wl\\\"}, $FactorySource];\n     \
+     If[FileExistsQ[FileNameJoin[{$FactorySource, \\\"DB.wl\\\"}]], \
+CopyFile[FileNameJoin[{$FactorySource, \\\"DB.wl\\\"}], $DBPathWL, \
+OverwriteTarget->True]];\n          \
+If[FileExistsQ[FileNameJoin[{$FactorySource, \\\"DB.mx\\\"}]], \
+CopyFile[FileNameJoin[{$FactorySource, \\\"DB.mx\\\"}], $DBPathMX, \
+OverwriteTarget->True]];\n          \
+If[FileExistsQ[FileNameJoin[{$FactorySource, \\\"SmartCache.mx\\\"}]], \
+CopyFile[FileNameJoin[{$FactorySource, \\\"SmartCache.mx\\\"}], $CachePathMX, \
+OverwriteTarget->True]];\n          facModels = Select[facFiles, \
+(FileNameTake[#] =!= \\\"DB.mx\\\" && FileNameTake[#] =!= \\\"SmartCache.mx\\\
+\" && FileNameTake[#] =!= \\\"DB.wl\\\" && StringEndsQ[#, {\\\".mx\\\", \
+\\\".wxf\\\"}]) &];\n          Scan[Function[src, CopyFile[src, \
+FileNameJoin[{$ModelDir, FileNameTake[src]}], OverwriteTarget->True]], \
+facModels];\n          If[FileExistsQ[$DBPathWL] && !FileExistsQ[$DBPathMX], \
+$DB = Import[$DBPathWL]; DumpSave[$DBPathMX, $DB]; Clear[$DB];];\n          \
+Print[Style[\\\"\[RightGuillemet] Factory Assets Restored Successfully.\\\", \
+Blue]];\n          LoadDB[True]; $AvailableModels = ScanModels[]; \
+ClearSystemCache[]; Print[Style[\\\"\[Checkmark] System Wiped & \
+Restored.\\\", Darker[Green], Bold]];\n       ,\n          \
+ChoiceDialog[Column[{Style[\\\"\[WarningSign] CRITICAL ERROR: FACTORY ASSETS \
+MISSING\\\", Red, Bold, 16], \\\"The system cannot locate the \
+'Factory_Assets' folder.\\\", \\\"Possible causes:\\\", \\\"1. You moved the \
+'ChemAIFlow' folder away from its original installation location.\\\", \\\"2. \
+You deleted the 'Factory_Assets' folder.\\\", \\\"\\\", \\\"Please reinstall \
+or move the folder back to its original location.\\\"}], {\\\"OK\\\"->True}];\
+\n          Print[Style[\\\"\[Cross] Restore Failed: Factory Assets Not \
+Found!\\\", Red, Bold]];\n       ];\n       , Print[Style[\\\"Reset \
+Cancelled.\\\", Gray]];];], Enabled->Dynamic[!$isProcessing], ImageSize -> \
+{220, 30}, BaseStyle -> {FontFamily -> \\\"Times New Roman\\\", 12, Red}, \
+Method -> \\\"Queued\\\"]\n  }, Alignment -> Center]\n}, Alignment -> Center, \
+Spacings->1.5], ImageSize -> {PanelWidth-20, Automatic}, Alignment -> \
+Center], ImageSize -> {PanelWidth, Automatic}, Alignment -> Center]\n\n(* --- \
+STEP 2: PREDICTION (CONSENSUS) --- *)\nPanel[Pane[Column[{\n  \
+Row[{Style[\\\"Step 2: Prediction and Visualization\\\", 18, Bold, FontFamily \
+-> \\\"Times New Roman\\\"], Spacer[10], HelpButton[\\\"4\\\"]}],\n  Column[{\
+\n     Row[{Style[\\\"Select Model: \\\", FontFamily->\\\"Times New \
+Roman\\\", Bold, 14], Spacer[5], \
+Dynamic[PopupMenu[Dynamic[$SelectedModelLabel, (\n        $SelectedModelLabel \
+= #; \n        If[StringContainsQ[#, \\\"Ensemble\\\"], \
+$Settings[\\\"ModelType\\\"] = \\\"Ensemble\\\", $Settings[\\\"ModelType\\\"] \
+= \\\"Pro\\\"]; \n     )&], Keys[$AvailableModels], ImageSize -> 300, Enabled \
+-> ($Settings[\\\"ModelType\\\"] =!= \\\"GrandConsensus\\\" && \
+!$isProcessing)]], Spacer[5], Button[\\\"Scan\\\", $AvailableModels = \
+ScanModels[];, ImageSize->{120, 30}, Enabled->Dynamic[!$isProcessing], \
+Method->\\\"Queued\\\"]}, Alignment->Center],\n     Spacer[5],\n     Column[{\
+\n        Row[{Style[\\\"Input Target & Ligands:\\\", Bold, 14, FontFamily -> \
+\\\"Times New Roman\\\"], Spacer[5], HelpButton[\\\"5\\\"]}, \
+Alignment->Center],\n        Row[{Style[\\\"Ligand Source: \\\", FontFamily->\
+\\\"Times New Roman\\\", 14, Bold], RadioButtonBar[Dynamic[$LigSrc], \
+{\\\"Manual\\\"->Style[\\\"Manual Entry\\\", 14, FontFamily -> \\\"Times New \
+Roman\\\"], \\\"Database\\\"->Style[\\\"Database Search\\\", 14, FontFamily \
+-> \\\"Times New Roman\\\"]}, Enabled->Dynamic[!$isProcessing]]}]}, \
+Alignment->Center]\n     }, Alignment->Center],\n\n  Spacer[10], \n  \
+Button[\\\"Clear User Models\\\", DeleteFile[FileNames[{\\\"User_*.mx\\\", \\\
+\"User_*.wxf\\\", \\\"EnsSub_*.wxf\\\"}, $ModelDir]]; $AvailableModels = \
+ScanModels[]; Print[Style[\\\"\[Checkmark] Deleted.\\\", Darker[Green], \
+Bold]];, Enabled->Dynamic[!$isProcessing], ImageSize->{150, 25}, \
+BaseStyle->{FontFamily->\\\"Times New Roman\\\", 10, Red}, Method->\\\"Queued\
+\\\"],\n  \n  Spacer[10], Style[\\\"Enter Protein Sequence (Target):\\\", \
+Bold, 14, FontFamily -> \\\"Times New Roman\\\"], \
+InputField[Dynamic[$Settings[\\\"Prot\\\"]], String, FieldSize -> {60, 5}, \
+Enabled->Dynamic[!$isProcessing]], Style[\\\"(Default: Auto-filled Protein \
+Sequence)\\\", 10, Gray, FontFamily -> \\\"Times New Roman\\\"],\n  \n  \
+Dynamic[If[$LigSrc === \\\"Manual\\\", \n     Column[{\n        Spacer[5],\n  \
+      Row[{\n           Button[\\\"Load Standard (EGFR)\\\", \
+$Settings[\\\"Prot\\\"]=$RealEGFR; $Settings[\\\"Lig\\\"]=$ExampleLigands;, \
+Enabled->Dynamic[!$isProcessing], ImageSize->{150, 25}, \
+BaseStyle->{FontFamily->\\\"Times New Roman\\\", 10}],\n           \
+Spacer[10],\n           Button[\\\"Load Alien (CDK2) \|01f47d\\\", $Settings[\
+\\\"Prot\\\"]=$AlienProt; $Settings[\\\"Lig\\\"]=$AlienLigs;, \
+Enabled->Dynamic[!$isProcessing], ImageSize->{150, 25}, \
+BaseStyle->{FontFamily->\\\"Times New Roman\\\", 10, Red, Bold}]\n        }],\
+\n        Spacer[5],\n        Style[\\\"Enter Ligands (ID, SMILES per \
+line):\\\", Bold, 14, FontFamily -> \\\"Times New Roman\\\"], \n        \
+InputField[Dynamic[$Settings[\\\"Lig\\\"]], String, FieldSize -> {60, 10}, \
+ContinuousAction->True, ReturnEntersInput->False, \
+Enabled->Dynamic[!$isProcessing]]\n     }, Alignment -> Center], \n     \n    \
+ Column[{Spacer[10], Style[\\\"Select N Unique Ligands:\\\", Bold, 14, \
+FontFamily -> \\\"Times New Roman\\\"], Row[{Style[\\\"Sample Size:\\\", \
+FontFamily->\\\"Times New Roman\\\", 12], \
+InputField[Dynamic[$Settings[\\\"SampleN\\\"]], Number, FieldSize->{10, 1}, \
+Enabled->Dynamic[!$isProcessing]], Module[{max = If[KeyExistsQ[$SmartCache, \
+\\\"Metadata\\\"], $SmartCache[\\\"Metadata\\\"][\\\"UniqueLigands\\\"], 0]}, \
+Style[\\\"  (Max: \\\" <> ToString[max] <> \\\")\\\", Gray, \
+FontFamily->\\\"Times New Roman\\\", 12]]}]}, Alignment -> Center]\n  ]],\n  \
+\n  Spacer[10],\n  Button[\\\"PREDICT & RANK\\\",\n     $isProcessing = True;\
+\n     Module[{lFeats, pFeats, vec, score, lines, parts, smi, modelPath, \
+loadedModel, ensembleManifest, inputs = {}, cachedEntry, validVectors = {}, \
+validIndices = {}, rawScores, tVec, lVec, pVec, item, mw, bei, finalScore, \
+status, results = {}, sortedResults, isEnsemble = False, subModels, subPath, \
+subModelObj, accumScores, countModels, isProV, isRetro, st, et, rawLig, \
+molObj, targetRecipes, grandResults = <||>, rIdx, rName, grandList, sdVal, \
+confLevel, confStr, isValidSub, cleanName, collection, subScoresList, \
+ensembleSDs},\n        \n        If[$Settings[\\\"Prot\\\"]===\\\"\\\", \
+$Settings[\\\"Prot\\\"]=$RealEGFR];\n        pFeats = \
+ChemAIFlow`Core`CalcProtFeatures[StringReplace[ToUpperCase[$Settings[\\\"Prot\
+\\\"]], Whitespace -> \\\"\\\"]]; \n        If[FailureQ[pFeats], Print[Style[\
+\\\"Protein Feature Failed.\\\", Red]]; $isProcessing=False; Return[]];\n     \
+   If[$LigSrc === \\\"Manual\\\",\n           If[$Settings[\\\"Lig\\\"] === \
+\\\"\\\", $Settings[\\\"Lig\\\"] = $ExampleLigands];\n           lines = \
+StringSplit[$Settings[\\\"Lig\\\"], \\\"\\\\n\\\"];\n           lines = \
+DeleteCases[lines, \\\"\\\"];\n           Do[If[StringContainsQ[line, \\\",\\\
+\"], parts = StringSplit[line, \\\",\\\", 2]; AppendTo[inputs, \
+{StringTrim[parts[[1]]], StringTrim[parts[[2]]]}];], {line, lines}];\n        \
+, If[!KeyExistsQ[$SmartCache, \\\"Index\\\"], Print[Style[\\\"DB Empty.\\\", \
+Red]]; $isProcessing=False; Return[]]; inputs = MapIndexed[{\\\"DB_Hit_\\\" \
+<> IntegerString[#2[[1]], 10, 3], #1} &, \
+Take[Keys[$SmartCache[\\\"Index\\\"]], UpTo[$Settings[\\\"SampleN\\\"]]]]; ];\
+\n        If[Length[inputs] == 0, Print[Style[\\\"No valid ligands.\\\", \
+Red]]; $isProcessing=False; Return[]];\n\n        \
+If[$Settings[\\\"ModelType\\\"] === \\\"GrandConsensus\\\",\n           \
+Print[Style[\\\"\[RightGuillemet] Starting Grand Consensus (3-Way \
+Vote)...\\\", Purple, Bold]];\n           targetRecipes = {\\\"The \
+Oracle\\\", \\\"The Trinity\\\", \\\"Deep Hunter\\\"};\n        ,\n           \
+If[$SelectedModelLabel === \\\"None\\\" || !KeyExistsQ[$AvailableModels, \
+$SelectedModelLabel], Print[Style[\\\"Select a valid model.\\\", Red]]; \
+$isProcessing=False; Return[]];\n           rName = $SelectedModelLabel; \n   \
+        targetRecipes = {rName};\n           If[StringContainsQ[rName, \
+\\\"Ensemble\\\"], $Settings[\\\"ModelType\\\"] = \\\"Ensemble\\\"];\n        \
+];\n\n        Monitor[\n        Do[\n           rName = \
+targetRecipes[[rIdx]];\n           Print[Style[\\\"   \[RightGuillemet] \
+Analyzing with: \\\" <> rName, Blue]];\n           isEnsemble = False;\n      \
+     \n           If[$Settings[\\\"ModelType\\\"] === \\\"GrandConsensus\\\" \
+|| StringContainsQ[rName, \\\"Ensemble\\\"],\n              cleanName = \
+StringReplace[StringTrim[First[StringSplit[rName, \\\"(\\\"]]], \
+{\\\"[Ensemble]\\\"->\\\"\\\", \\\" \\\"->\\\"\\\"}];\n              \
+modelPath = FileNameJoin[{$ModelDir, \\\"User_Ensemble_\\\" <> cleanName <> \
+\\\".wxf\\\"}];\n              If[!FileExistsQ[modelPath], Print[Style[\\\"   \
+   \[Cross] Model not found! Please Train first.\\\", Red]]; Continue[]];\n   \
+           ensembleManifest = Quiet[Check[Import[modelPath, \\\"WXF\\\"], \
+$Failed]];\n              If[FailureQ[ensembleManifest], Print[Style[\\\"     \
+ \[Cross] Manifest Corrupt!\\\", Red]]; Continue[]];\n              \
+isEnsemble = True;\n           ,\n              modelPath = \
+$AvailableModels[rName];\n              If[StringEndsQ[modelPath, \
+\\\".wxf\\\"], loadedModel = Quiet[Check[Import[modelPath, \\\"WXF\\\"], \
+$Failed]];, loadedModel = Quiet[Check[Import[modelPath, \\\"MX\\\"], \
+$Failed]];];\n              If[FailureQ[loadedModel], Print[Style[\\\"      \
+\[Cross] Model Corrupt!\\\", Red]]; Return[]];\n           ];\n           \n  \
+         If[!isEnsemble,\n              If[ListQ[loadedModel], loadedModel = \
+First[loadedModel]];\n           ];\n\n           If[isEnsemble,\n            \
+  subModels = ensembleManifest[\\\"Models\\\"]; \n              subScoresList \
+= ConstantArray[{}, Length[inputs]]; (* TRACKER *)\n              countModels \
+= 0;\n              \n              Do[\n                 subPath = \
+FileNameJoin[{$ModelDir, sub[\\\"File\\\"]}];\n                 \
+If[FileExistsQ[subPath],\n                    subModelObj = \
+Quiet[Check[Import[subPath, \\\"WXF\\\"], $Failed]];\n                    \
+isValidSub = MatchQ[subModelObj, _PredictorFunction] || (ListQ[subModelObj] \
+&& Length[subModelObj]>0 && MatchQ[First[subModelObj], _PredictorFunction]);\n\
+                    If[!isValidSub, Continue[]];\n                    \
+If[ListQ[subModelObj], subModelObj = First[subModelObj]];\n                   \
+ \n                    validVectors = {}; validIndices = {};\n                \
+    isProV = StringContainsQ[sub[\\\"Type\\\"], \\\"ProV\\\"]; isRetro = \
+StringContainsQ[sub[\\\"Type\\\"], \\\"Retro\\\"];\n                    Do[\n \
+                      item = inputs[[idx]]; smi = item[[2]]; cachedEntry = \
+Lookup[$SmartCache[\\\"Index\\\"], smi, Missing[]];\n                       \
+If[!MissingQ[cachedEntry], lVec = cachedEntry[\\\"Int\\\"];, rawLig = \
+ChemAIFlow`Core`CalcLigManual[smi]; If[FailureQ[rawLig], lVec = Missing[], \
+lVec = Values[rawLig]];];\n                       If[ListQ[lVec],\n           \
+               pVec = Values[pFeats];\n                          If[isProV, \
+tVec = ChemAIFlow`Core`CalcTextFeatures[smi]; vec = \
+ChemAIFlow`Core`AssembleHybridVector[tVec, lVec, pVec];,\n                    \
+         If[isRetro, vec = Join[lVec, pVec, If[!MissingQ[cachedEntry], \
+cachedEntry[\\\"Eff\\\"], $SmartCache[\\\"GlobalMean\\\"]]];, vec = \
+Join[lVec, pVec]];\n                          ];\n                          \
+AppendTo[validVectors, vec]; AppendTo[validIndices, idx];\n                   \
+    ];\n                    , {idx, 1, Length[inputs]}];\n                    \
+\n                    If[Length[validVectors] > 0, \n                       \
+rawScores = Quiet[Check[subModelObj[validVectors], $Failed]];\n               \
+        If[ListQ[rawScores] && Length[rawScores] == Length[validVectors] && \
+AllTrue[rawScores, NumericQ],\n                          \
+Do[AppendTo[subScoresList[[validIndices[[k]]]], rawScores[[k]]], {k, \
+Length[rawScores]}];\n                          countModels++;\n              \
+         ];\n                    ];\n                    Clear[subModelObj];\n\
+                 ];\n              , {sub, subModels}];\n              \n     \
+         rawScores = Map[If[Length[#]>0, Mean[#], 0.0]&, subScoresList];\n    \
+          ensembleSDs = Map[If[Length[#]>1, StandardDeviation[#], 0.0]&, \
+subScoresList];\n              validVectors = {}; validIndices = {}; \
+Do[AppendTo[validIndices, k]; AppendTo[validVectors, k];, {k, \
+Length[rawScores]}];\n           ,\n              isProV = \
+StringContainsQ[rName, \\\"ProV\\\"]; isRetro = StringContainsQ[rName, \
+\\\"Retro\\\"];\n              validVectors = {}; validIndices = {};\n        \
+      Do[\n                 item = inputs[[idx]]; smi = item[[2]]; \
+cachedEntry = Lookup[$SmartCache[\\\"Index\\\"], smi, Missing[]];\n           \
+      If[!MissingQ[cachedEntry], lVec = cachedEntry[\\\"Int\\\"];, rawLig = \
+ChemAIFlow`Core`CalcLigManual[smi]; If[FailureQ[rawLig], lVec = Missing[], \
+lVec = Values[rawLig]];];\n                 If[ListQ[lVec],\n                 \
+   pVec = Values[pFeats];\n                    If[isProV, tVec = \
+ChemAIFlow`Core`CalcTextFeatures[smi]; vec = \
+ChemAIFlow`Core`AssembleHybridVector[tVec, lVec, pVec];,\n                    \
+   If[isRetro, vec = Join[lVec, pVec, If[!MissingQ[cachedEntry], cachedEntry[\
+\\\"Eff\\\"], $SmartCache[\\\"GlobalMean\\\"]]];, vec = Join[lVec, pVec]];\n  \
+                  ];\n                    AppendTo[validVectors, vec]; \
+AppendTo[validIndices, idx];\n                 ];\n              , {idx, 1, \
+Length[inputs]}];\n              If[Length[validVectors] > 0, rawScores = \
+Quiet[loadedModel[validVectors]]; rawScores = Map[Max[0, #]&, rawScores];, \
+rawScores = {}];\n           ];\n\n           If[Length[rawScores] > 0, \n    \
+          Do[\n                 idx = validIndices[[i]]; item = \
+inputs[[idx]]; smi = item[[2]]; score = MakeSafe[rawScores[[i]]];\n           \
+      molObj = Molecule[smi]; If[MoleculeQ[molObj], mw = \
+QuantityMagnitude[MoleculeValue[molObj, \\\"MolecularMass\\\"]];, mw = 0.0];\n\
+                 mw = MakeSafe[mw]; If[mw <= 1.0, mw = 999.0];\n              \
+   bei = (score * 1000.0) / mw;\n                 finalScore = \
+CalcConsensus[score, bei];\n                 \n                 \
+If[!KeyExistsQ[grandResults, item[[1]]], grandResults[item[[1]]] = \
+<|\\\"SMILES\\\"->smi, \\\"TotalScore\\\"->0., \\\"Count\\\"->0, \
+\\\"pIC50\\\"->0., \\\"BEI\\\"->0., \\\"ScoreList\\\"->{}|>];\n               \
+  grandResults[item[[1]], \\\"TotalScore\\\"] += finalScore;\n                \
+ grandResults[item[[1]], \\\"pIC50\\\"] += score;\n                 \
+grandResults[item[[1]], \\\"BEI\\\"] += bei;\n                 \
+grandResults[item[[1]], \\\"Count\\\"] += 1;\n                 \
+AppendTo[grandResults[item[[1]], \\\"ScoreList\\\"], finalScore];\n           \
+      \n                 If[isEnsemble, grandResults[item[[1]], \
+\\\"InternalSD\\\"] = ensembleSDs[[idx]]];\n                 \n              \
+, {i, Length[validVectors]}];\n           ];\n           \n        , {rIdx, \
+Length[targetRecipes]}], \n        Row[{Style[\\\"Predicting... \\\", Blue, \
+Bold], ProgressIndicator[rIdx/Length[targetRecipes]], \\\" \\\", rName}]]; \n\
+\n        results = {};\n        KeyValueMap[Function[{k, v}, \n           \
+If[v[\\\"Count\\\"] > 0, \n              avgScore = v[\\\"TotalScore\\\"] / \
+v[\\\"Count\\\"];\n              avgP = v[\\\"pIC50\\\"] / v[\\\"Count\\\"];\n\
+              avgB = v[\\\"BEI\\\"] / v[\\\"Count\\\"];\n              \
+grandList = v[\\\"ScoreList\\\"];\n              \n              \
+If[isEnsemble || $Settings[\\\"ModelType\\\"] === \\\"GrandConsensus\\\",\n   \
+              If[avgScore > 0, \n                    If[Length[grandList] > \
+1, sdVal = StandardDeviation[grandList], sdVal = 0.0];\n                    \
+If[isEnsemble && Length[grandList] == 1, sdVal = Lookup[v, \
+\\\"InternalSD\\\", 0.0]];\n                    \n                    \
+confLevel = Which[sdVal < 0.3, Style[\\\"High\\\", Darker[Green], Bold], \
+sdVal < 1.5, Style[\\\"Med\\\", Orange, Bold], True, Style[\\\"Low\\\", Red, \
+Bold]];\n                    confStr = Row[{confLevel, Style[\\\" (\
+\[PlusMinus]\\\" <> ToString[NumberForm[sdVal, {3,2}]] <> \\\")\\\", Gray, \
+10]}];\n                 ,\n                    confStr = Style[\\\"-\\\", \
+Gray];\n                 ];\n              ,\n                 confStr = \
+Style[\\\"-\\\", Gray];\n              ];\n              \n              \
+status = If[avgScore > 0, Style[\\\"Pass\\\", Darker[Green], Bold], \
+Style[\\\"Filtered\\\", Gray]];\n              AppendTo[results, {k, \
+v[\\\"SMILES\\\"], NumberForm[avgScore, {4,2}], NumberForm[avgP, {4,2}], \
+NumberForm[avgB, {4,2}], confStr, status, avgScore}];\n           ]\n        \
+], grandResults];\n        \n        sortedResults = SortBy[results, -#[[8]] \
+&]; \n        Print[DynamicModule[{data = sortedResults, rank2D = 1, rank3D = \
+1, show2D = False, show3D = False, viewRank2D = 1}, Column[{Style[\\\"Final \
+Leaderboard (Grand Consensus)\\\", 16, Bold, FontFamily->\\\"Times New \
+Roman\\\", Blue], Grid[Prepend[data[[1;;Min[20, Length[data]]]][[All, 1;;7]], \
+{\\\"ID\\\", \\\"SMILES\\\", \\\"Grand Score\\\", \\\"Avg pIC50\\\", \\\"Avg \
+BEI\\\", \\\"Confidence\\\", \\\"Status\\\"}], Frame->All, Background->{None, \
+{Lighter[Blue, 0.9], White}}, ItemSize->Full, \
+BaseStyle->{FontFamily->\\\"Times New Roman\\\", 12}], Spacer[15], \
+Panel[Column[{Style[\\\"Zone 2: 2D Structure Viewer\\\", 16, Bold, \
+FontFamily->\\\"Times New Roman\\\", Darker[Green]], Row[{Style[\\\"Select \
+Rank to Inspect: \\\", FontFamily->\\\"Times New Roman\\\", 12], \
+InputField[Dynamic[rank2D], Number, FieldSize->{5,1}]}], Spacer[10], \
+Row[{Button[\\\"Generate 2D Image\\\", viewRank2D = rank2D; show2D = True, \
+Method->\\\"Queued\\\", Enabled->Dynamic[!$isProcessing], ImageSize->{180, \
+35}, BaseStyle->{FontFamily->\\\"Times New Roman\\\", 12}], Spacer[5], \
+Button[\\\"Clear 2D & RAM\\\", show2D = False; ClearSystemCache[];, \
+Method->\\\"Queued\\\", Enabled->Dynamic[!$isProcessing], ImageSize->{180, \
+35}, BaseStyle->{FontFamily->\\\"Times New Roman\\\", 12, Red}]}], Spacer[5], \
+Dynamic[If[show2D && viewRank2D > 0 && viewRank2D <= Length[data], \
+Column[{Style[data[[viewRank2D, 1]] <> \\\" (Score: \\\" <> \
+ToString[data[[viewRank2D, 3]]] <> \\\")\\\", Bold, FontFamily->\\\"Times New \
+Roman\\\", 12], MoleculePlot[data[[viewRank2D, 2]], ImageSize->250]}, \
+Alignment->Center], Style[\\\"Waiting for input...\\\", FontFamily->\\\"Times \
+New Roman\\\"]]]}, Alignment->Center], ImageSize->{PanelWidth, Automatic}, \
+Alignment->Center], Spacer[15], Panel[Column[{Style[\\\"Zone 3: 3D Structure \
+Viewer\\\", 16, Bold, FontFamily->\\\"Times New Roman\\\", Darker[Red]], \
+Row[{Style[\\\"Select Rank to View 3D: \\\", FontFamily->\\\"Times New \
+Roman\\\", 12], InputField[Dynamic[rank3D], Number, FieldSize->{5,1}]}], \
+Spacer[10], Grid[{{Button[\\\"Generate 3D Model\\\", show3D = True, \
+Method->\\\"Queued\\\", Enabled->Dynamic[!$isProcessing], ImageSize->{180, \
+35}, BaseStyle->{FontFamily->\\\"Times New Roman\\\", 12}], Button[\\\"Clear \
+3D & RAM\\\", show3D = False; ClearSystemCache[];, Method->\\\"Queued\\\", \
+Enabled->Dynamic[!$isProcessing], ImageSize->{180, 35}, \
+BaseStyle->{FontFamily->\\\"Times New Roman\\\", 12, Red}]}}, Spacings->{1, \
+0}], Spacer[5], Dynamic[If[show3D && rank3D > 0 && rank3D <= Length[data], \
+MoleculePlot3D[data[[rank3D, 2]], ImageSize->300, PlotTheme->\\\"Heavy\\\"], \
+If[show3D, Style[\\\"Invalid Rank\\\", FontFamily->\\\"Times New Roman\\\"], \
+\\\"\\\"]]]}, Alignment->Center], ImageSize->{PanelWidth, Automatic}, \
+Alignment->Center]}, Alignment->Center]]];\n        ClearSystemCache[];\n     \
+   $isProcessing = False;\n     ], Enabled->Dynamic[!$isProcessing], Method->\
+\\\"Queued\\\", ImageSize->{150, 30}, BaseStyle -> ChemAIFlowStyle\n  ]\n}, \
+Alignment -> Center, Spacings->1.5], ImageSize -> {PanelWidth-20, Automatic}, \
+Alignment -> Center], ImageSize -> {PanelWidth, Automatic}, Alignment -> \
+Center]\n\nLoadDB[]; $AvailableModels = ScanModels[];\n\>\""}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"SECTION", " ", "5"}], ":", "EXPORT"}], "&"}], " ", 
+         "LAUNCH"}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{
+         RowBox[{
+         "===", "===", "===", "===", "===", "===", "===", "===", "===", "===",
+           "===", "===", "===", "===", "===", "===", "===", "===", "==="}], 
+         "="}], "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"targetFile", "=", 
+        RowBox[{"FileNameJoin", "[", 
+         RowBox[{"{", 
+          RowBox[{"workflowsDir", ",", "\"\<ChemAIFlow_Main.nb\>\""}], "}"}], 
+         "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{"targetFile", ",", 
+         RowBox[{"Notebook", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Cell", "[", 
+              RowBox[{"CellGroupData", "[", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"Cell", "[", 
+                   
+                   RowBox[{"\"\<Code (Click to Expand)\>\"", 
+                    ",", "\"\<Section\>\"", ",", 
+                    RowBox[{"CellState", "->", "\"\<Closed\>\""}]}], "]"}], ",", 
+                  RowBox[{"Cell", "[", 
+                   RowBox[{"uiContent", ",", "\"\<Input\>\""}], "]"}]}], 
+                 "}"}], ",", "Closed"}], "]"}], "]"}], ",", 
+             RowBox[{"Cell", "[", 
+              RowBox[{"\"\<ChemAIFlow Interface\>\"", ",", "\"\<Title\>\""}], 
+              "]"}]}], "}"}], ",", 
+           RowBox[{"StyleDefinitions", "->", "\"\<Default.nb\>\""}]}], 
+          "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Print", "[", 
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<\[Checkmark] Installation Complete!\>\"", ",", 
+          RowBox[{"Darker", "[", "Green", "]"}], ",", "Bold", ",", "20"}], 
+         "]"}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Print", "[", 
+        RowBox[{"\"\<Launching App: \>\"", "<>", "targetFile"}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Pause", "[", "1", "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"SystemOpen", "[", "targetFile", "]"}], ";"}]}], "]"}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.9759136129222937`*^9, 3.9759136129237137`*^9}, 
+   3.975913744974008*^9, {3.975915500398115*^9, 3.9759156204085617`*^9}, {
+   3.975915775201995*^9, 3.9759157799889317`*^9}, {3.975915904120071*^9, 
+   3.975916075606398*^9}, {3.975924073806498*^9, 
+   3.975924081466586*^9}},ExpressionUUID->"4a8df240-255c-44a2-8321-\
+ccefa49d5d1c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox["\<\"\[RightGuillemet] Installing ChemAIFlow v26.27 (The Button \
+Locker)...\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[0.5, 0, 0.5],
+  FrontFaceColor->RGBColor[0.5, 0, 0.5],
+  BackFaceColor->RGBColor[0.5, 0, 0.5],
+  GraphicsColor->RGBColor[0.5, 0, 0.5],
+  FontFamily->"Times New Roman",
+  FontSize->16,
+  FontWeight->Bold,
+  FontColor->RGBColor[0.5, 0, 0.5]]], "Print",
+ CellChangeTimes->{3.975919270235571*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"addc73de-096c-4e13-a1be-00868f789391"],
+
+Cell[BoxData[
+ StyleBox["\<\"Found existing installation. Creating Rolling Backup...\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0.5, 0],
+  FrontFaceColor->RGBColor[1, 0.5, 0],
+  BackFaceColor->RGBColor[1, 0.5, 0],
+  GraphicsColor->RGBColor[1, 0.5, 0],
+  FontFamily->"Times New Roman",
+  FontColor->RGBColor[1, 0.5, 0]]], "Print",
+ CellChangeTimes->{3.975919270266635*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"6be9c10a-e955-45fc-a69d-c436eededccb"],
+
+Cell[BoxData["\<\"  Moved to: ChemAIFlow_Backup_2025_12_28_21_01_10\"\>"], \
+"Print",
+ CellChangeTimes->{3.9759192703461323`*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"caf9ea0a-e7ec-4711-83c7-47f4e8934a8f"],
+
+Cell[BoxData[
+ StyleBox["\<\"   \[RightGuillemet] Factory Assets Found. Checking \
+integrity...\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[0, 0, 1],
+  FrontFaceColor->RGBColor[0, 0, 1],
+  BackFaceColor->RGBColor[0, 0, 1],
+  GraphicsColor->RGBColor[0, 0, 1],
+  FontFamily->"Times New Roman",
+  FontColor->RGBColor[0, 0, 1]]], "Print",
+ CellChangeTimes->{3.975919270366579*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"a1b5c01e-9f74-4931-8e01-739eceeeb88c"],
+
+Cell[BoxData["\<\"      + SmartCache deployed.\"\>"], "Print",
+ CellChangeTimes->{3.975919299992331*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"e5b0dd99-bb05-4ff3-83cd-0b502d170694"],
+
+Cell[BoxData["\<\"      + Model assets verified.\"\>"], "Print",
+ CellChangeTimes->{3.975919300085422*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"1a77c720-cfb6-4a62-8e35-fb6eede3406d"],
+
+Cell[BoxData[
+ StyleBox["\<\"\[Checkmark] Installation Complete!\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[0, 
+    Rational[2, 3], 0],
+  FrontFaceColor->RGBColor[0, 
+    Rational[2, 3], 0],
+  BackFaceColor->RGBColor[0, 
+    Rational[2, 3], 0],
+  GraphicsColor->RGBColor[0, 
+    Rational[2, 3], 0],
+  FontSize->20,
+  FontWeight->Bold,
+  FontColor->RGBColor[0, 
+    Rational[2, 3], 0]]], "Print",
+ CellChangeTimes->{3.975919300136498*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"e5d457f4-b4ce-4039-be9f-deace54a3306"],
+
+Cell[BoxData["\<\"Launching App: /Users/macintosh/Downloads/Research/00 \
+PackageMathematica/Version5/ChemAIFlow/Workflows/ChemAIFlow_Main.nb\"\>"], \
+"Print",
+ CellChangeTimes->{3.975919300137465*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"5e40483d-a1e8-444f-adc8-9d9f26469d03"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{836, 831},
+WindowMargins->{{174, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"72ab60c4-48d5-41eb-87b2-5dbc7355b7ab"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 114528, 1902, 20369, "Input",ExpressionUUID->"4a8df240-255c-44a2-8321-ccefa49d5d1c"],
+Cell[CellGroupData[{
+Cell[115129, 1928, 548, 15, 25, "Print",ExpressionUUID->"addc73de-096c-4e13-a1be-00868f789391"],
+Cell[115680, 1945, 486, 12, 21, "Print",ExpressionUUID->"6be9c10a-e955-45fc-a69d-c436eededccb"],
+Cell[116169, 1959, 233, 5, 21, "Print",ExpressionUUID->"caf9ea0a-e7ec-4711-83c7-47f4e8934a8f"],
+Cell[116405, 1966, 487, 13, 21, "Print",ExpressionUUID->"a1b5c01e-9f74-4931-8e01-739eceeeb88c"],
+Cell[116895, 1981, 208, 4, 21, "Print",ExpressionUUID->"e5b0dd99-bb05-4ff3-83cd-0b502d170694"],
+Cell[117106, 1987, 210, 4, 21, "Print",ExpressionUUID->"1a77c720-cfb6-4a62-8e35-fb6eede3406d"],
+Cell[117319, 1993, 549, 18, 30, "Print",ExpressionUUID->"e5d457f4-b4ce-4039-be9f-deace54a3306"],
+Cell[117871, 2013, 305, 6, 21, "Print",ExpressionUUID->"5e40483d-a1e8-444f-adc8-9d9f26469d03"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
